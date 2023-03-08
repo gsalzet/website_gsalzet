@@ -51,9 +51,9 @@ status:
 last_name: Salzet
 role: PhD student in tropical forest bioeconomics
 highlight_name: true
-title: Biography
+title: Guillaume Salzet
 first_name: Guillaume
 email: "g.salzet@gmail.com"
 ---
-Hi, I’m Guillaume ! I’m a PhD student and my research focuses on the sustainability of forest sector and their interactions with tropical forest dynamics in the context of French Guiana. I am also interested in the forests ecosystems services and how their are evaluated.
+Hi , I’m Guillaume ! I’m a PhD student and my research focuses on the sustainability of forest sector and their interactions with tropical forest dynamics in the context of French Guiana. I am also interested in the forests ecosystems services and how their are evaluated.
 {style="text-align: justify;"}
