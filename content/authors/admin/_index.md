@@ -4,8 +4,11 @@ avatar_filename: avatar.jpg
 bio: "My research interests include "
 interests:
   - Bioeconomics
+  
   - Forest ecology
+  
   - Statistics
+  
   - Econometrics
 social:
   - icon: researchgate
