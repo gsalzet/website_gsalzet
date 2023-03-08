@@ -5,7 +5,6 @@ interests:
   - Bioeconomics
   - Forest ecology
   - Statistics
-  - Retrieval
 social:
   - icon: envelope
     icon_pack: fas
@@ -48,13 +47,13 @@ education:
       year: ""
 superuser: true
 status:
-  icon: ☕️
-last_name: Wu
+  icon: 🌳
+last_name: Salzet
 role: PhD student in tropical forest bioeconomics
 highlight_name: true
-title: Guillaume Salzet
-first_name: Alice
-email: ""
+title: Biography
+first_name: Guillaume
+email: "g.salzet@gmail.com"
 ---
 Hi, I’m Guillaume ! I’m a PhD student and my research focuses on the sustainability of forest sector and their interactions with tropical forest dynamics in the context of French Guiana. I am also interested in the forests ecosystems services and how their are evaluated.
 {style="text-align: justify;"}
