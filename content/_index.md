@@ -10,7 +10,7 @@ sections:
       title: Tropical forest bioeconomics
     design:
       background:
-        image: filename: head.png
+        image: head.jpg
         gradient_end: '#4bb4e3'
         gradient_start: '#2b94c3'
         image_darken = 0.5  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
