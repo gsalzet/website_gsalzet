@@ -1,5 +1,5 @@
 ---
-avatar_filename: salzet_guillaume-2-.jpg
+avatar_filename: avatar.jpg
 bio: "My research interests include "
 interests:
   - Bioeconomics
