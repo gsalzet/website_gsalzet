@@ -25,9 +25,7 @@ sections:
       # Text color (true=light, false=dark, or remove for the dynamic theme color).
       text_color_light: true
   - block: v1/about
-    id: about
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
   - block: experience
     content:

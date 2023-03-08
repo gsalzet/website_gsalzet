@@ -51,7 +51,7 @@ status:
 last_name: Salzet
 role: PhD student in tropical forest bioeconomics
 highlight_name: true
-title: Guillaume Salzet
+title: Biography
 first_name: Guillaume
 email: "g.salzet@gmail.com"
 ---
