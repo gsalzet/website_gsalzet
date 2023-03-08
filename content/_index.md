@@ -26,7 +26,7 @@ sections:
       text_color_light: true
   - block: v1/about
     content:
-      username: "admin"
+      username: admin
   - block: experience
     content:
       title: Experience

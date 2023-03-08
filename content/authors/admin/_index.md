@@ -1,7 +1,5 @@
 ---
-title: Guillaume Salzet 
-authors:
-  - admin
+title: Guillaume Salzet
 avatar_filename: avatar.jpg
 bio: "My research interests include "
 interests:
