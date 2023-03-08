@@ -6,22 +6,29 @@ interests:
   - Bioeconomics
   - Forest ecology
   - Statistics
+  - Econometrics
 social:
-  - icon: envelope
-    icon_pack: fas
-    link: /#contact
+  - icon: researchgate
+    icon_pack: fab
+    link: https://www.researchgate.net/profile/Guillaume-Salzet
   - icon: graduation-cap
     icon_pack: fas
     link: https://scholar.google.com/citations?user=MFpcvmYAAAAJ&hl=fr&oi=ao
   - icon: github
     icon_pack: fab
     link: https://github.com/gsalzet
+  - icon: orcid
+    icon_pack: fab
+    link: https://orcid.org/0000-0003-4548-5673
   - icon: linkedin
     icon_pack: fab
     link: https://fr.linkedin.com/in/guillaume-salzet
   - icon: cv
     icon_pack: ai
     link: uploads/resume.pdf
+  - icon: envelope
+    icon_pack: fas
+    link: /#contact
 organizations:
   - name: INRAe, BETA
     url: https://beta-economics.fr/
@@ -55,5 +62,7 @@ highlight_name: true
 first_name: Guillaume
 email: "g.salzet@gmail.com"
 ---
-Hi , I’m Guillaume ! I’m a PhD student and my research focuses on the sustainability of forest sector and their interactions with tropical forest dynamics in the context of French Guiana. I am also interested in the forests ecosystems services and how their are evaluated.
+# Biography
+Hi, I’m Guillaume ! I’m a PhD student in bioeconomics modelling.
+My research focuses on the sustainability of forest sector and their interactions with tropical forest dynamics in the context of French Guiana. I am also interested in the forests ecosystems services and how their are evaluated.
 {style="text-align: justify;"}
