@@ -32,18 +32,18 @@ education:
     - course: PhD in tropical forest bioeconomics, Ongoing
       institution: Univ. Guyane
       year: ""
-    - course: MSc/ Engineer in Forest engineering, 2020
+    - course: MSc/ Engineer in forest engineering, 2020
       institution: AgroParisTech
       year: ""
     - course: MSc in life science, 2020
       institution: Ecole Normale Supérieure
-    - course: MSc in Theoretical ecology & modelling, 2020
+    - course: MSc in statistical ecology, 2020
       institution: Muséum National d'Histoire Naturelle
       year: ""
-    - course: MSc in Tropical ecology, 2019
+    - course: MSc in tropical ecology, 2019
       institution: AgroParisTech, Univ. Montpellier
       year: ""
-    - course: MSc in Economy, 2018
+    - course: MSc in economy, 2018
       institution: Univ. Lorraine
       year: ""
 superuser: true
