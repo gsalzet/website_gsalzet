@@ -1,7 +1,7 @@
 ---
 title: Guillaume Salzet
 avatar_filename: avatar.jpg
-bio: "My research interests include "
+bio: "Bioeconomics/ Ecosystem services/ Ecology"
 interests:
   - Bioeconomics
   
