@@ -1,4 +1,7 @@
 ---
+title: Guillaume Salzet 
+authors:
+  - admin
 avatar_filename: avatar.jpg
 bio: "My research interests include "
 interests:
@@ -51,7 +54,6 @@ status:
 last_name: Salzet
 role: PhD student in tropical forest bioeconomics
 highlight_name: true
-title: Biography
 first_name: Guillaume
 email: "g.salzet@gmail.com"
 ---
