@@ -5,7 +5,7 @@ date: 2022-10-24
 type: landing
 
 sections:
-   - block: hero
+  - block: hero
     content:
       title: Tropical forest bioeconomics
     design:
