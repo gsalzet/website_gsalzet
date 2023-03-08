@@ -25,7 +25,10 @@ sections:
       # Text color (true=light, false=dark, or remove for the dynamic theme color).
       text_color_light: true
   - block: v1/about
+    id: about
+    title: Background
     content:
+      title: Background
       username: admin
   - block: experience
     content:
