@@ -60,14 +60,13 @@ sections:
               * Forest growth model calibration  - [TROLL model](https://sylvainschmitt.github.io/rcontroll/) with Gaussian processes.
               
         - title: "Statistician Engineer: Spatial analysis of industrial clusters in the Vosges and their impact the local forestry"
-          company: [Parc Naturel régional des ballons des Vosges](https://www.parc-ballons-vosges.fr/)
+          company: Parc Naturel regional des ballons des Vosges
           company_url: ''
           company_logo: ''
           location: Nancy, France
           date_start: '2020-02-03'
           date_end: '2020-04-30'
           description: Ecosystem services evaluation, Cox model, Forest sector, Bayesian modelling.
-          
         - title: "Design engineer: Establish trans-atlantic research partnership - [Univ. Georgia](https://www.uga.edu/) & [Rayonier](https://www.rayonier.com/)"
           company: UMR SILVA
           company_url: ''
