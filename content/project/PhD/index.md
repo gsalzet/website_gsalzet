@@ -1,6 +1,6 @@
 ---
 title: PhD Project
-summary: The direct lint to my notion "work in progress" website about my PhD.
+summary: My notion "work in progress" website about my PhD.
 tags:
   - PhD
 date: "2020-10-01T00:00:00Z"

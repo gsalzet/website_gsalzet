@@ -57,8 +57,6 @@ education:
       institution: Univ. Lorraine
       year: ""
 superuser: true
-status:
-  icon: 🌳
 last_name: Salzet
 role: PhD student in tropical forest bioeconomics
 highlight_name: true
@@ -66,6 +64,6 @@ first_name: Guillaume
 email: "g.salzet@gmail.com"
 ---
 # Biography
-I’m a PhD student in bioeconomics modelling.
+I’m a PhD student in forest bioeconomics modelling 🌳.
 My research focuses on the sustainability of forest sector and their interactions with tropical forest dynamics in the context of French Guiana. 
 I am also interested in the forests ecosystems services and their evaluation.

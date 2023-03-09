@@ -88,15 +88,15 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: "Research internship: Demographic processes and spatial distribution of functional traits under environmental constraints in tropical forests"
-          company: UMR ECOFOG
+        - title: "Research internship: Demographic processes and spatial distribution of functional traits under environmental constraints in tropical forests, 6 months"
+          company: "[UMR ECOFOG](http://www.ecofog.gf/)"
           company_url: ''
           company_logo: ''
           location: remote internship (COVID)
           date_start: '2020-02-01'
           date_end: '2020-07-31'
           description: Functional traits, Demography, Tropical forest, Spatial Point process, Bayesian modelling.
-        - title: "Research internship: Bayesian modeling of Douglas fir quality to predict the resource of extractable chemical compounds"
+        - title: "Research internship: Bayesian modeling of Douglas fir quality to predict the resource of extractable chemical compounds, 6 months"
           company: "[UMR SILVA](https://www6.nancy.inrae.fr/silva/)"
           company_url: ''
           company_logo: ''
@@ -104,7 +104,7 @@ sections:
           date_start: '2019-02-01'
           date_end: '2019-07-31'
           description:  Wood quality, Sylviculture, Bayesian modelling, Knottiness, Detection, Tree architecture, Growth.
-        - title: "Research internship: Spatial analysis of industrial clusters in the French forestry and wood sector and their impact on the probability of cutting"
+        - title: "Research internship: Spatial analysis of industrial clusters in the French forestry and wood sector and their impact on the probability of cutting, 3 months"
           company: "[UMR BETA](https://beta-economics.fr/)"
           company_url: ''
           company_logo: ''
@@ -112,7 +112,7 @@ sections:
           date_start: '2018-06-01'
           date_end: '2018-09-01'
           description: Ecosystem services evaluation, Spatial modelling, Forest sector, Bayesian modelling.
-        - title: "Research internship: Protein-ligand interactions between Glutathione-S-transferases from Trametes versicolor and French Guiana wood extractives in relation to natural durability"
+        - title: "Research internship: Protein-ligand interactions between Glutathione-S-transferases from Trametes versicolor and French Guiana wood extractives in relation to natural durability, 5 months"
           company: "[UMR IAM](https://mycor.nancy.inra.fr/IAM/)"
           company_url: ''
           company_logo: ''
@@ -120,14 +120,14 @@ sections:
           date_start: '2018-02-01'
           date_end: '2018-06-01'
           description: Ecosystem services evaluation, Spatial modelling, Forest sector, Bayesian modelling.
-        - title: "Engineer internship: Technology transfert study of a high-throughput Characterization method of tropical wood extractives"
+        - title: "Engineer internship: Technology transfert study of a high-throughput Characterization method of tropical wood extractives, 10 months"
           company: "[SATT Lorraine](https://www.sayens.fr/), [UMR IAM](https://mycor.nancy.inra.fr/IAM/), [UR LERMAB](https://lermab.univ-lorraine.fr/), [UMR ECOFOG](http://www.ecofog.gf/)"
           company_url: ''
           company_logo: ''
           location: Nancy, France
           date_start: '2016-11-01'
           date_end: '2017-08-01'
-          description: Feasability study, Prospective market analysis, .
+          description: Feasability study, Prospective market analysis, chemical ecology, wood chemistry.
       design:
         columns: '2'
   - block: portfolio
