@@ -45,7 +45,7 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: PhD student: sustainability of the french guiana forest sector, a spatialized bioeconomic approach
+        - title: PhD student - sustainability of the french guiana forest sector, a spatialized bioeconomic approach
           company: INRAe, UMR BETA & UMR ECOFOG
           company_url: ''
           company_logo: UMR
