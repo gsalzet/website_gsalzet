@@ -1,6 +1,6 @@
 ---
 title: ForHunt Logging
-summary: Forest hunting pressure interaction with forest logging over the north of French Guiana: a GPS tracking survey coupled with a spatialized bioeconomic modelling.
+summary: "Forest hunting pressure interaction with forest logging over the north of French Guiana: a GPS tracking survey coupled with a spatialized bioeconomic modelling."
 tags:
   - Hunting
   - Forest ecology
