@@ -12,8 +12,8 @@ sections:
       background:
         image:
           # Background gradient.
-          gradient_start = "#4bb4e3"
-          gradient_end = "#2b94c3"
+          gradient_start: "#4bb4e3"
+          gradient_end: "#2b94c3"
           filename: background.jpg
           # Apply image filters?
         filters:
