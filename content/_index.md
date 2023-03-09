@@ -46,7 +46,7 @@ sections:
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
         - title: "PhD student: sustainability of the french guiana forest sector, a spatialized bioeconomic approach"
-          company: INRAe, UMR BETA & UMR ECOFOG
+          company: INRAe, [UMR BETA](https://beta-economics.fr/) & [UMR ECOFOG](http://www.ecofog.gf/)
           company_url: ''
           company_logo: ''
           location: Kourou, France
@@ -60,26 +60,27 @@ sections:
               * Forest growth model calibration  - [TROLL model](https://sylvainschmitt.github.io/rcontroll/) with Gaussian processes.
               
         - title: "Statistician Engineer: Spatial analysis of industrial clusters in the Vosges and their impact the local forestry"
-          company: Parc Naturel regional des ballons des Vosges
+          company: [Parc Naturel regional des ballons des Vosges](https://www.parc-ballons-vosges.fr/)
           company_url: ''
           company_logo: ''
           location: Nancy, France
           date_start: '2020-02-03'
           date_end: '2020-04-30'
           description: Ecosystem services evaluation, Cox model, Forest sector, Bayesian modelling.
+          
         - title: "Design engineer: Establish trans-atlantic research partnership - [Univ. Georgia](https://www.uga.edu/) & [Rayonier](https://www.rayonier.com/)"
-          company: UMR SILVA
+          company: [UMR SILVA](https://www6.nancy.inrae.fr/silva/)
           company_url: ''
           company_logo: ''
-          location: remote internship (COVID)
+          location: Florida & Georgia, USA
           date_start: '2020-01-01'
           date_end: '2020-02-01'
-          description: Internation partnership, Project design
+          description: Internation research partnership, Project design, forestry, wood quality.
       design:
         columns: '2'
   - block: experience
     content:
-      title: Internship
+      title: Internships
       # Date format for experience
       #   Refer to https://wowchemy.com/docs/customization/#date-format
       date_format: Jan 2006
@@ -97,32 +98,36 @@ sections:
           date_start: '2020-02-01'
           date_end: '2020-07-31'
           description: Functional traits, Demography, Tropical forest, Spatial Point process, Bayesian modelling.
+          
         - title: "Research internship: Bayesian modeling of Douglas fir quality to predict the resource of extractable chemical compounds"
-          company: UMR SILVA
+          company: [UMR SILVA](https://www6.nancy.inrae.fr/silva/)
           company_url: ''
           company_logo: ''
           location: Champenoux, France
           date_start: '2019-02-01'
           date_end: '2019-07-31'
           description:  Wood quality, Sylviculture, Bayesian modelling, Knottiness, Detection, Tree architecture, Growth.
+          
         - title: "Research internship: Spatial analysis of industrial clusters in the French forestry and wood sector and their impact on the probability of cutting"
-          company: UMR BETA
+          company: [UMR BETA](https://beta-economics.fr/)
           company_url: ''
           company_logo: ''
           location: Nancy, France
           date_start: '2018-06-01'
           date_end: '2018-09-01'
           description: Ecosystem services evaluation, Spatial modelling, Forest sector, Bayesian modelling.
+          
         - title: "Research internship: Protein-ligand interactions between Glutathione-S-transferases from Trametes versicolor and French Guiana wood extractives in relation to natural durability"
-          company: UMR IAM
+          company: [UMR IAM](https://mycor.nancy.inra.fr/IAM/)
           company_url: ''
           company_logo: ''
           location: Nancy, France
           date_start: '2018-02-01'
           date_end: '2018-06-01'
           description: Ecosystem services evaluation, Spatial modelling, Forest sector, Bayesian modelling.
+          
         - title: "Engineer internship: Technology transfert study of a high-throughput Characterization method of tropical wood extractives"
-          company: SATT Lorraine, UMR IAM, UR LERMAB, UMR ECOFOG
+          company: [SATT Lorraine](https://www.sayens.fr/), [UMR IAM](https://mycor.nancy.inra.fr/IAM/), [UR LERMAB](https://lermab.univ-lorraine.fr/), [UMR ECOFOG](http://www.ecofog.gf/)
           company_url: ''
           company_logo: ''
           location: Nancy, France
@@ -180,10 +185,6 @@ sections:
   - block: collection
     content:
       title: Recent Publications
-      text: |-
-        {{% callout note %}}
-        Quickly discover relevant content by [filtering publications](./publication/).
-        {{% /callout %}}
       filters:
         folders:
           - publication
