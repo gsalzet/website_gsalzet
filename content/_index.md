@@ -70,7 +70,7 @@ sections:
     design:
       columns: '2'
 
-  - block: intership
+  - block: experience
       content:
         title: Interships
         # Date format for experience
