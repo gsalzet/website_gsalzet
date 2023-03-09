@@ -70,28 +70,29 @@ sections:
     design:
       columns: '2'
 
-- block: intership
-    content:
-      title: Interships
-      # Date format for experience
-      #   Refer to https://wowchemy.com/docs/customization/#date-format
-      date_format: Jan 2006
-      # Experiences.
-      #   Add/remove as many `experience` items below as you like.
-      #   Required fields are `title`, `company`, and `date_start`.
-      #   Leave `date_end` empty if it's your current employer.
-      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
-      items:
-        - title: "Research internship: Demographic processes and spatial distribution of functional traits under environmental constraints in tropical forests"
-          company: UMR ECOFOG
-          company_url: ''
-          company_logo: ''
-          location: remote internship (COVID)
-          date_start: '2020-02-01'
-          date_end: '2020-07-31'
-          description: Functional traits, Demography, Tropical forest, Point process, Bayesian.
-    design:
-      columns: '1'
+  - block: intership
+      content:
+        title: Interships
+        # Date format for experience
+        #   Refer to https://wowchemy.com/docs/customization/#date-format
+        date_format: Jan 2006
+        # Experiences.
+        #   Add/remove as many `experience` items below as you like.
+        #   Required fields are `title`, `company`, and `date_start`.
+        #   Leave `date_end` empty if it's your current employer.
+        #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
+        items:
+          - title: "Research internship: Demographic processes and spatial distribution of functional traits under environmental constraints in tropical forests"
+            company: UMR ECOFOG
+            company_url: ''
+            company_logo: ''
+            location: remote internship (COVID)
+            date_start: '2020-02-01'
+            date_end: '2020-07-31'
+            description: Functional traits, Demography, Tropical forest, Point process, Bayesian.
+      design:
+        columns: '1'
+      
   - block: portfolio
     id: projects
     content:
