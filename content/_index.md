@@ -79,7 +79,7 @@ sections:
         columns: '2'
   - block: experience
     content:
-      title: Interchip
+      title: Internship
       # Date format for experience
       #   Refer to https://wowchemy.com/docs/customization/#date-format
       date_format: Jan 2006
@@ -97,6 +97,38 @@ sections:
           date_start: '2020-02-01'
           date_end: '2020-07-31'
           description: Functional traits, Demography, Tropical forest, Spatial Point process, Bayesian modelling.
+        - title: "Research internship: Bayesian modeling of Douglas fir quality to predict the resource of extractable chemical compounds"
+          company: UMR SILVA
+          company_url: ''
+          company_logo: ''
+          location: Champenoux, France
+          date_start: '2019-02-01'
+          date_end: '2019-07-31'
+          description:  Wood quality, Sylviculture, Bayesian modelling, Knottiness, Detection, Tree architecture, Growth.
+        - title: "Research internship: Spatial analysis of industrial clusters in the French forestry and wood sector and their impact on the probability of cutting"
+          company: UMR BETA
+          company_url: ''
+          company_logo: ''
+          location: Nancy, France
+          date_start: '2018-06-01'
+          date_end: '2018-09-01'
+          description: Ecosystem services evaluation, Spatial modelling, Forest sector, Bayesian modelling.
+        - title: "Research internship: Protein-ligand interactions between Glutathione-S-transferases from Trametes versicolor and French Guiana wood extractives in relation to natural durability"
+          company: UMR IAM
+          company_url: ''
+          company_logo: ''
+          location: Nancy, France
+          date_start: '2018-02-01'
+          date_end: '2018-06-01'
+          description: Ecosystem services evaluation, Spatial modelling, Forest sector, Bayesian modelling.
+        - title: "Engineer internship: Technology transfert study of a high-throughput Characterization method of tropical wood extractives"
+          company: SATT Lorraine, UMR IAM, UR LERMAB, UMR ECOFOG
+          company_url: ''
+          company_logo: ''
+          location: Nancy, France
+          date_start: '2016-11-01'
+          date_end: '2017-08-01'
+          description: Feasability study, Prospective market analysis, .
       design:
         columns: '2'
   - block: portfolio
@@ -132,6 +164,19 @@ sections:
       view: showcase
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false
+  - block: portfolio
+    id: softwares
+    content:
+      title: Softwares
+      filters:
+        folders:
+          - softwares
+    design:
+      # Choose how many columns the section has. Valid values: '1' or '2'.
+      columns: '2'
+      view: showcase
+      # For Showcase view, flip alternate rows?
+      flip_alt_rows: true
   - block: collection
     content:
       title: Recent Publications
