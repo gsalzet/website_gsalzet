@@ -2,9 +2,10 @@
 title: ExtraForEst
 summary: 'The research project on extractable wood chemical components ([link](https://www6.inrae.fr/extraforest)). 
 
-I worked on coupling non-linear wood quality models in a hierarchical bayesian framework (report in french [link](uploads/reports/ExtraForEst.pdf))'
+I worked on coupling non-linear wood quality models in a hierarchical bayesian framework (presentation in french [link](uploads/reports/ExtraForEst.pdf))'
 tags:
   - Forest ecology
+  - Chemical ecology
 date: "2020-10-01T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
