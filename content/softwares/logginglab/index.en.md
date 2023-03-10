@@ -31,6 +31,10 @@ url_code: "https://github.com/VincyaneBadouard/LoggingLab/"
 url_website: "https://vincyanebadouard.github.io/LoggingLab/"
 ---
 
+> Ongoing
+
+> Contribution: Major contributor on optimisation process/ debug/ spatial analysis
+
 `LoggingLab`: A new individual-based and spatially-explicit logging simulator. 
 
 `LoggingLab` simulates the different logging stages taking into account the topography and the hydrographic network, the main spatial constraints for mechanisation.
@@ -38,3 +42,5 @@ url_website: "https://vincyanebadouard.github.io/LoggingLab/"
 `LoggingLab` has been developed to diagnose, quantify and spatialise the impact of logging. 
 
 `LoggingLab` can be used together with any individual-based and spatially explicit forest dynamics simulator like TROLL (see rcontroll) or SEIB–DGVM (Sato et al., 2007) to observe the effects of logging over time on the forest stand and the resilience of each forest to different logging scenarios.
+
+

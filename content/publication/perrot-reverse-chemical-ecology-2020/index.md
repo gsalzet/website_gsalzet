@@ -1,8 +1,8 @@
 ---
 title: "A Reverse Chemical Ecology Approach to Explore Wood Natural Durability"
 date: 2020-09-01
-publishDate: 2023-03-10T14:31:06.888946Z
-authors: ["Thomas Perrot", "Guillaume Salzet", "Nadine Amusant", "Jacques Beauchene", "Philippe Gérardin", "Stéphane Dumarçay", "Rodnay Sormani", "Mélanie Morel-Rouhier", "Eric Gelhaye"]
+publishDate: 2023-03-10T16:53:05.132096Z
+authors: ["Thomas Perrot", "**Guillaume Salzet**", "Nadine Amusant", "Jacques Beauchene", "Philippe Gérardin", "Stéphane Dumarçay", "Rodnay Sormani", "Mélanie Morel-Rouhier", "Eric Gelhaye"]
 publication_types: ["2"]
 abstract: ""
 featured: false

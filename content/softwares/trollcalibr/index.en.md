@@ -30,12 +30,15 @@ image:
 url_code: "https://github.com/gsalzet/trollcalibr/"
 ---
 
-*WORK IN PROGRESS*
-
-*trollcalibr* integrates the rcontroll package and provides a rigorous framework to design **in silico** experiments.
+> Work in progress
 
 
-*trollcalibr* can be used with user-friendly functions to set up, analyse, decompose sensitivity and calibrate  the *TROLL* forest simulator.
+> Contribution: Principal investigator on package design/ implementation/ test & debug
+
+`trollcalibr` integrates the rcontroll package and provides a rigorous framework to design **in silico** experiments.
+
+
+`trollcalibr` can be used with user-friendly functions to set up, analyse, decompose sensitivity and calibrate  the *TROLL* forest simulator.
 
 The *TROLL* simulator relies on a complex system of equations coded in C++ to efficiently simulate hundreds of individuals over hundreds of years.
 In contrast, the *trollcalibr* package relies on a few functions in R to generate and provide inputs, prepare and run the simulations, and analyse the simulations through tables, figures, and maps that are easily connected to the rest of the R package ecosystem.

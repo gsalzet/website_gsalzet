@@ -31,10 +31,15 @@ url_code: "https://github.com/sylvainschmitt/rcontroll/"
 url_website: "https://sylvainschmitt.github.io/rcontroll/"
 ---
 
-*rcontroll* integrates the individual-based  and spatially-explicit *TROLL* model to simulate forest ecosystem and species dynamics forward in time.
+> Ongoing
 
 
-*rcontroll* provides user-friendly functions to set up and analyse simulations with varying community compositions, ecological parameters, and climate conditions.
+> Contribution: Major contributor on package framework/ OS compatibility/ code implementation.
+
+`rcontroll` integrates the individual-based  and spatially-explicit *TROLL* model to simulate forest ecosystem and species dynamics forward in time.
+
+
+`rcontroll` provides user-friendly functions to set up and analyse simulations with varying community compositions, ecological parameters, and climate conditions.
 
 The *TROLL* simulator relies on a complex system of equations coded in C++ to efficiently simulate hundreds of individuals over hundreds of years.
 In contrast, the *rcontroll* package relies on a few functions in R to generate and provide inputs, prepare and run the simulations, and analyse the simulations through tables, figures, and maps that are easily connected to the rest of the R package ecosystem. 

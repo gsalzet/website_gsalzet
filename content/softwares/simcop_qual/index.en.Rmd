@@ -31,7 +31,9 @@ url_code: ""
 url_website: ""
 ---
 
-*WORK IN PROGRESS*
+> Work in progress
+
+> Contribution: Principal investigator on model design/ coupling model/ capsis integration.
 
 Trees are hierarchical system including stem, branches and foliage. These compartments 
 are linked together by their primary growth and secondary growth. Knottiness is
@@ -48,4 +50,5 @@ a bayesian hierarchical framework. They form a preliminary set of a complete mod
 verifying the allometric equations obtained in the literature and allowing the simulation
 of quality according to silvicultural treatments.
 
-Afterward, we designed the *simcop qual* as a module of [Capsis](https://capsis.cirad.fr/capsis) to simulate growth, moratlity and quality processes.
+Afterward, we designed the *simcop qual* as a module of [Capsis](https://capsis.cirad.fr/capsis) 
+to simulate growth, moratlity and quality processes.

@@ -66,7 +66,7 @@ first_name: Guillaume
 email: "g.salzet@gmail.com"
 ---
 # Biography
-I’m a PhD student in forest bioeconomics modelling 🌳.
+I’m a PhD student in **forest bioeconomics modelling** 🌳.
 
 My research focuses on the forest sector and its interactions with the forest dynamics in the context of French Guiana. 
-I am also particulary interested in the forest ecosystem services and their evaluation.
+I am also particulary interested in the **forest ecosystem services** and their **evaluation**.
