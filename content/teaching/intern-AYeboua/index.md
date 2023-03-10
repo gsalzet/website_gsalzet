@@ -1,5 +1,5 @@
 ---
-title: 'Internship: ocio-economic modeling and sustainability of material flows of the forest-wood sector in French Guiana'
+title: 'Internship: Socio-economic modeling and sustainability of material flows of the forest-wood sector in French Guiana'
 summary: '6 Months internship Ambroise Koffi Yeboua (M2 Ecology Univ. Montpellier).'
 tag: 
   - Courses
