@@ -166,7 +166,7 @@ sections:
       flip_alt_rows: true
   - block: collection
     content:
-      title: Recent Publications
+      title: Publications
       filters:
         folders:
           - publication
