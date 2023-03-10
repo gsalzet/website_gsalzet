@@ -177,7 +177,7 @@ sections:
           - softwares
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
-      columns: '1'
+      columns: '4'
       view: card
   - block: portfolio
     id: projects
@@ -185,7 +185,7 @@ sections:
       title: Teaching
       filters:
         folders:
-          - project
+          - teaching
       # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
       default_button_index: 0
       # Filter toolbar (optional).
