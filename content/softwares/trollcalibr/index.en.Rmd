@@ -3,7 +3,7 @@
 
 title: "trollcalibr"
 subtitle: ""
-summary: ""
+summary: "A package to design, experiment, analyse & calibrate TROLL model"
 authors: ["Guillaume Salzet", "Sylvain Schmitt", "Melaine Aubry-Kientz"]
 tags: ["Forest ecology"]
 categories: []

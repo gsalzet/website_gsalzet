@@ -2,8 +2,8 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "Simcop Qual"
-subtitle: "A branching and nodosity model linked to the Simcop model"
-summary: ""
+subtitle: ""
+summary: "A branching and nodosity model linked to the Simcop model"
 authors: ["Julien Sainte-Maire", "Guillaume Salzet", "Thomas Aiguier"]
 tags: ["Forest ecology"]
 categories: []
