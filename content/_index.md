@@ -87,7 +87,7 @@ sections:
           location: remote internship (COVID)
           date_start: '2020-02-01'
           date_end: '2020-07-31'
-          description: Functional traits, demography, tropical forest, *spatial analysis*, *bayesian modelling*.
+          description: "Functional traits, demography, tropical forest, *spatial analysis*, *bayesian modelling*."
         - title: "Research internship: Bayesian modeling of Douglas fir quality to predict the resource of extractable chemical compounds, 6 months"
           company: "[UMR SILVA](https://www6.nancy.inrae.fr/silva/)"
           company_url: ''
@@ -95,7 +95,7 @@ sections:
           location: Champenoux, France
           date_start: '2019-02-01'
           date_end: '2019-07-31'
-          description:  Wood quality, sylviculture, bayesian modelling, knottiness, *hierarchical modelling*, tree architecture, growth model.
+          description:  "Wood quality, sylviculture, bayesian modelling, knottiness, *hierarchical modelling*, tree architecture, growth model."
         - title: "Research internship: Spatial analysis of industrial clusters in the French forestry and wood sector and their impact on the probability of cutting, 3 months"
           company: "[UMR BETA](https://beta-economics.fr/)"
           company_url: ''
@@ -103,7 +103,7 @@ sections:
           location: Nancy, France
           date_start: '2018-06-01'
           date_end: '2018-09-01'
-          description: *Ecosystem services evaluation*, *spatial modelling*, *forest sector*, *Bayesian modelling*.
+          description: "*Ecosystem services evaluation*, *spatial modelling*, *forest sector*, *Bayesian modelling*."
         - title: "Research internship: Protein-ligand interactions between Glutathione-S-transferases from Trametes versicolor and French Guiana wood extractives in relation to natural durability, 5 months"
           company: "[UMR IAM](https://mycor.nancy.inra.fr/IAM/)"
           company_url: ''
@@ -111,7 +111,7 @@ sections:
           location: Nancy, France
           date_start: '2018-02-01'
           date_end: '2018-06-01'
-          description: Microbiology, biochemistry, wood chemistry, *non-linear model*, *bayesian modelling*.
+          description: "Microbiology, biochemistry, wood chemistry, *non-linear model*, *bayesian modelling*."
         - title: "Engineer internship: Technology transfert study of a high-throughput Characterization method of tropical wood extractives, 10 months"
           company: "[SATT Lorraine](https://www.sayens.fr/), [UMR IAM](https://mycor.nancy.inra.fr/IAM/), [UR LERMAB](https://lermab.univ-lorraine.fr/), [UMR ECOFOG](http://www.ecofog.gf/)"
           company_url: ''
@@ -119,7 +119,7 @@ sections:
           location: Nancy, France
           date_start: '2016-11-01'
           date_end: '2017-08-01'
-          description: *Feasability study*, *Prospective market analysis*, chemical ecology, wood chemistry.
+          description: "*Feasability study*, *Prospective market analysis*, chemical ecology, wood chemistry."
       design:
         columns: '2'
   - block: portfolio
