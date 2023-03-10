@@ -33,3 +33,5 @@ url_pdf: ''
 url_slides: ''
 url_video: 'https://www.youtube.com/watch?v=v2hGeYQFkUY'
 ---
+
+{{< youtube id="v2hGeYQFkUY" title="ATBC 2022 - Hydro-edaphic gradient shapes the local community assembly of trees in a neotropical forest" >}}

@@ -3,13 +3,13 @@ title: Guillaume Salzet
 avatar_filename: avatar.jpg
 bio: "Bioeconomics/ Ecosystem services/ Ecology"
 interests:
-  - Bioeconomics
+  - Statistics/ Econometrics
   
   - Forest ecology
   
-  - Statistics
+  - (Bio)economics
   
-  - Econometrics
+  - Forestry
 social:
   - icon: researchgate
     icon_pack: fab
@@ -65,5 +65,6 @@ email: "g.salzet@gmail.com"
 ---
 # Biography
 I’m a PhD student in forest bioeconomics modelling 🌳.
-My research focuses on the sustainability of forest sector and their interactions with tropical forest dynamics in the context of French Guiana. 
-I am also interested in the forests ecosystems services and their evaluation.
+
+My research focuses on the forest sector and its interactions with the forest dynamics in the context of French Guiana. 
+I am also particulary interested in the forest ecosystem services and their evaluation.

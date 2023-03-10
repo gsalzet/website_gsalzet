@@ -18,7 +18,7 @@ sections:
           # Apply image filters?
         filters:
           # Darken the image? Range 0-1 where 1 is transparent and 0 is opaque.
-          brightness: 0.7
+          brightness: 0.5
           #  Image fit. Options are `cover` (default), `contain`, or `actual` size.
         size: cover
           # Image focal point. Options include `left`, `center` (default), or `right`.
@@ -56,7 +56,7 @@ sections:
               Fields of research:
 
               * Forest ecosystem services estimation - Carbon storage/ Functional diversity/ Roundwood/ Hunting ;
-              * Modelling forest sector - Agent Based modelling ;
+              * Modelling forest sector - Agent Based modelling/ preferences survey/ elicitation interviews ;
               * Forest growth model calibration  - [TROLL model](https://sylvainschmitt.github.io/rcontroll/) with Gaussian processes.
         - title: "Statistician Engineer: Spatial analysis of industrial clusters in the Vosges and their impact the local forestry"
           company: "[Parc Naturel regional des ballons des Vosges](https://www.parc-ballons-vosges.fr/)"
@@ -66,14 +66,14 @@ sections:
           date_start: '2020-02-03'
           date_end: '2020-04-30'
           description: Ecosystem services evaluation, Cox model, Forest sector, Bayesian modelling.
-        - title: "Design engineer: Establish trans-atlantic research partnership - [Univ. Georgia](https://www.uga.edu/) & [Rayonier](https://www.rayonier.com/)"
+        - title: "Design engineer: Establish a trans-atlantic research partnership - [Univ. Georgia](https://www.uga.edu/) & [Rayonier](https://www.rayonier.com/)"
           company: "[UMR SILVA](https://www6.nancy.inrae.fr/silva/)"
           company_url: ''
           company_logo: ''
           location: Florida & Georgia, USA
           date_start: '2020-01-01'
           date_end: '2020-02-01'
-          description: Internation research partnership, Project design, forestry, wood quality.
+          description: International research partnership, Project design, forestry, wood quality.
       design:
         columns: '2'
   - block: experience
