@@ -30,6 +30,26 @@ sections:
     content:
       title: Background
       username: admin
+  - block: features
+    content:
+      title: Skills
+      items:
+        - name: R
+          description: 90%
+          icon: r-project
+          icon_pack: fab
+        - name: Statistics/ Econometrics
+          description: 100%
+          icon: chart-line
+          icon_pack: fas
+        - name: Programming C++/ Python/ Julia
+          description: 30%
+          icon: fa-file-code
+          icon_pack: fa-solid
+        - name: QGis - GRASS
+          description: 50%
+          icon: fa-layer-group
+          icon_pack: fa-solid 
   - block: experience
     content:
       title: Professional experiences
