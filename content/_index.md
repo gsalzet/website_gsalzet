@@ -45,11 +45,11 @@ sections:
         - name: Programming C++/ Python/ Julia
           description: 30%
           icon: fa-file-code
-          icon_pack: fa-solid
+          icon_pack: fas
         - name: QGis - GRASS
           description: 50%
           icon: fa-layer-group
-          icon_pack: fa-solid 
+          icon_pack: fas 
   - block: experience
     content:
       title: Professional experiences
@@ -201,6 +201,19 @@ sections:
     design:
       columns: '2'
       view: compact
+  - block: portfolio
+    id: teaching
+    content:
+      title: Teaching
+      filters:
+        folders:
+          - teaching
+    design:
+      # Choose how many columns the section has. Valid values: '1' or '2'.
+      columns: '2'
+      view: showcase
+      # For Showcase view, flip alternate rows?
+      flip_alt_rows: true
   - block: contact
     id: contact
     content:
