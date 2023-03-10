@@ -1,9 +1,9 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "logginglab"
+title: "Logginglab"
 subtitle: "An R Package to Simulate Forest Logging"
-summary: ""
+summary: "LoggingLab: A new individual-based and spatially-explicit logging simulator."
 authors: ["Vincyane Badouard","Sylvain Schmitt", "Guillaume Salzet", "Thomas Gacquiere", "Geraldine Derroire"]
 tags: []
 categories: []

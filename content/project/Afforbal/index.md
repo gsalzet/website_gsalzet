@@ -1,9 +1,7 @@
 ---
-title: ForHunt Logging
+title: Afforball
 summary: "Forest hunting pressure interaction with forest logging over the north of French Guiana: a GPS tracking survey coupled with a spatialized bioeconomic modelling."
 tags:
-  - Hunting
-  - Forest ecology
   - Economics
 date: '2016-04-27T00:00:00Z'
 

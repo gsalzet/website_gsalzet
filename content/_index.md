@@ -141,12 +141,10 @@ sections:
           tag: '*'
         - name: Forest ecology
           tag: Forest ecology
-        - name: Economics
+        - name: (Bio)economics
           tag: Economics
-        - name: R package
-          tag: R package
-        - name: Other
-          tag: Other
+        - name: Chemical ecology
+          tag: Chemical ecology
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'

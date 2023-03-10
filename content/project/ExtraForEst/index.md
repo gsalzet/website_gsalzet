@@ -1,6 +1,6 @@
 ---
 title: ExtraForEst
-summary: 'The research project on extractable wood chemical components ([link](https://www6.inrae.fr/extraforest). 
+summary: 'The research project on extractable wood chemical components ([link](https://www6.inrae.fr/extraforest)). 
 
 I worked on coupling non-linear wood quality models in a hierarchical bayesian framework '
 tags:
