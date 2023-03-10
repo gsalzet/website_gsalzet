@@ -2,7 +2,7 @@
 title: 'Internship: Study of the dispersal patterns of hunters: Bioeconomic analysis of hunted wildlife populations on the French Guiana coastline'
 summary: '6 Months internship Cyrus Matboo (Engineer IMT Nord Europe) in collaboration with OFB french guiana.'
 tag: 
-  - Courses
+  - Internship
 date: "2022-08-21"
 
 # Optional external URL for project (replaces project detail page).

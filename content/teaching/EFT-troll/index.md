@@ -1,8 +1,10 @@
 ---
-title: 'Study of low impact logging on the Manare Saut Lavillette site with a forest simulator'
+title: 'Master EFT: Study of low impact logging on the Manare Saut Lavillette site with a forest simulator'
 summary: '1 semester project for M2 tropical forest ecology student about the coupling of rcontroll and LoggingLab.'
 tag: 
-  - Courses
+  - courses
+  - FTH
+  - Internship
 date: "2022-12-03"
 
 # Optional external URL for project (replaces project detail page).
