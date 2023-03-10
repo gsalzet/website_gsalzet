@@ -202,7 +202,7 @@ sections:
           tag: FTH
         - name: Internship
           tag: Internship
-        -name: Other
+        - name: Other
           tag: other
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
