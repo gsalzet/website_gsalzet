@@ -9,6 +9,8 @@ interests:
   
   - (Bio)economics
   
+  - Ecosystem services evaluation
+  
   - Forestry
 social:
   - icon: researchgate

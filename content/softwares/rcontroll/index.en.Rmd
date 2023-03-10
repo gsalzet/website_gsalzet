@@ -3,7 +3,7 @@
 
 title: "rcontroll"
 subtitle: "individual-based forest growth simulator TROLL"
-summary: ""
+summary: "rcontroll integrates the individual-based and spatially-explicit TROLL model to simulate forest ecosystem and species dynamics forward in time."
 authors: ["Sylvain Schmitt", "Guillaume Salzet", "Fabian Fisher", "Isabelle Marechaux", "Jerome Chave"]
 tags: ["Forest ecology"]
 categories: []
@@ -32,6 +32,8 @@ url_website: "https://sylvainschmitt.github.io/rcontroll/"
 ---
 
 *rcontroll* integrates the individual-based  and spatially-explicit *TROLL* model to simulate forest ecosystem and species dynamics forward in time.
+
+
 *rcontroll* provides user-friendly functions to set up and analyse simulations with varying community compositions, ecological parameters, and climate conditions.
 
 The *TROLL* simulator relies on a complex system of equations coded in C++ to efficiently simulate hundreds of individuals over hundreds of years.
