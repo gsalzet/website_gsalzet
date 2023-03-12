@@ -35,21 +35,33 @@ sections:
       title: Skills
       items:
         - name: R
-          description: 90%
+          description: modelling/ packaging
           icon: r-project
           icon_pack: fab
         - name: Statistics/ Econometrics
-          description: 100%
+          description: Frequentist/ bayesian
           icon: chart-line
           icon_pack: fas
-        - name: Programming C++/ Python/ Julia
-          description: 30%
-          icon: fa-file-code
+        - name: Programming
+          description: C++/ Python/ Julia
+          icon: file-code
           icon_pack: fas
-        - name: QGis - GRASS
-          description: 50%
-          icon: fa-layer-group
+        - name: Cartography
+          description: QGis - GRASS
+          icon: map
           icon_pack: fas 
+        - name: Open science
+          description: FAIR principes/ Open-code
+          icon: creative-commons
+          icon_pack: fab
+        - name: Project design
+          description: Research partnership/ feasibility study
+          icon: file-invoice
+          icon_pack: fas
+        - name: Survey/ interviews
+          description: Design/ analyse/ report
+          icon: list
+          icon_pack: fas
   - block: experience
     content:
       title: Professional experiences
@@ -182,7 +194,7 @@ sections:
       # For Showcase view, flip alternate rows?
       flip_alt_rows: true
   - block: portfolio
-    id: projects
+    id: teaching
     content:
       title: Teaching
       filters:
@@ -201,9 +213,9 @@ sections:
         - name: Courses
           tag: courses
         - name: Pratical module
-          tag: FTH
+          tag: fth
         - name: Internship
-          tag: Internship
+          tag: internship
         - name: Other
           tag: other
     design:
@@ -213,6 +225,7 @@ sections:
       # For Showcase view, flip alternate rows?
       flip_alt_rows: true
   - block: collection
+    id: publications
     content:
       title: Publications
       filters:
