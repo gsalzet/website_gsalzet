@@ -16,7 +16,7 @@ main:
   - name: Softwares
     url: '#softwares'
     weight: 40
-  - name: Teaching
+  - name: Teaching & supervision
     url: '#teaching'
     weight: 50
   - name: Publications

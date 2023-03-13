@@ -3,9 +3,7 @@ title: 'Master EFT: A spatial analysis of three tree species at seedling stage o
 site.'
 summary: '1 semester project for M2 tropical forest ecology student about the regeneration conditions of *Dicorynia guianensis, Tachigali melinonii* and *Symphonia globulifera*.'
 tags: 
-  - courses
   - fth
-  - internship
 date: "2022-12-03"
 
 # Optional external URL for project (replaces project detail page).

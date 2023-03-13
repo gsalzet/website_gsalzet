@@ -36,7 +36,7 @@ sections:
       items:
         - name: Statistics - Econometrics
           description: 'Frequentist & bayesian approches for
-          discrete | hierarchical | mixtes models'
+          discrete | hierarchical | mixted models'
           icon: chart-line
           icon_pack: fas
         - name: Programming & package developer
@@ -95,7 +95,7 @@ sections:
           date_end: '2020-04-30'
           description: Ecosystem services evaluation, Cox model, forest sector, bayesian modelling.
         - title: "Design engineer:  
-        Establish a trans-atlantic research partnership - [Univ. Georgia](https://www.uga.edu/) & [Rayonier](https://www.rayonier.com/)"
+        Building a trans-atlantic research partnership - [Univ. Georgia](https://www.uga.edu/) & [Rayonier](https://www.rayonier.com/)"
           company: "[UMR SILVA](https://www6.nancy.inrae.fr/silva/)"
           company_url: ''
           company_logo: ''
@@ -103,12 +103,6 @@ sections:
           date_start: '2020-01-01'
           date_end: '2020-02-01'
           description: International research partnership, project design, forestry, wood quality.
-      design:
-        columns: '2'
-  - block: experience
-    content:
-      title: Vocational experiences
-      items:
         - title: "Research internship:  
         Demographic processes and spatial distribution of functional traits under environmental constraints in tropical forests, 6 months"
           company: "[UMR ECOFOG](http://www.ecofog.gf/)"
@@ -216,7 +210,7 @@ sections:
           tag: '*'
         - name: Courses
           tag: courses
-        - name: Pratical module
+        - name: Student projects
           tag: fth
         - name: Internship
           tag: internship
