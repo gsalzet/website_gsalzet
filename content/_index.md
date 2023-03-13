@@ -76,7 +76,7 @@ sections:
           company: INRAe, [UMR BETA](https://beta-economics.fr/) & [UMR ECOFOG](http://www.ecofog.gf/)
           company_url: ''
           company_logo: ''
-          location: Kourou, France
+          location: Kourou & Nancy, France
           date_start: '2020-10-01'
           date_end: ''
           description: |2-
