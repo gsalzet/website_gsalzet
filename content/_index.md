@@ -35,16 +35,16 @@ sections:
       title: Skills
       items:
         - name: Statistics - Econometrics
-          description: 'Frequentist & bayesian approches  
-          Discrete | hierarchical | mixtes models'
+          description: 'Frequentist & bayesian approches for
+          discrete | hierarchical | mixtes models'
           icon: chart-line
           icon_pack: fas
         - name: Programming & package developer
-          description: "**R** | C++ | Python"
+          description: "**R** (advanced) | C++ | Python"
           icon: file-code
           icon_pack: fas
         - name: Cartography
-          description: QGis - GRASS
+          description: QGis - GRASS - SAGA
           icon: map
           icon_pack: fas 
         - name: Open science
@@ -52,8 +52,7 @@ sections:
           icon: creative-commons
           icon_pack: fab
         - name: Project design & management
-          description: 'Research partnership  
-          feasibility study'
+          description: 'Research partnership | feasibility study'
           icon: file-invoice
           icon_pack: fas
         - name: Survey & interviews
