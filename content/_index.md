@@ -34,16 +34,13 @@ sections:
     content:
       title: Skills
       items:
-        - name: R
-          description: modelling/ packaging
-          icon: r-project
-          icon_pack: fab
-        - name: Statistics/ Econometrics
-          description: Frequentist/ bayesian
+        - name: Statistics - Econometrics
+          description: 'Frequentist & bayesian approches  
+          Discrete | hierarchical | mixtes models'
           icon: chart-line
           icon_pack: fas
-        - name: Programming
-          description: C++/ Python/ Julia
+        - name: Programming & package developer
+          description: "**R** | C++ | Python"
           icon: file-code
           icon_pack: fas
         - name: Cartography
@@ -51,15 +48,16 @@ sections:
           icon: map
           icon_pack: fas 
         - name: Open science
-          description: FAIR principes/ Open-code
+          description: FAIR principles | Open-code
           icon: creative-commons
           icon_pack: fab
-        - name: Project design
-          description: Research partnership/ feasibility study
+        - name: Project design & management
+          description: 'Research partnership  
+          feasibility study'
           icon: file-invoice
           icon_pack: fas
-        - name: Survey/ interviews
-          description: Design/ analyse/ report
+        - name: Survey & interviews
+          description: Design - analyses - report
           icon: list
           icon_pack: fas
   - block: experience
@@ -74,7 +72,8 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: "PhD student: sustainability of the french guiana forest sector, a spatialized bioeconomic approach"
+        - title: "PhD student:  
+        Sustainability of the french guiana forest sector, a spatialized bioeconomic approach"
           company: INRAe, [UMR BETA](https://beta-economics.fr/) & [UMR ECOFOG](http://www.ecofog.gf/)
           company_url: ''
           company_logo: ''
@@ -84,10 +83,11 @@ sections:
           description: |2-
               Fields of research:
 
-              * Forest ecosystem services estimation - Carbon storage/ Functional diversity/ Roundwood/ Hunting ;
-              * Modelling forest sector - Agent Based modelling/ preferences survey/ elicitation interviews ;
-              * Forest growth model calibration  - [TROLL model](https://sylvainschmitt.github.io/rcontroll/) with Gaussian processes.
-        - title: "Statistician Engineer: Spatial analysis of wood industrial clusters in the Vosges and their impact on the local forestry"
+              * **Forest ecosystem services estimation** - Carbon storage/ Functional diversity/ Roundwood/ Hunting ;
+              * **Modelling forest sector** - Agent Based modelling/ preferences survey/ elicitation interviews ;
+              * **Forest growth model calibration**  - [TROLL model](https://sylvainschmitt.github.io/rcontroll/) with Gaussian processes.
+        - title: "Statistician Engineer:  
+        Spatial analysis of wood industrial clusters in the Vosges and their impact on the local forestry"
           company: "[Parc Naturel regional des ballons des Vosges](https://www.parc-ballons-vosges.fr/)"
           company_url: ''
           company_logo: ''
@@ -95,7 +95,8 @@ sections:
           date_start: '2020-02-03'
           date_end: '2020-04-30'
           description: Ecosystem services evaluation, Cox model, forest sector, bayesian modelling.
-        - title: "Design engineer: Establish a trans-atlantic research partnership - [Univ. Georgia](https://www.uga.edu/) & [Rayonier](https://www.rayonier.com/)"
+        - title: "Design engineer:  
+        Establish a trans-atlantic research partnership - [Univ. Georgia](https://www.uga.edu/) & [Rayonier](https://www.rayonier.com/)"
           company: "[UMR SILVA](https://www6.nancy.inrae.fr/silva/)"
           company_url: ''
           company_logo: ''
@@ -109,31 +110,35 @@ sections:
     content:
       title: Vocational experiences
       items:
-        - title: "Research internship: Demographic processes and spatial distribution of functional traits under environmental constraints in tropical forests, 6 months"
+        - title: "Research internship:  
+        Demographic processes and spatial distribution of functional traits under environmental constraints in tropical forests, 6 months"
           company: "[UMR ECOFOG](http://www.ecofog.gf/)"
           company_url: ''
           company_logo: ''
           location: remote internship (COVID)
           date_start: '2020-02-01'
           date_end: '2020-07-31'
-          description: "Functional traits, demography, tropical forest, *spatial analysis*, *bayesian modelling*."
-        - title: "Research internship: Bayesian modeling of Douglas fir quality to predict the resource of extractable chemical compounds, 6 months"
+          description: "Functional traits, demography, tropical forest, **spatial analysis**, **bayesian modelling**."
+        - title: "Research internship:  
+        Bayesian modeling of Douglas fir quality to predict the resource of extractable chemical compounds, 6 months"
           company: "[UMR SILVA](https://www6.nancy.inrae.fr/silva/)"
           company_url: ''
           company_logo: ''
           location: Champenoux, France
           date_start: '2019-02-01'
           date_end: '2019-07-31'
-          description:  "Wood quality, sylviculture, bayesian modelling, knottiness, *hierarchical modelling*, tree architecture, growth model."
-        - title: "Research internship: Spatial analysis of industrial clusters in the French forestry and wood sector and their impact on the probability of cutting, 3 months"
+          description:  "Wood quality, sylviculture, bayesian modelling, knottiness, **hierarchical modelling**, tree architecture, growth model."
+        - title: "Research internship:  
+        Spatial analysis of industrial clusters in the French forestry and wood sector and their impact on the probability of cutting, 3 months"
           company: "[UMR BETA](https://beta-economics.fr/)"
           company_url: ''
           company_logo: ''
           location: Nancy, France
           date_start: '2018-06-01'
           date_end: '2018-09-01'
-          description: "*Ecosystem services evaluation*, *spatial modelling*, *forest sector*, *Bayesian modelling*."
-        - title: "Research internship: Protein-ligand interactions between Glutathione-S-transferases from Trametes versicolor and French Guiana wood extractives in relation to natural durability, 5 months"
+          description: "**Ecosystem services evaluation**, **spatial modelling**, **forest sector**, **bayesian modelling**."
+        - title: "Research internship:  
+        Protein-ligand interactions between Glutathione-S-transferases from Trametes versicolor and French Guiana wood extractives in relation to natural durability, 5 months"
           company: "[UMR IAM](https://mycor.nancy.inra.fr/IAM/)"
           company_url: ''
           company_logo: ''
@@ -148,7 +153,7 @@ sections:
           location: Nancy, France
           date_start: '2016-11-01'
           date_end: '2017-08-01'
-          description: "*Feasability study*, *Prospective market analysis*, chemical ecology, wood chemistry."
+          description: "**Feasability study**, **Prospective market analysis**, chemical ecology, wood chemistry."
       design:
         columns: '2'
   - block: portfolio
