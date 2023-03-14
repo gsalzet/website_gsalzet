@@ -1,10 +1,10 @@
 ---
-title: ATBC 2022 - Hydro-edaphic gradient shapes the local community assembly of trees in a neotropical forest
+title: Workshop rcontroll
 
-event: ATBC 2022
-event_url: https://www.atbc2022.org/
+event: Workshop rcontroll
+event_url: 
 
-location: Virtual Talk
+location: UMR EcoFoG
 
 abstract: 'Hydrological and edaphic gradients are known to determine local community assembly in tropical forests, but are often summarised in discrete categories. These approaches disregard the continuous response of species abundance to waterlogging. This methodological issue is critical in the context of climate change because water gradient at a local scale is expected to fluctuate due to unstable rain patterns. The use of a continuous proxy for soil moisture such as the Topographic Wetness Index (TWI) overcomes the limits of punctual measurements with hydrological grounded algorithms. The TWI allows the interpolation of the soil moisture based solely on the topography. Taking advantage of interpolation property, the TWI recently unveiled a pervasive hydro-edaphic niche differentiation mechanism in neotropical species complexes. Thus, an evaluation of the predictive efficiency of TWI calculation methods at the local community scale is a crucial step to study local determinants of tropical tree species’ niche.
 
@@ -16,21 +16,20 @@ Our results demonstrate that TWI is an integrative proxy for local-scale communi
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2022-07-10T13:00:00Z'
-date_end: '2022-07-14T15:00:00Z'
+date: '2022-01-06'
+date_end: '2022-01-01'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
 publishDate: '2022-01-01T00:00:00Z'
 
-authors: ["Guillaume Salzet","Sylvain Schmitt","Marion Boisseaux", "Thomas Gacquiere", "Melaine Aubry-Kientz", "Stephane Traissac", "Eric Marcon"]
+authors: ["Guillaume Salzet","Sylvain Schmitt"]
 tags: []
 
 # Is this a featured talk? (true/false)
 featured: false
 
 image:
-  caption: 'Image credit: G. Salzet'
   focal_point: Right
   
 url_code: ''

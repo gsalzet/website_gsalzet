@@ -10,5 +10,6 @@ date: "2021-09-23"
 external_link: ''
 
 image:
+  caption: 'Image credit: G. Salzet'
   focal_point: Smart
 ---

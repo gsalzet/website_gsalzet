@@ -1,7 +1,7 @@
 ---
-title: 'Master EFT: A spatial analysis of three tree species at seedling stage on parcel 16 of Paracou experimental
+title: 'Msc project: A spatial analysis of three tree species at seedling stage on parcel 16 of Paracou experimental
 site.'
-summary: '1 semester project for M2 tropical forest ecology student about the regeneration conditions of *Dicorynia guianensis, Tachigali melinonii* and *Symphonia globulifera*.'
+summary: '1 semester project for Msc program in tropical forestry about the regeneration conditions of *Dicorynia guianensis, Tachigali melinonii* and *Symphonia globulifera*.'
 tags: 
   - fth
 date: "2022-12-03"
