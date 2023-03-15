@@ -56,7 +56,7 @@ sections:
           icon: file-invoice
           icon_pack: fas
         - name: Survey & interviews
-          description: Design - analyses - report
+          description: Design - analyses (AI approaches) - report
           icon: list
           icon_pack: fas
   - block: experience
@@ -85,7 +85,7 @@ sections:
               * **Forest ecosystem services estimation** - Carbon storage/ Functional diversity/ Roundwood/ Hunting ;
               * **Modelling forest sector** - Agent Based modelling/ preferences survey/ elicitation interviews ;
               * **Forest growth model calibration**  - [TROLL model](https://sylvainschmitt.github.io/rcontroll/) with Gaussian processes.
-        - title: "Research Engineer:  
+        - title: "Research assistant (Ingénieur d'étude) in econometrics:  
         Spatial analysis of wood industrial clusters in the Vosges and their impact on the local forestry"
           company: "[Parc Naturel regional des ballons des Vosges](https://www.parc-ballons-vosges.fr/)"
           company_url: ''
@@ -94,7 +94,7 @@ sections:
           date_start: '2020-02-03'
           date_end: '2020-04-30'
           description: Ecosystem services evaluation, Cox model, forest sector, bayesian modelling.
-        - title: "Research engineer:  
+        - title: "Research assistant (Ingénieur d'étude):  
         Building a trans-atlantic research partnership - [Univ. Georgia](https://www.uga.edu/) & [Rayonier](https://www.rayonier.com/)"
           company: "[UMR SILVA](https://www6.nancy.inrae.fr/silva/)"
           company_url: ''
