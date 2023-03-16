@@ -110,7 +110,7 @@ sections:
           company_logo: ''
           location: remote internship (COVID)
           date_start: '2020-04-01'
-          date_end: '2020-09-31'
+          date_end: '2020-09-30'
           description: "Functional traits, demography, tropical forest, **spatial analysis**, **bayesian modelling**."
         - title: "MSc research project:  
         Bayesian modeling of Douglas fir quality to predict the resource of extractable chemical compounds, 6 months"
