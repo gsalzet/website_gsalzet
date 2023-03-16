@@ -6,7 +6,7 @@ event_url:
 
 location: UMR EcoFoG
 
-abstract: ''
+abstract: 'Technical workshop on rcontroll'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
@@ -27,8 +27,8 @@ image:
   focal_point: Right
   
 url_code: ''
-url_pdf: ''
+url_pdf: 'uploads/presentation/rcontroll_2021.pdf'
 url_slides: ''
-url_video: 'https://www.youtube.com/watch?v=v2hGeYQFkUY'
+url_video: ''
 ---
 
