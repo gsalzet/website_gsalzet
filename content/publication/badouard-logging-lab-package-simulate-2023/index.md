@@ -6,6 +6,6 @@ authors: ["Vincyane Badouard", "Sylvain Schmitt", "Guillaume Salzet", "Thomas Ga
 publication_types: ["3"]
 abstract: ""
 featured: false
-publication: "Working Paper"
+publication: "*In prep*"
 ---
 
