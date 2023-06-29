@@ -1,6 +1,5 @@
 # IDEs
 .idea/
-
 # Hugo
 resources/
 /public/
@@ -11,3 +10,5 @@ go.sum
 .Rproj.user
 .DS_Store
 Thumbs.db
+.Rhistory
+.Rprofile
