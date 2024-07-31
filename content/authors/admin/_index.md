@@ -1,13 +1,13 @@
 ---
 title: Guillaume Salzet
 avatar_filename: avatar.jpg
-bio: "Bioeconomics/ Ecosystem services/ Ecology"
+bio: "Bioeconomics"
 interests:
+  - Bioeconomics
+
   - Statistics/ Econometrics
   
   - Forest ecology
-  
-  - (Bio)economics
   
   - Ecosystem services evaluation
   
@@ -28,20 +28,15 @@ social:
   - icon: linkedin
     icon_pack: fab
     link: https://fr.linkedin.com/in/guillaume-salzet
-  - icon: cv
-    icon_pack: ai
-    link: uploads/resume.pdf
   - icon: envelope
     icon_pack: fas
     link: /#contact
 organizations:
-  - name: INRAe, BETA
-    url: https://beta-economics.fr/
-  - name: INRAe, ECOFOG
-    url: https://www.ecofog.gf/
+  - name: ONF
+    url: https://www.onf.fr/
 education:
   courses:
-    - course: PhD in tropical forest bioeconomics, Ongoing
+    - course: PhD in tropical forest bioeconomics, 2024
       institution: Univ. Guyane
       year: ""
     - course: MSc/ Engineer in forest engineering, 2020
@@ -60,13 +55,14 @@ education:
       year: ""
 superuser: true
 last_name: Salzet
-role: PhD student in tropical forest bioeconomics
+role: ONF R&D researcher in forest bioeconomics
 highlight_name: true
 first_name: Guillaume
 email: "g.salzet@gmail.com"
 ---
 # Biography
-I’m a PhD student in **forest bioeconomics modelling** 🌳.
+I’m a **forest bioeconomist** at The French National Forest Office ([ONF](https://www.onf.fr/))🌳.
 
-My research focuses on the **forest sector** and its interactions with **forest dynamics** in the context of **French Guiana**. 
-I am also particulary interested in the **forest ecosystem services** and their **evaluation**.
+My research focuses on the **forest sector** and its interactions with **forest dynamics** in the context of **France** (mainland & overseas territories). 
+I am currently working on a seemless integration of coupled biophysical & market models. 
+The goal is to provide expected wood-market trajectories under climate changes scenarios.
