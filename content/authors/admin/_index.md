@@ -86,6 +86,6 @@ I’m **Guillaume**, a **forest bioeconomist** at the French National Forest Age
 
 My research focuses on the **forest sector** and its interactions with **forest dynamics** in the context of the **french forest sector** (mainland & overseas territories). 
 
-I am currently working on a seemless evaluation of coupled biophysical & market models. 
-The goal is to provide expected wood-market trajectories under climate changes scenarios.
+I am currently working on a seamless evaluation of coupled biophysical & market models. 
+The goal is to provide expected wood-market trajectories under climate changes scenarios at both national and regional scales.
 {style="text-align: justify;"}
