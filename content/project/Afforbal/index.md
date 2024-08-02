@@ -3,7 +3,7 @@ title: Afforball
 summary: "Adaptations of the forestry and wood industry of the Ballons des Vosges Regional Park in a context of global changes."
 tags:
   - Economics
-date: '2016-04-27T00:00:00Z'
+date: '2019-04-27T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''

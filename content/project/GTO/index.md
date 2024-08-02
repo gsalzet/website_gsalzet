@@ -3,7 +3,7 @@ title: Glutathion-S-transferase
 summary: "Glutathione Transferases: Surrogate Targets for Discovering Biologically Active Compounds"
 tags:
   - Chemical ecology
-date: '2021-11-01T00:00:00Z'
+date: '2017-11-01T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''

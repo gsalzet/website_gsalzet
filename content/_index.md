@@ -1,13 +1,13 @@
 ---
 # Leave the homepage title empty to use the site title
-title:
-date: 2024-07-31
+title: ''
+date: 2022-10-24
 type: landing
 
 sections:
   - block: hero
     content:
-      title: Forest bioeconomics
+      title: Tropical forest bioeconomics
     design:
       background:
         image:
@@ -24,11 +24,11 @@ sections:
         parallax: true
           # Text color (true=light, false=dark, or remove for the dynamic theme color).
         text_color_light: true
-  - block: v1/about
+  - block: about.biography
     id: about
-    title: Background
     content:
-      title: Background
+      title: Hey there !
+      # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
   - block: features
     content:
@@ -71,48 +71,30 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-      - title: "Forest bioeconomist"
-          company: R&D department at the French National Forest Office [(ONF)](https://www.onf.fr/)
+        - title: R&D researcher - forest bioeconomist
+          company: 'French National Forest Agency (ONF)'
           company_url: ''
           company_logo: ''
           location: Fontainebleau, France
-          date_start: '2024-04-02'
+          date_start: 2024-04-02
           date_end: ''
           description: |2-
               Fields of research:
-
-              * **Forest ecosystem services estimation** - Carbon storage/ Functional diversity/ Roundwood/ Hunting ;
-              * **Modelling forest sector** - Agent Based modelling/ preferences survey/ elicitation interviews ;
-              * **Forest growth model calibration**.
+                - **Forest ecosystem services estimation** - Carbon storage/ Functional diversity/ Roundwood/ Hunting ;
+                 - **Modelling forest sector** - Agent Based modelling/ preferences survey/ elicitation interviews ;
+                 - **Forest growth model calibration**.
+  
         - title: "PhD student:  
         Sustainability of the french guiana forest sector, a spatialized bioeconomic approach"
           company: INRAe, [UMR BETA](https://beta-economics.fr/) & [UMR ECOFOG](http://www.ecofog.gf/)
           company_url: ''
           company_logo: ''
           location: Kourou & Nancy, France
-          date_start: '2020-10-01'
-          date_end: '2024-05-29'
+          date_start: 2020-10-01
+          date_end: 2024-05-29
           description: |2-
-              The aim of this thesis is to provide an integrated analysis of conservation and timber production issues
-              in French Guiana. The chapter 1 provides the historical and current specificities of the forest sector,
-              highlighting its economic importance while also undelaying the pressures exerted on forest
-              ecosystems. The following chapters examine the different dimensions of forest management in
-              French Guiana.
-
-              Chapter 2 assesses the evolution of tree species composition on a regional scale, highlighting the
-              impact of geomorphology and hydro-edaphic conditions on species diversity. Issues of production,
-              carbon storage and tree species richness are mapped based on these data and analysed in relation
-              to the location of forest management areas.
-
-              Chapters 3 and 4 focus on the impacts of logging, examining tree mortality induced by logging roads
-              and felling gaps, as well as subsequent resilience trajectories. The results show that, despite lowimpact
-              logging practices, no set of management parameters can guarantee a return to the prelogging
-              state within a timeframe compatible with the production objective.
-
-              In conclusion, this thesis highlights the need to rethink ecological sustainability in French Guiana, and
-              more broadly in the tropics, to ensure that ecosystems continue to function. Rather than focusing
-              solely on maintaining their state, it highlights the importance of an integrated approach between
-              ecology and economics to guarantee the functioning of tropical forest ecosystems.
+              The aim of this thesis is to provide an integrated analysis of conservation  and timber production issues in French Guiana. 
+              More details [here](/project/PhD/PhD_GS_def.pdf) !
         - title: "Research assistant (Ingénieur d'étude) in econometrics:  
         Spatial analysis of wood industrial clusters in the Vosges and their impact on the local forestry"
           company: "[Parc Naturel regional des ballons des Vosges](https://www.parc-ballons-vosges.fr/)"
@@ -196,7 +178,7 @@ sections:
           tag: '*'
         - name: Forest ecology
           tag: Forest ecology
-        - name: Bioeconomics
+        - name: (Bio)economics
           tag: Economics
         - name: Chemical ecology
           tag: Chemical ecology
@@ -205,8 +187,8 @@ sections:
       columns: '1'
       view: showcase
       # For Showcase view, flip alternate rows?
-      flip_alt_rows: false
-  - block: portfolio
+      flip_alt_rows: true
+  - block: collection
     id: softwares
     content:
       title: Softwares
@@ -214,10 +196,8 @@ sections:
         folders:
           - softwares
     design:
-      # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '2'
       view: showcase
-      # For Showcase view, flip alternate rows?
       flip_alt_rows: true
   - block: portfolio
     id: teaching
