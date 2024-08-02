@@ -7,7 +7,7 @@ type: landing
 sections:
   - block: hero
     content:
-      title: Tropical forest bioeconomics
+      title: Forest bioeconomics
     design:
       background:
         image:
