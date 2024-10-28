@@ -18,7 +18,7 @@ role: R&D  researcher in forest bioeconomist
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: French National Forest Agency (ONF)
+  - name: French National Forest Office (ONF)
     url: https://www.onf.fr/
 
 # Short bio (displayed in user profile at end of posts)

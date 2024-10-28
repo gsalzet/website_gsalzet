@@ -72,7 +72,7 @@ sections:
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
         - title: R&D researcher - forest bioeconomist
-          company: 'French National Forest Office ([ONF](https://www.onf.fr/)'
+          company: 'French National Forest Office ([ONF](https://www.onf.fr/))'
           company_url: ''
           company_logo: ''
           location: Fontainebleau, France
