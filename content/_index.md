@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: ''
-date: 2022-10-24
+date: 2024-10-28
 type: landing
 
 sections:
@@ -72,7 +72,7 @@ sections:
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
         - title: R&D researcher - forest bioeconomist
-          company: 'French National Forest Agency (ONF)'
+          company: 'French National Forest Office ([ONF](https://www.onf.fr/)'
           company_url: ''
           company_logo: ''
           location: Fontainebleau, France
@@ -81,8 +81,8 @@ sections:
           description: |2-
               Fields of research:
                 - **Forest ecosystem services estimation** - Carbon storage/ Functional diversity/ Roundwood/ Hunting ;
-                 - **Modelling forest sector** - Agent Based modelling/ preferences survey/ elicitation interviews ;
-                 - **Forest growth model calibration**.
+                - **Modelling forest sector** - Agent Based modelling/ preferences survey/ elicitation interviews ;
+                - **Forest growth model calibration**.
   
         - title: "PhD student:  
         Sustainability of the french guiana forest sector, a spatialized bioeconomic approach"

@@ -82,7 +82,7 @@ social:
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-I’m **Guillaume**, a **forest bioeconomist** at the French National Forest Agency ([ONF](https://www.onf.fr/)).
+I’m **Guillaume**, a **forest bioeconomist** at the French National Forest Office ([ONF](https://www.onf.fr/)).
 
 My research focuses on the **forest sector** and its interactions with **forest dynamics** in the context of the **french forest sector** (mainland & overseas territories). 
 
