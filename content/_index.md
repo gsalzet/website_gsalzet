@@ -85,7 +85,7 @@ sections:
                 - **Forest growth model calibration**.
   
         - title: "PhD student:  
-        Sustainability of the french guiana forest sector, a spatialized bioeconomic approach"
+        Sustainability of the forest sector in French Guiana - a spatialized ecosystem service modelling approach"
           company: INRAe, [UMR BETA](https://beta-economics.fr/) & [UMR ECOFOG](http://www.ecofog.gf/)
           company_url: ''
           company_logo: ''
@@ -94,7 +94,7 @@ sections:
           date_end: 2024-05-29
           description: |2-
               The aim of this thesis is to provide an integrated analysis of conservation  and timber production issues in French Guiana. 
-              More details [here](/project/PhD/PhD_GS_def.pdf) !
+              More details on [HAL](https://theses.hal.science/tel-04969321v1).
         - title: "Research assistant (Ingénieur d'étude) in econometrics:  
         Spatial analysis of wood industrial clusters in the Vosges and their impact on the local forestry"
           company: "[Parc Naturel regional des ballons des Vosges](https://www.parc-ballons-vosges.fr/)"
