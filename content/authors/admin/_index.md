@@ -14,12 +14,14 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: R&D  researcher in forest bioeconomist
+role: R&D  researcher / Associated researcher in forest bioeconomist
 
 # Organizations/Affiliations to show in About widget
 organizations:
   - name: French National Forest Office (ONF)
     url: https://www.onf.fr/
+  - name: Bureau d'économie théorique et appliquée (UMR BETA)
+    url: https://www.beta-economics.fr/annuaire/381/salzet_guillaume/
 
 # Short bio (displayed in user profile at end of posts)
 bio: Bioeconomics/ Ecosystem services/ Ecology.

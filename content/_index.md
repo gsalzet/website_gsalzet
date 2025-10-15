@@ -71,8 +71,9 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: R&D researcher - forest bioeconomist
-          company: 'French National Forest Office ([ONF](https://www.onf.fr/))'
+        - title: R&D researcher / Associated researcher - forest bioeconomist
+          company: 'French National Forest Office ([ONF](https://www.onf.fr/)) | 
+          [UMR BETA](https://beta-economics.fr/)'
           company_url: ''
           company_logo: ''
           location: Fontainebleau, France
