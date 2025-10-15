@@ -81,9 +81,9 @@ sections:
           date_end: ''
           description: |2-
               Fields of research:
-                - **Forest ecosystem services estimation** - Carbon storage/ Functional diversity/ Roundwood/ Hunting ;
-                - **Modelling forest sector** - Agent Based modelling/ preferences survey/ elicitation interviews ;
-                - **Forest growth model calibration**.
+              - **Forest ecosystem services estimation** - Carbon storage/ Functional diversity/ Roundwood/ Hunting ;
+              - **Modelling forest sector** - Agent Based modelling/ preferences survey/ elicitation interviews ;
+              - **Forest growth model calibration**.
   
         - title: "PhD student:  
         Sustainability of the forest sector in French Guiana - a spatialized ecosystem service modelling approach"
