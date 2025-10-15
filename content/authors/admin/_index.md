@@ -14,8 +14,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: R&D  researcher
-  Associated researcher 
+role: R&D  researcher 
   in forest bioeconomist
 
 # Organizations/Affiliations to show in About widget
@@ -86,7 +85,7 @@ social:
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-I’m **Guillaume**, a **forest bioeconomist** at the R&D department of French National Forest Office ([ONF](https://www.onf.fr/)) and an associated researcher at the Bureau d'économie théorique et appliquée ([BETA](https://www.beta-economics.fr/)).
+I’m **Guillaume**, a **forest bioeconomist** at the **R&D department** of French National Forest Office ([ONF](https://www.onf.fr/)) and an **associated researcher** at the Bureau d'économie théorique et appliquée ([BETA](https://www.beta-economics.fr/)).
 
 My research focuses on the **forest sector** and its interactions with **forest dynamics** in the context of the **french forest sector** (mainland & overseas territories). 
 
