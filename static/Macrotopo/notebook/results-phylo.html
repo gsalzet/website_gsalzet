@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.553">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Multiscale JSDM French Guiana - Phylogenetic analysis</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../notebook/results-com.html" rel="next">
+<link href="../notebook/results-model.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Multiscale JSDM French Guiana</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../notebook/data_prep.html"> 
+<span class="menu-text">Data</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../notebook/model_fit.html"> 
+<span class="menu-text">Model</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../notebook/results-model.html" aria-current="page"> 
+<span class="menu-text">Results</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://gitlab.onf.fr/gsalzet/macrotopo_jsdm"> <i class="bi bi-gitlab" role="img" aria-label="gitlab">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <a class="flex-grow-1 no-decor" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title">Phylogenetic analysis</h1>
+        </a>     
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebook/results-model.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Results JSDM</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebook/results-phylo.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Phylogenetic analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebook/results-com.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Community analysis</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
+  <ul class="collapse">
+  <li><a href="#regional-climate" id="toc-regional-climate" class="nav-link" data-scroll-target="#regional-climate">Regional climate</a></li>
+  <li><a href="#geomorphological-landscapes" id="toc-geomorphological-landscapes" class="nav-link" data-scroll-target="#geomorphological-landscapes">Geomorphological landscapes</a></li>
+  <li><a href="#local-topography" id="toc-local-topography" class="nav-link" data-scroll-target="#local-topography">Local topography</a></li>
+  </ul></li>
+  <li><a href="#local-phylogenetic-association-indicators-lipa" id="toc-local-phylogenetic-association-indicators-lipa" class="nav-link" data-scroll-target="#local-phylogenetic-association-indicators-lipa">Local phylogenetic association indicators (LIPA)</a>
+  <ul class="collapse">
+  <li><a href="#regional-climate-1" id="toc-regional-climate-1" class="nav-link" data-scroll-target="#regional-climate-1">Regional climate</a></li>
+  <li><a href="#geomophological-landscapes" id="toc-geomophological-landscapes" class="nav-link" data-scroll-target="#geomophological-landscapes">Geomophological landscapes</a></li>
+  <li><a href="#local-topography-1" id="toc-local-topography-1" class="nav-link" data-scroll-target="#local-topography-1">Local topography</a></li>
+  </ul></li>
+  <li><a href="#within-genus-specialisation-along-swi-gradient" id="toc-within-genus-specialisation-along-swi-gradient" class="nav-link" data-scroll-target="#within-genus-specialisation-along-swi-gradient">Within-genus specialisation along SWI gradient</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://gitlab.onf.fr/gsalzet/macrotopo_jsdm/blob/main/notebook/results-phylo.qmd" class="toc-action"><i class="bi bi-git"></i>View source</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title d-none d-lg-block">Phylogenetic analysis</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This section evaluates whether species’ environmental preferences inferred from the JSDM are phylogenetically structured. We first quantify global phylogenetic signal in each species-level coefficient using Pagel’s λ, then characterise how this signal varies across phylogenetic distances using phylogenetic correlograms. Finally, we use Local Indicators of Phylogenetic Association (LIPA) to identify clades in which closely related species show unusually similar (or unusually dissimilar) preferences.</p>
+<p>To relate model outputs to evolutionary history, we combine two data sources: (i) posterior summaries of species-specific environmental coefficients (regional climate, geomorphological subtypes, and SWI), and (ii) a backbone seed-plant phylogeny. The workflow below harmonises taxonomy between the French Guiana checklist and the megatree, constructs a phylogeny for the analysed species, and matches each tip to the corresponding coefficient values.</p>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Species_list_path <span class="ot">&lt;-</span> <span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"inventory_data"</span>, <span class="st">"Species_list.csv"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Summary_beta <span class="ot">&lt;-</span> vroom<span class="sc">::</span><span class="fu">vroom</span>(<span class="fu">here_rel</span>(<span class="st">"results"</span>, <span class="st">"models"</span>, <span class="st">"H1"</span>, <span class="st">"beta_fitH1.tsv.gz"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(Scale <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Regional"</span>, <span class="st">"Landscape"</span>, <span class="st">"Local"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        <span class="co"># significance at 80% CI</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">sig80 =</span> (l <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> h <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">|</span> (l <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> h <span class="sc">&lt;</span> <span class="dv">0</span>),</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">sign =</span> <span class="fu">case_when</span>(</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>            sig80 <span class="sc">&amp;</span> m <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"positive"</span>,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>            sig80 <span class="sc">&amp;</span> m <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"negative"</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>            <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"ns"</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">species =</span> <span class="fu">paste</span>(genus, species)) <span class="sc">|&gt;</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(species, m, parameter) <span class="sc">|&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">spread</span>(parameter, m)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="do">## Rows: 9104 Columns: 10</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="do">## ── Column specification ────────────────────────────────────────────────────────</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="do">## Delimiter: "\t"</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="do">## chr (5): variable, Scale, parameter, genus, species</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="do">## dbl (5): m, ll, l, h, hh</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="do">## ℹ Use `spec()` to retrieve the full column specification for this data.</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="do">## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>Species_list <span class="ot">&lt;-</span> <span class="fu">read_csv2</span>(Species_list_path) <span class="sc">|&gt;</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(<span class="at">SpEpithet =</span> specie, <span class="at">species =</span> taxonomic_name) <span class="sc">|&gt;</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(species, genus, family, selected) <span class="sc">|&gt;</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(species <span class="sc">%in%</span> Summary_beta<span class="sc">$</span>species, <span class="sc">!</span><span class="fu">duplicated</span>(species))</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="do">## ℹ Using "','" as decimal and "'.'" as grouping mark. Use `read_delim()` for more control.</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="do">## Rows: 1726 Columns: 7── Column specification ────────────────────────────────────────────────────────</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="do">## Delimiter: ";"</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="do">## chr (5): taxonomic_name, family, genus, specie, ID.TAXREF</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="do">## dbl (2): ID, selected</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="do">## ℹ Use `spec()` to retrieve the full column specification for this data.</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="do">## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">file.exists</span>(<span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"inventory_data"</span>, <span class="st">"tree_beta.rds"</span>))) {</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    tree_beta <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"inventory_data"</span>, <span class="st">"tree_beta.rds"</span>))</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    megatree <span class="ot">&lt;-</span> <span class="fu">read.tree</span>(<span class="st">"https://github.com/megatrees/plant_20221117/raw/refs/heads/main/plant_megatree.tre"</span>)</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    gen.list <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://github.com/megatrees/plant_20221117/raw/refs/heads/main/plant_genus_list.csv"</span>, <span class="at">sep =</span> <span class="st">","</span>)</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Correction for modified genus between megatree / species list (Molino et al. 2022).</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    splist_cor <span class="ot">&lt;-</span> Species_list</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    splist_cor<span class="sc">$</span>genus <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"Marlimorimia"</span>, <span class="st">"Inga"</span>, splist_cor<span class="sc">$</span>genus)</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    splist_cor<span class="sc">$</span>species <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"Marlimorimia"</span>, <span class="st">"Inga"</span>, splist_cor<span class="sc">$</span>species)</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>    splist_cor<span class="sc">$</span>genus <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"Robrichia"</span>, <span class="st">"Enterolobium"</span>, splist_cor<span class="sc">$</span>genus)</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>    splist_cor<span class="sc">$</span>species <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"Robrichia"</span>, <span class="st">"Enterolobium"</span>, splist_cor<span class="sc">$</span>species)</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>    splist_cor<span class="sc">$</span>genus <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"Gwilymia"</span>, <span class="st">"Entada"</span>, splist_cor<span class="sc">$</span>genus)</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>    splist_cor<span class="sc">$</span>species <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"Gwilymia"</span>, <span class="st">"Entada"</span>, splist_cor<span class="sc">$</span>species)</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>    tree_beta <span class="ot">&lt;-</span> <span class="fu">phylo.maker</span>(splist_cor, megatree, gen.list, <span class="at">nodes.type =</span> <span class="dv">1</span>, <span class="at">scenario =</span> <span class="dv">3</span>)</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>    tree_beta<span class="sc">$</span>sp.list<span class="sc">$</span>genus <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"Entada"</span>, <span class="st">"Gwilymia"</span>, tree_beta<span class="sc">$</span>sp.list<span class="sc">$</span>genus)</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>    tree_beta<span class="sc">$</span>sp.list<span class="sc">$</span>species <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"Entada"</span>, <span class="st">"Gwilymia"</span>, tree_beta<span class="sc">$</span>sp.list<span class="sc">$</span>species)</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>    tree_beta<span class="sc">$</span>phylo<span class="sc">$</span>tip.lab <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"Entada"</span>, <span class="st">"Gwilymia"</span>, tree_beta<span class="sc">$</span>phylo<span class="sc">$</span>tip.lab)</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>    tree_beta<span class="sc">$</span>sp.list<span class="sc">$</span>genus <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"Enterolobium"</span>, <span class="st">"Robrichia"</span>, tree_beta<span class="sc">$</span>sp.list<span class="sc">$</span>genus)</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>    tree_beta<span class="sc">$</span>sp.list<span class="sc">$</span>species <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"Enterolobium"</span>, <span class="st">"Robrichia"</span>, tree_beta<span class="sc">$</span>sp.list<span class="sc">$</span>species)</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>    tree_beta<span class="sc">$</span>phylo<span class="sc">$</span>tip.lab <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"Enterolobium"</span>, <span class="st">"Robrichia"</span>, tree_beta<span class="sc">$</span>phylo<span class="sc">$</span>tip.lab)</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>    tree_beta<span class="sc">$</span>sp.list<span class="sc">$</span>species[<span class="fu">which</span>(tree_beta<span class="sc">$</span>sp.list<span class="sc">$</span>species <span class="sc">%in%</span> splist_cor<span class="sc">$</span>species[<span class="fu">which</span>(Species_list<span class="sc">$</span>genus <span class="sc">==</span> <span class="st">"Marlimorimia"</span>)])] <span class="ot">&lt;-</span> Species_list<span class="sc">$</span>species[<span class="fu">which</span>(Species_list<span class="sc">$</span>genus <span class="sc">==</span> <span class="st">"Marlimorimia"</span>)]</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>    tree_beta<span class="sc">$</span>sp.list<span class="sc">$</span>genus[<span class="fu">which</span>(tree_beta<span class="sc">$</span>sp.list<span class="sc">$</span>species <span class="sc">%in%</span> splist_cor<span class="sc">$</span>species[<span class="fu">which</span>(Species_list<span class="sc">$</span>genus <span class="sc">==</span> <span class="st">"Marlimorimia"</span>)])] <span class="ot">&lt;-</span> <span class="st">"Marlimorimia"</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>    tree_beta<span class="sc">$</span>phylo<span class="sc">$</span>tip.lab[<span class="fu">which</span>(tree_beta<span class="sc">$</span>phylo<span class="sc">$</span>tip.lab <span class="sc">%in%</span> <span class="fu">gsub</span>(<span class="st">" "</span>, <span class="st">"_"</span>, splist_cor<span class="sc">$</span>species[<span class="fu">which</span>(Species_list<span class="sc">$</span>genus <span class="sc">==</span> <span class="st">"Marlimorimia"</span>)]))] <span class="ot">&lt;-</span> Species_list<span class="sc">$</span>species[<span class="fu">which</span>(Species_list<span class="sc">$</span>genus <span class="sc">==</span> <span class="st">"Marlimorimia"</span>)]</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>    tree_beta<span class="sc">$</span>phylo<span class="sc">$</span>tip.label <span class="ot">&lt;-</span> tree_beta<span class="sc">$</span>phylo<span class="sc">$</span>tip.lab</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>    <span class="fu">saveRDS</span>(tree_beta, <span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"inventory_data"</span>, <span class="st">"tree_beta.rds"</span>))</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>tree_beta<span class="sc">$</span>phylo<span class="sc">$</span>tip.lab <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"_"</span>, <span class="st">" "</span>, tree_beta<span class="sc">$</span>phylo<span class="sc">$</span>tip.lab)</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">file.exists</span>(<span class="fu">here_rel</span>(<span class="st">"results"</span>, <span class="st">"models"</span>, <span class="st">"H1"</span>, <span class="st">"phylodata_H1.rds"</span>)) <span class="sc">&amp;</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>    <span class="fu">file.exists</span>(<span class="fu">here_rel</span>(<span class="st">"results"</span>, <span class="st">"models"</span>, <span class="st">"H1"</span>, <span class="st">"crlgmulti_H1.rds"</span>))) {</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>    phylodata <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="fu">here_rel</span>(<span class="st">"results"</span>, <span class="st">"models"</span>, <span class="st">"H1"</span>, <span class="st">"phylodata_H1.rds"</span>))</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>    crlgmulti <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="fu">here_rel</span>(<span class="st">"results"</span>, <span class="st">"models"</span>, <span class="st">"H1"</span>, <span class="st">"crlgmulti_H1.rds"</span>))</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>    phylodata <span class="ot">&lt;-</span> phylobase<span class="sc">::</span><span class="fu">phylo4d</span>(tree_beta<span class="sc">$</span>phylo, <span class="fu">data.frame</span>(<span class="at">species =</span> <span class="fu">gsub</span>(<span class="st">"_"</span>, <span class="st">" "</span>, tree_beta<span class="sc">$</span>phylo<span class="sc">$</span>tip.lab)) <span class="sc">|&gt;</span> <span class="fu">left_join</span>(Summary_beta))</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>    phylodata<span class="sc">@</span>data<span class="sc">$</span>species <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>    <span class="fu">saveRDS</span>(phylodata, <span class="fu">here_rel</span>(<span class="st">"results"</span>, <span class="st">"models"</span>, <span class="st">"H1"</span>, <span class="st">"phylodata_H1.rds"</span>))</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>    crlgmulti <span class="ot">&lt;-</span> parallel<span class="sc">::</span><span class="fu">mclapply</span>(<span class="fu">colnames</span>(phylodata<span class="sc">@</span>data),</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>        \(i){</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>            phylosignal<span class="sc">::</span><span class="fu">phyloCorrelogram</span>(phylodata, <span class="at">trait =</span> i, <span class="at">ci.bs =</span> <span class="dv">1000</span>)</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>        },</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>        <span class="at">mc.cores =</span> <span class="dv">10</span></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>    <span class="fu">setNames</span>(crlgmulti, <span class="fu">colnames</span>(phylodata<span class="sc">@</span>data)) <span class="ot">-&gt;</span> crlgmulti</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>    <span class="fu">saveRDS</span>(crlgmulti, <span class="fu">here_rel</span>(<span class="st">"results"</span>, <span class="st">"models"</span>, <span class="st">"H1"</span>, <span class="st">"crlgmulti_H1.rds"</span>))</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>We constructed a phylogeny using the GBOTB megatree as a backbone and attached missing taxa using U.PhyloMaker (scenario 3). Because a small number of genera have alternative circumscriptions between the French Guiana checklist and the megatree, we applied explicit name mappings (e.g., Marlimorimia ↔︎ Inga) to ensure consistent tip matching. We then assembled a phylo4d object that links each species (tip) to its set of environmental preference coefficients.</p>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>phylosignal<span class="sc">::</span><span class="fu">phyloSignal</span>(<span class="at">p4d =</span> phylodata, <span class="at">method =</span> <span class="st">"Lambda"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">lapply</span>(as.data.frame) <span class="sc">|&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">lapply</span>(rownames_to_column, <span class="st">"parameter"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">bind_rows</span>(<span class="at">.id =</span> <span class="st">"type"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    reshape2<span class="sc">::</span><span class="fu">melt</span>(<span class="fu">c</span>(<span class="st">"type"</span>, <span class="st">"parameter"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    reshape2<span class="sc">::</span><span class="fu">dcast</span>(parameter <span class="sc">+</span> variable <span class="sc">~</span> type) <span class="sc">|&gt;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">parameter =</span> <span class="fu">if_else</span>(<span class="fu">substr</span>(parameter,<span class="dv">1</span>,<span class="dv">2</span>) <span class="sc">==</span> <span class="st">"Ge"</span>, <span class="fu">paste0</span>(<span class="st">"GeomSub"</span>, <span class="fu">str_pad</span>(<span class="fu">gsub</span>(<span class="st">"GeomSub"</span>, <span class="st">""</span>, parameter),</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">width =</span> <span class="dv">2</span>,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">side =</span> <span class="st">"left"</span>, <span class="at">pad =</span> <span class="st">"0"</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    )), parameter)) <span class="sc">|&gt;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">value =</span> <span class="fu">paste0</span>(<span class="fu">round</span>(stat, <span class="dv">4</span>), <span class="st">" (p="</span>, <span class="fu">round</span>(pvalue, <span class="dv">4</span>), <span class="st">")"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    reshape2<span class="sc">::</span><span class="fu">dcast</span>(parameter <span class="sc">~</span> variable) <span class="sc">|&gt;</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div id="tbl-phylosignal" class="cell quarto-float anchored" data-layout-align="center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-phylosignal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Phylogenetic signal of species environmental preferences.
+</figcaption>
+<div aria-describedby="tbl-phylosignal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="do-not-create-environment cell table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">parameter</th>
+<th style="text-align: left;">Lambda</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Clim1</td>
+<td style="text-align: left;">0.1177 (p=0.001)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Clim2</td>
+<td style="text-align: left;">0.264 (p=0.001)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GeomSub02</td>
+<td style="text-align: left;">0.0603 (p=0.0152)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GeomSub03</td>
+<td style="text-align: left;">0.0297 (p=0.2579)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GeomSub04</td>
+<td style="text-align: left;">0.0821 (p=0.001)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GeomSub05</td>
+<td style="text-align: left;">0.016 (p=0.3174)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GeomSub06</td>
+<td style="text-align: left;">0.0201 (p=0.4328)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GeomSub07</td>
+<td style="text-align: left;">0.17 (p=0.001)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GeomSub08</td>
+<td style="text-align: left;">0.0519 (p=0.0216)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GeomSub09</td>
+<td style="text-align: left;">0.1122 (p=0.001)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GeomSub10</td>
+<td style="text-align: left;">0.0286 (p=0.0782)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GeomSub11</td>
+<td style="text-align: left;">1e-04 (p=1)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GeomSub12</td>
+<td style="text-align: left;">0.4133 (p=0.001)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GeomSub13</td>
+<td style="text-align: left;">0.0886 (p=0.19)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">logSWI</td>
+<td style="text-align: left;">0.1555 (p=0.001)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>We quantify phylogenetic signal in each coefficient using Pagel’s λ. This statistic measures the extent to which trait variation across species covaries with shared evolutionary history under a Brownian-motion reference model. Values near 0 indicate weak phylogenetic structure (preferences vary independently of phylogeny), whereas higher values indicate that related species tend to share similar preferences.</p>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>(<span class="fu">plot_crlg</span>(crlgmulti, <span class="st">"Clim2"</span>) <span class="sc">|</span> <span class="fu">plot_crlg</span>(crlgmulti, <span class="st">"logSWI"</span>)) <span class="sc">/</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    (<span class="fu">plot_crlg</span>(crlgmulti, <span class="st">"GeomSub7"</span>) <span class="sc">|</span> <span class="fu">plot_crlg</span>(crlgmulti, <span class="st">"GeomSub12"</span>)) <span class="sc">+</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot_layout</span>(<span class="at">guides =</span> <span class="st">"collect"</span>) <span class="sc">+</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_public</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-crlg" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-crlg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="results-phylo_files/figure-html/fig-crlg-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="2100">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-crlg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Phylogenetic correlograms for species‐level environmental coefficients with significant phylogenetic signal detected (Clim2, SWI, complex hilly landscape and high hills landscape)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Global λ values summarise phylogenetic signal across the entire tree, but they do not indicate at which phylogenetic depths similarity is strongest. To address this, we compute phylogenetic correlograms, which quantify trait autocorrelation as a function of patristic (branch-length) distance. This allows us to distinguish short-range conservatism among close relatives from deeper, clade-level patterns and potential long-distance opposition.</p>
+<section id="regional-climate" class="level3">
+<h3 class="anchored" data-anchor-id="regional-climate">Regional climate</h3>
+<p>A moderate significant phylogenetic signal was detected for <span class="math inline">\(Clim_2\)</span> (Pagel’s λ = 0.26), with a <strong>positive phylogenetic autocorrelation</strong> at <strong>short patristic distances</strong>, meaning that phylogenetically close species are more likely to prefer the same climatic condition defined by <span class="math inline">\(Clim_2\)</span>, and a <strong>negative</strong> association at <strong>long distances</strong> <a href="#fig-crlg" class="quarto-xref">Figure&nbsp;1</a>.</p>
+</section>
+<section id="geomorphological-landscapes" class="level3">
+<h3 class="anchored" data-anchor-id="geomorphological-landscapes">Geomorphological landscapes</h3>
+<p>Phylogenetic signals were significant for “<span class="math inline">\(GeomSub_{[12]}\)</span> high hills” (λ = 0.41, p &lt; 0.001) and “<span class="math inline">\(GeomSub_{[7]}\)</span> complex hilly area” (λ = 0.17, p = 0.001). Both exhibited <strong>positive autocorrelation</strong> at <strong>short patristic distances</strong> <a href="#fig-crlg" class="quarto-xref">Figure&nbsp;1</a>. The pattern was <strong>negative</strong> at <strong>long patristic distance</strong> for “<span class="math inline">\(GeomSub_{[7]}\)</span> complex hilly areas” and <strong>non-significant</strong> for “<span class="math inline">\(GeomSub_{[12]}\)</span> high hills” <a href="#fig-crlg" class="quarto-xref">Figure&nbsp;1</a>.</p>
+</section>
+<section id="local-topography" class="level3">
+<h3 class="anchored" data-anchor-id="local-topography">Local topography</h3>
+<p>A significant phylogenetic signal was detected for <span class="math inline">\(SWI\)</span> (λ = 0.16, p &lt; 0.001) with a <strong>positive</strong> phylogenetic autocorrelation at <strong>short patristic distances</strong> and <strong>non-significant</strong> at <strong>long patristic distances</strong>.</p>
+</section>
+</section>
+<section id="local-phylogenetic-association-indicators-lipa" class="level2">
+<h2 class="anchored" data-anchor-id="local-phylogenetic-association-indicators-lipa">Local phylogenetic association indicators (LIPA)</h2>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">file.exists</span>(<span class="fu">here_rel</span>(<span class="st">"results"</span>, <span class="st">"models"</span>, <span class="st">"H1"</span>, <span class="st">"lipa_beta_H1.rds"</span>))) {</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    lipa_beta <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="fu">here_rel</span>(<span class="st">"results"</span>, <span class="st">"models"</span>, <span class="st">"H1"</span>, <span class="st">"lipa_beta_H1.rds"</span>))</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    lipa_beta <span class="ot">&lt;-</span> phylosignal<span class="sc">::</span><span class="fu">lipaMoran</span>(phylodata, <span class="at">alternative =</span> <span class="st">"two-sided"</span>, <span class="at">reps =</span> <span class="dv">9999</span>, <span class="at">prox.phylo =</span> <span class="st">"patristic"</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">saveRDS</span>(lipa_beta, <span class="fu">here_rel</span>(<span class="st">"results"</span>, <span class="st">"models"</span>, <span class="st">"H1"</span>, <span class="st">"lipa_beta_H1.rds"</span>))</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>While correlograms describe average autocorrelation patterns, they do not identify where in the phylogeny the signal is concentrated. We therefore compute Local Indicators of Phylogenetic Association (LIPA), which provide a tip- and clade-specific measure of whether a species’ coefficient value is unusually similar to (positive LIPA) or unusually different from (negative LIPA) those of its phylogenetic neighbours, relative to a permutation-based null model.</p>
+<p>LIPA outputs are interpreted as local departures from the global phylogenetic expectation. Positive values highlight phylogenetic clustering of preferences (local conservatism), whereas negative values highlight local overdispersion (close relatives differing more than expected). We visualise these patterns on the phylogeny for the coefficients that exhibited significant global signal.</p>
+<section id="regional-climate-1" class="level3">
+<h3 class="anchored" data-anchor-id="regional-climate-1">Regional climate</h3>
+<p>We focus on the regional climate Clim2, which showed significant phylogenetic structure. The figure below maps LIPA values onto the phylogeny to identify which clades contribute most strongly to the detected signal.</p>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">file.exists</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"LIPA_H1_Clim2.png"</span>))) {</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    g <span class="ot">&lt;-</span> <span class="fu">plot_LIPA</span>(lipa_beta, phylodata, <span class="st">"Clim2"</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggsave</span>(<span class="at">plot =</span> g, <span class="at">filename =</span> <span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"LIPA_H1_Clim2.png"</span>), </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">bg =</span> <span class="st">"white"</span>, <span class="at">width =</span> <span class="dv">20</span>, <span class="at">height =</span> <span class="dv">20</span>, <span class="at">dpi =</span> <span class="dv">1000</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"LIPA_H1_Clim2.png"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-LIPA-Clim2" class="quarto-figure quarto-figure-center quarto-float anchored" width="3200" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-LIPA-Clim2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figs/LIPA_H1_Clim2.png" id="fig-LIPA-Clim2" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" width="3200">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-LIPA-Clim2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>LIPA associated to regional climate highlighted <strong>positive signals</strong> for <em>Sapotaceae</em> and for the genera <em>Eschweilera</em>, <em>Lecythis</em>, <em>Tovomita</em>, <em>Rinorea</em>, <em>Goupia</em>, <em>Eperua</em>, and <em>Protium</em> <a href="#fig-LIPA-Clim2" class="quarto-xref">Figure&nbsp;2</a>.</p>
+</section>
+<section id="geomophological-landscapes" class="level3">
+<h3 class="anchored" data-anchor-id="geomophological-landscapes">Geomophological landscapes</h3>
+<p>We then repeat the same LIPA-based localisation for geomorphological subtypes that exhibit significant phylogenetic signal. Because geomorphological subtypes represent mesoscale hydro-edaphic contexts, clade-level clustering can be interpreted as lineage-specific habitat affinities associated with soil development, drainage constraints, and related functional strategies.</p>
+<section id="complex-hilly" class="level4">
+<h4 class="anchored" data-anchor-id="complex-hilly">Complex hilly</h4>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">file.exists</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"LIPA_H1_GeomSub7.png"</span>))) {</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    g <span class="ot">&lt;-</span> <span class="fu">plot_LIPA</span>(lipa_beta, phylodata, <span class="st">"GeomSub7"</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggsave</span>(</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot =</span> g, <span class="at">filename =</span> <span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"LIPA_H1_GeomSub7.png"</span>),</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">bg =</span> <span class="st">"white"</span>, <span class="at">width =</span> <span class="dv">20</span>, <span class="at">height =</span> <span class="dv">20</span>, <span class="at">dpi =</span> <span class="dv">1000</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"LIPA_H1_GeomSub7.png"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-LIPA-GeomSub07" class="quarto-figure quarto-figure-center quarto-float anchored" width="3200" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-LIPA-GeomSub07-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figs/LIPA_H1_GeomSub7.png" id="fig-LIPA-GeomSub07" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" width="3200">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-LIPA-GeomSub07-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>IPA associated to “<span class="math inline">\(GeomSub_{[7]}\)</span> Complex hilly” geomorphological landscapes revealed <strong>positive signals</strong> located in <em>Eschweilera</em> and <em>Lecythis</em> <a href="#fig-LIPA-GeomSub07" class="quarto-xref">Figure&nbsp;3</a>.</p>
+</section>
+<section id="high-hills" class="level4">
+<h4 class="anchored" data-anchor-id="high-hills">high hills</h4>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">file.exists</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"LIPA_H1_GeomSub12.png"</span>))) {</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    g <span class="ot">&lt;-</span> <span class="fu">plot_LIPA</span>(lipa_beta, phylodata, <span class="st">"GeomSub12"</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggsave</span>(</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot =</span> g, <span class="at">filename =</span> <span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"LIPA_H1_GeomSub12.png"</span>),</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">bg =</span> <span class="st">"white"</span>, <span class="at">width =</span> <span class="dv">20</span>, <span class="at">height =</span> <span class="dv">20</span>, <span class="at">dpi =</span> <span class="dv">1000</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"LIPA_H1_GeomSub12.png"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-LIPA-GeomSub12" class="quarto-figure quarto-figure-center quarto-float anchored" width="3200" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-LIPA-GeomSub12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figs/LIPA_H1_GeomSub12.png" id="fig-LIPA-GeomSub12" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" width="3200">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-LIPA-GeomSub12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>LIPA associated to “<span class="math inline">\(GeomSub_{[12]}\)</span> high hills” geomorphological landscapes revealed <strong>positive signals</strong> located in <em>Eschweilera</em>, <em>Lecythis</em> and <em>Licania</em> <a href="#fig-LIPA-GeomSub12" class="quarto-xref">Figure&nbsp;4</a>.</p>
+</section>
+</section>
+<section id="local-topography-1" class="level3">
+<h3 class="anchored" data-anchor-id="local-topography-1">Local topography</h3>
+<p>Finally, we assess whether local topographic preferences (SWI coefficient) are phylogenetically clustered or dispersed. Because SWI captures fine-scale variation in drainage and waterlogging expose, local dispersion within genera would be consistent with repeated ecological divergence among close relatives along local topographic gradients.</p>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">file.exists</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"LIPA_H1_SWI.png"</span>))) {</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    g <span class="ot">&lt;-</span> <span class="fu">plot_LIPA</span>(lipa_beta, phylodata, <span class="st">"logSWI"</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggsave</span>(</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot =</span> g, <span class="at">filename =</span> <span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"LIPA_H1_SWI.png"</span>),</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">bg =</span> <span class="st">"white"</span>, <span class="at">width =</span> <span class="dv">20</span>, <span class="at">height =</span> <span class="dv">20</span>, <span class="at">dpi =</span> <span class="dv">1000</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"LIPA_H1_SWI.png"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-LIPA-SWI" class="quarto-figure quarto-figure-center quarto-float anchored" width="3200" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-LIPA-SWI-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figs/LIPA_H1_SWI.png" id="fig-LIPA-SWI" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" width="3200">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-LIPA-SWI-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>LIPA associated to local topography identified <strong>positive signals</strong> in <em>Sapotaceae</em> and in the genera <em>Eschweilera</em>, <em>Inga</em>, <em>Vismia</em>, and <em>Carapa</em>, and <strong>negative signals</strong> in <em>Eschweilera</em>, <em>Pouteria</em>, <em>Symphonia</em>, and <em>Zygia</em> <a href="#fig-LIPA-SWI" class="quarto-xref">Figure&nbsp;5</a>.</p>
+</section>
+</section>
+<section id="within-genus-specialisation-along-swi-gradient" class="level2">
+<h2 class="anchored" data-anchor-id="within-genus-specialisation-along-swi-gradient">Within-genus specialisation along SWI gradient</h2>
+<p>Global phylogenetic signal can coexist with recent divergence within genera. To characterise potential evolutionary differentiation, we centre each species’ SWI coefficient relative to its genus mean. This highlights congeneric species that consistently deviate from their genus-average position along the SWI gradient, which is interpreted here as within-genus specialisation.</p>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">file.exists</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"div_intragenus_H1.png"</span>))){</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    g <span class="ot">&lt;-</span> vroom<span class="sc">::</span><span class="fu">vroom</span>(<span class="fu">here_rel</span>(<span class="st">"results"</span>, <span class="st">"models"</span>, <span class="st">"H1"</span>, <span class="st">"beta_fitH1.tsv.gz"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(parameter <span class="sc">==</span> <span class="st">"logSWI"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">specieslong =</span> <span class="fu">paste</span>(genus,species))<span class="sc">|&gt;</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(genus) <span class="sc">|&gt;</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">reframe</span>(specieslong, species, <span class="at">TWI_mean_genus =</span> (m <span class="sc">-</span> <span class="fu">mean</span>(m)), </span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">l =</span> (l <span class="sc">-</span> <span class="fu">mean</span>(m)), <span class="at">h =</span> (h <span class="sc">-</span> <span class="fu">mean</span>(m)), <span class="at">ll =</span> (ll <span class="sc">-</span> <span class="fu">mean</span>(m)), <span class="at">hh =</span> (hh <span class="sc">-</span> <span class="fu">mean</span>(m))) <span class="sc">|&gt;</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>( TWI_mean_genus <span class="sc">!=</span> <span class="dv">0</span>) <span class="sc">|&gt;</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">association =</span> <span class="st">"neutral"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">association =</span> <span class="fu">ifelse</span>(l <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> h <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="st">"80% positive"</span>, association)) <span class="sc">|&gt;</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">association =</span> <span class="fu">ifelse</span>(l <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> h <span class="sc">&lt;</span> <span class="dv">0</span>, <span class="st">"80% negative"</span>, association)) <span class="sc">|&gt;</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">association =</span> <span class="fu">ifelse</span>(ll <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> hh <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="st">"95% positive"</span>, association)) <span class="sc">|&gt;</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">association =</span> <span class="fu">ifelse</span>(ll <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> hh <span class="sc">&lt;</span> <span class="dv">0</span>, <span class="st">"95% negative"</span>, association)) <span class="sc">|&gt;</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(species, TWI_mean_genus, mean), <span class="at">xend =</span> <span class="fu">reorder</span>(species, TWI_mean_genus, mean), <span class="at">color =</span> association, <span class="at">fill =</span> association)) <span class="sc">+</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y =</span> TWI_mean_genus), <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ylab</span>(<span class="fu">expression</span>(beta[SWI] <span class="sc">-</span> beta[SWI[genus]] )) <span class="sc">+</span></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">y =</span> ll, <span class="at">yend =</span> hh),</span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>        <span class="at">linewidth =</span> <span class="dv">1</span>, <span class="at">show.legend =</span> F, <span class="at">alpha =</span> <span class="fl">0.5</span></span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">y =</span> l, <span class="at">yend =</span> h), <span class="at">linewidth =</span> <span class="dv">2</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"95% positive"</span> <span class="ot">=</span> <span class="st">"darkblue"</span>, <span class="st">"80% positive"</span> <span class="ot">=</span> <span class="st">"blue"</span>, <span class="st">"neutral"</span> <span class="ot">=</span> <span class="st">"grey"</span>, <span class="st">"80% negative"</span> <span class="ot">=</span> <span class="st">"red"</span>, <span class="st">"95% negative"</span> <span class="ot">=</span> <span class="st">"darkred"</span>)) <span class="sc">+</span></span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"95% positive"</span> <span class="ot">=</span> <span class="st">"darkblue"</span>, <span class="st">"80% positive"</span> <span class="ot">=</span> <span class="st">"blue"</span>, <span class="st">"neutral"</span> <span class="ot">=</span> <span class="st">"grey"</span>, <span class="st">"80% negative"</span> <span class="ot">=</span> <span class="st">"red"</span>, <span class="st">"95% negative"</span> <span class="ot">=</span> <span class="st">"darkred"</span>)) <span class="sc">+</span></span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">col =</span> <span class="st">"black"</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>) <span class="sc">+</span></span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(</span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title.y =</span> <span class="fu">element_blank</span>(), <span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"italic"</span>), <span class="at">strip.text =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"italic"</span>),</span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.position =</span> <span class="st">"bottom"</span></span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>genus, <span class="at">scales =</span> <span class="st">"free_y"</span>, <span class="at">ncol =</span> <span class="dv">6</span>) <span class="sc">+</span></span>
+<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xlab</span>(<span class="st">"Species per Genus"</span>) <span class="sc">+</span></span>
+<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggtitle</span>(<span class="st">"Beta SWI centered by Genus mean"</span>) <span class="sc">+</span></span>
+<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_public</span>()</span>
+<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggsave</span>(<span class="at">plot =</span> g, <span class="at">filename =</span> <span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>,<span class="st">"div_intragenus_H1.png"</span>), <span class="at">bg =</span> <span class="st">"white"</span>, <span class="at">width =</span><span class="dv">20</span>,<span class="at">height =</span> <span class="dv">80</span>, <span class="at">dpi =</span> <span class="dv">300</span>,<span class="at">limitsize =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a>} </span>
+<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>,<span class="st">"div_intragenus_H1.png"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-intra-genus" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-intra-genus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figs/div_intragenus_H1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="960">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-intra-genus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Phylogenetic tree of the studied specie selection among identified tree and palm species in French Guiana
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The genus-centred coefficients summarise whether species are systematically shifted toward wetter or drier microtopographic positions relative to their closest congeners. We interpret consistent positive or negative deviations (with credible intervals excluding zero) as evidence for within-genus differentiation in microtopographic affinity, which may contribute to local coexistence by reducing niche overlap among close relatives.</p>
+<p>By testing species preference differences within genera, within-genus comparison, we found that 25 species out of 105 multispecies genera, showed opposite SWI affinities to at least one congener.</p>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../notebook/results-model.html" class="pagination-link" aria-label="Results JSDM">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Results JSDM</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../notebook/results-com.html" class="pagination-link" aria-label="Community analysis">
+        <span class="nav-page-text">Community analysis</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb10" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Phylogenetic analysis"</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="in">```{r libraries-data, warning=FALSE, message=FALSE, include=FALSE}</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="in">library(tidyverse)</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="in">library(U.PhyloMaker)</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="in">library(gt)</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="in">library(gtExtras)</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="in">library(patchwork)</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a><span class="in">here_rel &lt;- function(...) {</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a><span class="in">  fs::path_rel(here::here(...))</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a><span class="in">source(here_rel("R", "funs_data.R"))</span></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a><span class="in">source(here_rel("R", "funs_graphics.R"))</span></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a><span class="in">source(here_rel("R", "funs_plot_tables.R"))</span></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a><span class="in">theme_set(theme_public())</span></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a><span class="fu"># Overview</span></span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>This section evaluates whether species’ environmental preferences inferred from the JSDM are phylogenetically structured. We first quantify global phylogenetic signal in each species-level coefficient using Pagel’s λ, then characterise how this signal varies across phylogenetic distances using phylogenetic correlograms. Finally, we use Local Indicators of Phylogenetic Association (LIPA) to identify clades in which closely related species show unusually similar (or unusually dissimilar) preferences.</span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a>To relate model outputs to evolutionary history, we combine two data sources: (i) posterior summaries of species-specific environmental coefficients (regional climate, geomorphological subtypes, and SWI), and (ii) a backbone seed-plant phylogeny. The workflow below harmonises taxonomy between the French Guiana checklist and the megatree, constructs a phylogeny for the analysed species, and matches each tip to the corresponding coefficient values.</span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a><span class="in">```{r PhyloSignal}</span></span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a><span class="in">Species_list_path &lt;- here_rel("data", "inventory_data", "Species_list.csv")</span></span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a><span class="in">Summary_beta &lt;- vroom::vroom(here_rel("results", "models", "H1", "beta_fitH1.tsv.gz")) |&gt;</span></span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a><span class="in">    filter(Scale %in% c("Regional", "Landscape", "Local")) |&gt;</span></span>
+<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a><span class="in">    mutate(</span></span>
+<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a><span class="in">        # significance at 80% CI</span></span>
+<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a><span class="in">        sig80 = (l &gt; 0 &amp; h &gt; 0) | (l &lt; 0 &amp; h &lt; 0),</span></span>
+<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a><span class="in">        sign = case_when(</span></span>
+<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a><span class="in">            sig80 &amp; m &gt; 0 ~ "positive",</span></span>
+<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a><span class="in">            sig80 &amp; m &lt; 0 ~ "negative",</span></span>
+<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a><span class="in">            TRUE ~ "ns"</span></span>
+<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a><span class="in">        )</span></span>
+<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a><span class="in">    ) |&gt;</span></span>
+<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a><span class="in">    mutate(species = paste(genus, species)) |&gt;</span></span>
+<span id="cb10-44"><a href="#cb10-44" aria-hidden="true" tabindex="-1"></a><span class="in">    select(species, m, parameter) |&gt;</span></span>
+<span id="cb10-45"><a href="#cb10-45" aria-hidden="true" tabindex="-1"></a><span class="in">    spread(parameter, m)</span></span>
+<span id="cb10-46"><a href="#cb10-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-47"><a href="#cb10-47" aria-hidden="true" tabindex="-1"></a><span class="in">Species_list &lt;- read_csv2(Species_list_path) |&gt;</span></span>
+<span id="cb10-48"><a href="#cb10-48" aria-hidden="true" tabindex="-1"></a><span class="in">    rename(SpEpithet = specie, species = taxonomic_name) |&gt;</span></span>
+<span id="cb10-49"><a href="#cb10-49" aria-hidden="true" tabindex="-1"></a><span class="in">    select(species, genus, family, selected) |&gt;</span></span>
+<span id="cb10-50"><a href="#cb10-50" aria-hidden="true" tabindex="-1"></a><span class="in">    filter(species %in% Summary_beta$species, !duplicated(species))</span></span>
+<span id="cb10-51"><a href="#cb10-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-52"><a href="#cb10-52" aria-hidden="true" tabindex="-1"></a><span class="in">if (file.exists(here_rel("data", "inventory_data", "tree_beta.rds"))) {</span></span>
+<span id="cb10-53"><a href="#cb10-53" aria-hidden="true" tabindex="-1"></a><span class="in">    tree_beta &lt;- readRDS(here_rel("data", "inventory_data", "tree_beta.rds"))</span></span>
+<span id="cb10-54"><a href="#cb10-54" aria-hidden="true" tabindex="-1"></a><span class="in">} else {</span></span>
+<span id="cb10-55"><a href="#cb10-55" aria-hidden="true" tabindex="-1"></a><span class="in">    megatree &lt;- read.tree("https://github.com/megatrees/plant_20221117/raw/refs/heads/main/plant_megatree.tre")</span></span>
+<span id="cb10-56"><a href="#cb10-56" aria-hidden="true" tabindex="-1"></a><span class="in">    gen.list &lt;- read.csv("https://github.com/megatrees/plant_20221117/raw/refs/heads/main/plant_genus_list.csv", sep = ",")</span></span>
+<span id="cb10-57"><a href="#cb10-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-58"><a href="#cb10-58" aria-hidden="true" tabindex="-1"></a><span class="in">    # Correction for modified genus between megatree / species list (Molino et al. 2022).</span></span>
+<span id="cb10-59"><a href="#cb10-59" aria-hidden="true" tabindex="-1"></a><span class="in">    splist_cor &lt;- Species_list</span></span>
+<span id="cb10-60"><a href="#cb10-60" aria-hidden="true" tabindex="-1"></a><span class="in">    splist_cor$genus &lt;- gsub("Marlimorimia", "Inga", splist_cor$genus)</span></span>
+<span id="cb10-61"><a href="#cb10-61" aria-hidden="true" tabindex="-1"></a><span class="in">    splist_cor$species &lt;- gsub("Marlimorimia", "Inga", splist_cor$species)</span></span>
+<span id="cb10-62"><a href="#cb10-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-63"><a href="#cb10-63" aria-hidden="true" tabindex="-1"></a><span class="in">    splist_cor$genus &lt;- gsub("Robrichia", "Enterolobium", splist_cor$genus)</span></span>
+<span id="cb10-64"><a href="#cb10-64" aria-hidden="true" tabindex="-1"></a><span class="in">    splist_cor$species &lt;- gsub("Robrichia", "Enterolobium", splist_cor$species)</span></span>
+<span id="cb10-65"><a href="#cb10-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-66"><a href="#cb10-66" aria-hidden="true" tabindex="-1"></a><span class="in">    splist_cor$genus &lt;- gsub("Gwilymia", "Entada", splist_cor$genus)</span></span>
+<span id="cb10-67"><a href="#cb10-67" aria-hidden="true" tabindex="-1"></a><span class="in">    splist_cor$species &lt;- gsub("Gwilymia", "Entada", splist_cor$species)</span></span>
+<span id="cb10-68"><a href="#cb10-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-69"><a href="#cb10-69" aria-hidden="true" tabindex="-1"></a><span class="in">    tree_beta &lt;- phylo.maker(splist_cor, megatree, gen.list, nodes.type = 1, scenario = 3)</span></span>
+<span id="cb10-70"><a href="#cb10-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-71"><a href="#cb10-71" aria-hidden="true" tabindex="-1"></a><span class="in">    tree_beta$sp.list$genus &lt;- gsub("Entada", "Gwilymia", tree_beta$sp.list$genus)</span></span>
+<span id="cb10-72"><a href="#cb10-72" aria-hidden="true" tabindex="-1"></a><span class="in">    tree_beta$sp.list$species &lt;- gsub("Entada", "Gwilymia", tree_beta$sp.list$species)</span></span>
+<span id="cb10-73"><a href="#cb10-73" aria-hidden="true" tabindex="-1"></a><span class="in">    tree_beta$phylo$tip.lab &lt;- gsub("Entada", "Gwilymia", tree_beta$phylo$tip.lab)</span></span>
+<span id="cb10-74"><a href="#cb10-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-75"><a href="#cb10-75" aria-hidden="true" tabindex="-1"></a><span class="in">    tree_beta$sp.list$genus &lt;- gsub("Enterolobium", "Robrichia", tree_beta$sp.list$genus)</span></span>
+<span id="cb10-76"><a href="#cb10-76" aria-hidden="true" tabindex="-1"></a><span class="in">    tree_beta$sp.list$species &lt;- gsub("Enterolobium", "Robrichia", tree_beta$sp.list$species)</span></span>
+<span id="cb10-77"><a href="#cb10-77" aria-hidden="true" tabindex="-1"></a><span class="in">    tree_beta$phylo$tip.lab &lt;- gsub("Enterolobium", "Robrichia", tree_beta$phylo$tip.lab)</span></span>
+<span id="cb10-78"><a href="#cb10-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-79"><a href="#cb10-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-80"><a href="#cb10-80" aria-hidden="true" tabindex="-1"></a><span class="in">    tree_beta$sp.list$species[which(tree_beta$sp.list$species %in% splist_cor$species[which(Species_list$genus == "Marlimorimia")])] &lt;- Species_list$species[which(Species_list$genus == "Marlimorimia")]</span></span>
+<span id="cb10-81"><a href="#cb10-81" aria-hidden="true" tabindex="-1"></a><span class="in">    tree_beta$sp.list$genus[which(tree_beta$sp.list$species %in% splist_cor$species[which(Species_list$genus == "Marlimorimia")])] &lt;- "Marlimorimia"</span></span>
+<span id="cb10-82"><a href="#cb10-82" aria-hidden="true" tabindex="-1"></a><span class="in">    tree_beta$phylo$tip.lab[which(tree_beta$phylo$tip.lab %in% gsub(" ", "_", splist_cor$species[which(Species_list$genus == "Marlimorimia")]))] &lt;- Species_list$species[which(Species_list$genus == "Marlimorimia")]</span></span>
+<span id="cb10-83"><a href="#cb10-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-84"><a href="#cb10-84" aria-hidden="true" tabindex="-1"></a><span class="in">    tree_beta$phylo$tip.label &lt;- tree_beta$phylo$tip.lab</span></span>
+<span id="cb10-85"><a href="#cb10-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-86"><a href="#cb10-86" aria-hidden="true" tabindex="-1"></a><span class="in">    saveRDS(tree_beta, here_rel("data", "inventory_data", "tree_beta.rds"))</span></span>
+<span id="cb10-87"><a href="#cb10-87" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb10-88"><a href="#cb10-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-89"><a href="#cb10-89" aria-hidden="true" tabindex="-1"></a><span class="in">tree_beta$phylo$tip.lab &lt;- gsub("_", " ", tree_beta$phylo$tip.lab)</span></span>
+<span id="cb10-90"><a href="#cb10-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-91"><a href="#cb10-91" aria-hidden="true" tabindex="-1"></a><span class="in">if (file.exists(here_rel("results", "models", "H1", "phylodata_H1.rds")) &amp;</span></span>
+<span id="cb10-92"><a href="#cb10-92" aria-hidden="true" tabindex="-1"></a><span class="in">    file.exists(here_rel("results", "models", "H1", "crlgmulti_H1.rds"))) {</span></span>
+<span id="cb10-93"><a href="#cb10-93" aria-hidden="true" tabindex="-1"></a><span class="in">    phylodata &lt;- readRDS(here_rel("results", "models", "H1", "phylodata_H1.rds"))</span></span>
+<span id="cb10-94"><a href="#cb10-94" aria-hidden="true" tabindex="-1"></a><span class="in">    crlgmulti &lt;- readRDS(here_rel("results", "models", "H1", "crlgmulti_H1.rds"))</span></span>
+<span id="cb10-95"><a href="#cb10-95" aria-hidden="true" tabindex="-1"></a><span class="in">} else {</span></span>
+<span id="cb10-96"><a href="#cb10-96" aria-hidden="true" tabindex="-1"></a><span class="in">    phylodata &lt;- phylobase::phylo4d(tree_beta$phylo, data.frame(species = gsub("_", " ", tree_beta$phylo$tip.lab)) |&gt; left_join(Summary_beta))</span></span>
+<span id="cb10-97"><a href="#cb10-97" aria-hidden="true" tabindex="-1"></a><span class="in">    phylodata@data$species &lt;- NULL</span></span>
+<span id="cb10-98"><a href="#cb10-98" aria-hidden="true" tabindex="-1"></a><span class="in">    saveRDS(phylodata, here_rel("results", "models", "H1", "phylodata_H1.rds"))</span></span>
+<span id="cb10-99"><a href="#cb10-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-100"><a href="#cb10-100" aria-hidden="true" tabindex="-1"></a><span class="in">    crlgmulti &lt;- parallel::mclapply(colnames(phylodata@data),</span></span>
+<span id="cb10-101"><a href="#cb10-101" aria-hidden="true" tabindex="-1"></a><span class="in">        \(i){</span></span>
+<span id="cb10-102"><a href="#cb10-102" aria-hidden="true" tabindex="-1"></a><span class="in">            phylosignal::phyloCorrelogram(phylodata, trait = i, ci.bs = 1000)</span></span>
+<span id="cb10-103"><a href="#cb10-103" aria-hidden="true" tabindex="-1"></a><span class="in">        },</span></span>
+<span id="cb10-104"><a href="#cb10-104" aria-hidden="true" tabindex="-1"></a><span class="in">        mc.cores = 10</span></span>
+<span id="cb10-105"><a href="#cb10-105" aria-hidden="true" tabindex="-1"></a><span class="in">    )</span></span>
+<span id="cb10-106"><a href="#cb10-106" aria-hidden="true" tabindex="-1"></a><span class="in">    setNames(crlgmulti, colnames(phylodata@data)) -&gt; crlgmulti</span></span>
+<span id="cb10-107"><a href="#cb10-107" aria-hidden="true" tabindex="-1"></a><span class="in">    saveRDS(crlgmulti, here_rel("results", "models", "H1", "crlgmulti_H1.rds"))</span></span>
+<span id="cb10-108"><a href="#cb10-108" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb10-109"><a href="#cb10-109" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-110"><a href="#cb10-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-111"><a href="#cb10-111" aria-hidden="true" tabindex="-1"></a>We constructed a phylogeny using the GBOTB megatree as a backbone and attached missing taxa using U.PhyloMaker (scenario 3). Because a small number of genera have alternative circumscriptions between the French Guiana checklist and the megatree, we applied explicit name mappings (e.g., Marlimorimia ↔ Inga) to ensure consistent tip matching. We then assembled a phylo4d object that links each species (tip) to its set of environmental preference coefficients.</span>
+<span id="cb10-112"><a href="#cb10-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-115"><a href="#cb10-115" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb10-116"><a href="#cb10-116" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tbl-phylosignal</span></span>
+<span id="cb10-117"><a href="#cb10-117" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: "Phylogenetic signal of species environmental preferences."</span></span>
+<span id="cb10-118"><a href="#cb10-118" aria-hidden="true" tabindex="-1"></a>phylosignal<span class="sc">::</span><span class="fu">phyloSignal</span>(<span class="at">p4d =</span> phylodata, <span class="at">method =</span> <span class="st">"Lambda"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb10-119"><a href="#cb10-119" aria-hidden="true" tabindex="-1"></a>    <span class="fu">lapply</span>(as.data.frame) <span class="sc">|&gt;</span></span>
+<span id="cb10-120"><a href="#cb10-120" aria-hidden="true" tabindex="-1"></a>    <span class="fu">lapply</span>(rownames_to_column, <span class="st">"parameter"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb10-121"><a href="#cb10-121" aria-hidden="true" tabindex="-1"></a>    <span class="fu">bind_rows</span>(<span class="at">.id =</span> <span class="st">"type"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb10-122"><a href="#cb10-122" aria-hidden="true" tabindex="-1"></a>    reshape2<span class="sc">::</span><span class="fu">melt</span>(<span class="fu">c</span>(<span class="st">"type"</span>, <span class="st">"parameter"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb10-123"><a href="#cb10-123" aria-hidden="true" tabindex="-1"></a>    reshape2<span class="sc">::</span><span class="fu">dcast</span>(parameter <span class="sc">+</span> variable <span class="sc">~</span> type) <span class="sc">|&gt;</span></span>
+<span id="cb10-124"><a href="#cb10-124" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">parameter =</span> <span class="fu">if_else</span>(<span class="fu">substr</span>(parameter,<span class="dv">1</span>,<span class="dv">2</span>) <span class="sc">==</span> <span class="st">"Ge"</span>, <span class="fu">paste0</span>(<span class="st">"GeomSub"</span>, <span class="fu">str_pad</span>(<span class="fu">gsub</span>(<span class="st">"GeomSub"</span>, <span class="st">""</span>, parameter),</span>
+<span id="cb10-125"><a href="#cb10-125" aria-hidden="true" tabindex="-1"></a>        <span class="at">width =</span> <span class="dv">2</span>,</span>
+<span id="cb10-126"><a href="#cb10-126" aria-hidden="true" tabindex="-1"></a>        <span class="at">side =</span> <span class="st">"left"</span>, <span class="at">pad =</span> <span class="st">"0"</span></span>
+<span id="cb10-127"><a href="#cb10-127" aria-hidden="true" tabindex="-1"></a>    )), parameter)) <span class="sc">|&gt;</span></span>
+<span id="cb10-128"><a href="#cb10-128" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">value =</span> <span class="fu">paste0</span>(<span class="fu">round</span>(stat, <span class="dv">4</span>), <span class="st">" (p="</span>, <span class="fu">round</span>(pvalue, <span class="dv">4</span>), <span class="st">")"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb10-129"><a href="#cb10-129" aria-hidden="true" tabindex="-1"></a>    reshape2<span class="sc">::</span><span class="fu">dcast</span>(parameter <span class="sc">~</span> variable) <span class="sc">|&gt;</span></span>
+<span id="cb10-130"><a href="#cb10-130" aria-hidden="true" tabindex="-1"></a>    knitr<span class="sc">::</span><span class="fu">kable</span>()</span>
+<span id="cb10-131"><a href="#cb10-131" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-132"><a href="#cb10-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-133"><a href="#cb10-133" aria-hidden="true" tabindex="-1"></a> We quantify phylogenetic signal in each coefficient using Pagel’s λ. This statistic measures the extent to which trait variation across species covaries with shared evolutionary history under a Brownian-motion reference model. Values near 0 indicate weak phylogenetic structure (preferences vary independently of phylogeny), whereas higher values indicate that related species tend to share similar preferences.</span>
+<span id="cb10-134"><a href="#cb10-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-135"><a href="#cb10-135" aria-hidden="true" tabindex="-1"></a><span class="in">```{r warning=FALSE, message=FALSE}</span></span>
+<span id="cb10-136"><a href="#cb10-136" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: fig-crlg</span></span>
+<span id="cb10-137"><a href="#cb10-137" aria-hidden="true" tabindex="-1"></a><span class="in">#| fig-cap: "Phylogenetic correlograms for species‐level environmental coefficients with significant phylogenetic signal detected (Clim2, SWI, complex hilly landscape and high hills landscape)"</span></span>
+<span id="cb10-138"><a href="#cb10-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-139"><a href="#cb10-139" aria-hidden="true" tabindex="-1"></a><span class="in">(plot_crlg(crlgmulti, "Clim2") | plot_crlg(crlgmulti, "logSWI")) /</span></span>
+<span id="cb10-140"><a href="#cb10-140" aria-hidden="true" tabindex="-1"></a><span class="in">    (plot_crlg(crlgmulti, "GeomSub7") | plot_crlg(crlgmulti, "GeomSub12")) +</span></span>
+<span id="cb10-141"><a href="#cb10-141" aria-hidden="true" tabindex="-1"></a><span class="in">    plot_layout(guides = "collect") +</span></span>
+<span id="cb10-142"><a href="#cb10-142" aria-hidden="true" tabindex="-1"></a><span class="in">    theme_public()</span></span>
+<span id="cb10-143"><a href="#cb10-143" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-144"><a href="#cb10-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-145"><a href="#cb10-145" aria-hidden="true" tabindex="-1"></a>Global λ values summarise phylogenetic signal across the entire tree, but they do not indicate at which phylogenetic depths similarity is strongest. To address this, we compute phylogenetic correlograms, which quantify trait autocorrelation as a function of patristic (branch-length) distance. This allows us to distinguish short-range conservatism among close relatives from deeper, clade-level patterns and potential long-distance opposition.</span>
+<span id="cb10-146"><a href="#cb10-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-147"><a href="#cb10-147" aria-hidden="true" tabindex="-1"></a><span class="fu">## Regional climate</span></span>
+<span id="cb10-148"><a href="#cb10-148" aria-hidden="true" tabindex="-1"></a>A moderate significant phylogenetic signal was detected for $Clim_2$ (Pagel’s λ = 0.26), with a **positive phylogenetic autocorrelation** at **short patristic distances**, meaning that phylogenetically close species are more likely to prefer the same climatic condition defined by $Clim_2$, and a **negative** association at **long distances** @fig-crlg. </span>
+<span id="cb10-149"><a href="#cb10-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-150"><a href="#cb10-150" aria-hidden="true" tabindex="-1"></a><span class="fu">## Geomorphological landscapes</span></span>
+<span id="cb10-151"><a href="#cb10-151" aria-hidden="true" tabindex="-1"></a>Phylogenetic signals were significant for “$GeomSub_{<span class="co">[</span><span class="ot">12</span><span class="co">]</span>}$ high hills” (λ = 0.41, p &lt; 0.001) and “$GeomSub_{<span class="co">[</span><span class="ot">7</span><span class="co">]</span>}$ complex hilly area” (λ = 0.17, p = 0.001). Both exhibited **positive autocorrelation** at **short patristic distances** @fig-crlg. </span>
+<span id="cb10-152"><a href="#cb10-152" aria-hidden="true" tabindex="-1"></a>The pattern was **negative** at **long patristic distance** for “$GeomSub_{[7]}$ complex hilly areas” and **non-significant** for “$GeomSub_{<span class="co">[</span><span class="ot">12</span><span class="co">]</span>}$ high hills” @fig-crlg. </span>
+<span id="cb10-153"><a href="#cb10-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-154"><a href="#cb10-154" aria-hidden="true" tabindex="-1"></a><span class="fu">## Local topography </span></span>
+<span id="cb10-155"><a href="#cb10-155" aria-hidden="true" tabindex="-1"></a>A significant phylogenetic signal was detected for $SWI$ (λ = 0.16, p &lt; 0.001) with a **positive** phylogenetic autocorrelation at **short patristic distances** and **non-significant** at **long patristic distances**.</span>
+<span id="cb10-156"><a href="#cb10-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-157"><a href="#cb10-157" aria-hidden="true" tabindex="-1"></a><span class="fu"># Local phylogenetic association indicators (LIPA)</span></span>
+<span id="cb10-158"><a href="#cb10-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-159"><a href="#cb10-159" aria-hidden="true" tabindex="-1"></a><span class="in">```{r warning=FALSE, message=FALSE}</span></span>
+<span id="cb10-160"><a href="#cb10-160" aria-hidden="true" tabindex="-1"></a><span class="in">if (file.exists(here_rel("results", "models", "H1", "lipa_beta_H1.rds"))) {</span></span>
+<span id="cb10-161"><a href="#cb10-161" aria-hidden="true" tabindex="-1"></a><span class="in">    lipa_beta &lt;- readRDS(here_rel("results", "models", "H1", "lipa_beta_H1.rds"))</span></span>
+<span id="cb10-162"><a href="#cb10-162" aria-hidden="true" tabindex="-1"></a><span class="in">} else {</span></span>
+<span id="cb10-163"><a href="#cb10-163" aria-hidden="true" tabindex="-1"></a><span class="in">    lipa_beta &lt;- phylosignal::lipaMoran(phylodata, alternative = "two-sided", reps = 9999, prox.phylo = "patristic")</span></span>
+<span id="cb10-164"><a href="#cb10-164" aria-hidden="true" tabindex="-1"></a><span class="in">    saveRDS(lipa_beta, here_rel("results", "models", "H1", "lipa_beta_H1.rds"))</span></span>
+<span id="cb10-165"><a href="#cb10-165" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb10-166"><a href="#cb10-166" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-167"><a href="#cb10-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-168"><a href="#cb10-168" aria-hidden="true" tabindex="-1"></a>While correlograms describe average autocorrelation patterns, they do not identify where in the phylogeny the signal is concentrated. We therefore compute Local Indicators of Phylogenetic Association (LIPA), which provide a tip- and clade-specific measure of whether a species’ coefficient value is unusually similar to (positive LIPA) or unusually different from (negative LIPA) those of its phylogenetic neighbours, relative to a permutation-based null model.</span>
+<span id="cb10-169"><a href="#cb10-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-170"><a href="#cb10-170" aria-hidden="true" tabindex="-1"></a>LIPA outputs are interpreted as local departures from the global phylogenetic expectation. Positive values highlight phylogenetic clustering of preferences (local conservatism), whereas negative values highlight local overdispersion (close relatives differing more than expected). We visualise these patterns on the phylogeny for the coefficients that exhibited significant global signal.</span>
+<span id="cb10-171"><a href="#cb10-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-172"><a href="#cb10-172" aria-hidden="true" tabindex="-1"></a><span class="fu">## Regional climate</span></span>
+<span id="cb10-173"><a href="#cb10-173" aria-hidden="true" tabindex="-1"></a>We focus on the regional climate Clim2, which showed significant phylogenetic structure. The figure below maps LIPA values onto the phylogeny to identify which clades contribute most strongly to the detected signal.</span>
+<span id="cb10-174"><a href="#cb10-174" aria-hidden="true" tabindex="-1"></a><span class="in">```{r warning=FALSE, message=FALSE}</span></span>
+<span id="cb10-175"><a href="#cb10-175" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: fig-LIPA-Clim2</span></span>
+<span id="cb10-176"><a href="#cb10-176" aria-hidden="true" tabindex="-1"></a><span class="in">if (!file.exists(here_rel("notebook", "figs", "LIPA_H1_Clim2.png"))) {</span></span>
+<span id="cb10-177"><a href="#cb10-177" aria-hidden="true" tabindex="-1"></a><span class="in">    g &lt;- plot_LIPA(lipa_beta, phylodata, "Clim2")</span></span>
+<span id="cb10-178"><a href="#cb10-178" aria-hidden="true" tabindex="-1"></a><span class="in">    ggsave(plot = g, filename = here_rel("notebook", "figs", "LIPA_H1_Clim2.png"), </span></span>
+<span id="cb10-179"><a href="#cb10-179" aria-hidden="true" tabindex="-1"></a><span class="in">    bg = "white", width = 20, height = 20, dpi = 1000)</span></span>
+<span id="cb10-180"><a href="#cb10-180" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb10-181"><a href="#cb10-181" aria-hidden="true" tabindex="-1"></a><span class="in">knitr::include_graphics(here_rel("notebook", "figs", "LIPA_H1_Clim2.png"))</span></span>
+<span id="cb10-182"><a href="#cb10-182" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-183"><a href="#cb10-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-184"><a href="#cb10-184" aria-hidden="true" tabindex="-1"></a>LIPA associated to regional climate highlighted **positive signals** for *Sapotaceae* and for the genera *Eschweilera*, *Lecythis*, *Tovomita*, *Rinorea*, *Goupia*, *Eperua*, and *Protium* @fig-LIPA-Clim2.</span>
+<span id="cb10-185"><a href="#cb10-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-186"><a href="#cb10-186" aria-hidden="true" tabindex="-1"></a><span class="fu">## Geomophological landscapes</span></span>
+<span id="cb10-187"><a href="#cb10-187" aria-hidden="true" tabindex="-1"></a>We then repeat the same LIPA-based localisation for geomorphological subtypes that exhibit significant phylogenetic signal. Because geomorphological subtypes represent mesoscale hydro-edaphic contexts, clade-level clustering can be interpreted as lineage-specific habitat affinities associated with soil development, drainage constraints, and related functional strategies.</span>
+<span id="cb10-188"><a href="#cb10-188" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-189"><a href="#cb10-189" aria-hidden="true" tabindex="-1"></a><span class="fu">### Complex hilly</span></span>
+<span id="cb10-190"><a href="#cb10-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-191"><a href="#cb10-191" aria-hidden="true" tabindex="-1"></a><span class="in">```{r warning=FALSE, message=FALSE}</span></span>
+<span id="cb10-192"><a href="#cb10-192" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: fig-LIPA-GeomSub07</span></span>
+<span id="cb10-193"><a href="#cb10-193" aria-hidden="true" tabindex="-1"></a><span class="in">if (!file.exists(here_rel("notebook", "figs", "LIPA_H1_GeomSub7.png"))) {</span></span>
+<span id="cb10-194"><a href="#cb10-194" aria-hidden="true" tabindex="-1"></a><span class="in">    g &lt;- plot_LIPA(lipa_beta, phylodata, "GeomSub7")</span></span>
+<span id="cb10-195"><a href="#cb10-195" aria-hidden="true" tabindex="-1"></a><span class="in">    ggsave(</span></span>
+<span id="cb10-196"><a href="#cb10-196" aria-hidden="true" tabindex="-1"></a><span class="in">        plot = g, filename = here_rel("notebook", "figs", "LIPA_H1_GeomSub7.png"),</span></span>
+<span id="cb10-197"><a href="#cb10-197" aria-hidden="true" tabindex="-1"></a><span class="in">        bg = "white", width = 20, height = 20, dpi = 1000</span></span>
+<span id="cb10-198"><a href="#cb10-198" aria-hidden="true" tabindex="-1"></a><span class="in">    )</span></span>
+<span id="cb10-199"><a href="#cb10-199" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb10-200"><a href="#cb10-200" aria-hidden="true" tabindex="-1"></a><span class="in">knitr::include_graphics(here_rel("notebook", "figs", "LIPA_H1_GeomSub7.png"))</span></span>
+<span id="cb10-201"><a href="#cb10-201" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-202"><a href="#cb10-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-203"><a href="#cb10-203" aria-hidden="true" tabindex="-1"></a>IPA associated to “$GeomSub_{<span class="co">[</span><span class="ot">7</span><span class="co">]</span>}$ Complex hilly” geomorphological landscapes revealed **positive signals** located in *Eschweilera* and *Lecythis* @fig-LIPA-GeomSub07.</span>
+<span id="cb10-204"><a href="#cb10-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-205"><a href="#cb10-205" aria-hidden="true" tabindex="-1"></a><span class="fu">### high hills</span></span>
+<span id="cb10-206"><a href="#cb10-206" aria-hidden="true" tabindex="-1"></a><span class="in">```{r warning=FALSE, message=FALSE}</span></span>
+<span id="cb10-207"><a href="#cb10-207" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: fig-LIPA-GeomSub12</span></span>
+<span id="cb10-208"><a href="#cb10-208" aria-hidden="true" tabindex="-1"></a><span class="in">if (!file.exists(here_rel("notebook", "figs", "LIPA_H1_GeomSub12.png"))) {</span></span>
+<span id="cb10-209"><a href="#cb10-209" aria-hidden="true" tabindex="-1"></a><span class="in">    g &lt;- plot_LIPA(lipa_beta, phylodata, "GeomSub12")</span></span>
+<span id="cb10-210"><a href="#cb10-210" aria-hidden="true" tabindex="-1"></a><span class="in">    ggsave(</span></span>
+<span id="cb10-211"><a href="#cb10-211" aria-hidden="true" tabindex="-1"></a><span class="in">        plot = g, filename = here_rel("notebook", "figs", "LIPA_H1_GeomSub12.png"),</span></span>
+<span id="cb10-212"><a href="#cb10-212" aria-hidden="true" tabindex="-1"></a><span class="in">        bg = "white", width = 20, height = 20, dpi = 1000</span></span>
+<span id="cb10-213"><a href="#cb10-213" aria-hidden="true" tabindex="-1"></a><span class="in">    )</span></span>
+<span id="cb10-214"><a href="#cb10-214" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb10-215"><a href="#cb10-215" aria-hidden="true" tabindex="-1"></a><span class="in">knitr::include_graphics(here_rel("notebook", "figs", "LIPA_H1_GeomSub12.png"))</span></span>
+<span id="cb10-216"><a href="#cb10-216" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-217"><a href="#cb10-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-218"><a href="#cb10-218" aria-hidden="true" tabindex="-1"></a>LIPA associated to “$GeomSub_{<span class="co">[</span><span class="ot">12</span><span class="co">]</span>}$ high hills” geomorphological landscapes revealed **positive signals** located in *Eschweilera*, *Lecythis* and *Licania* @fig-LIPA-GeomSub12.</span>
+<span id="cb10-219"><a href="#cb10-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-220"><a href="#cb10-220" aria-hidden="true" tabindex="-1"></a><span class="fu">## Local topography</span></span>
+<span id="cb10-221"><a href="#cb10-221" aria-hidden="true" tabindex="-1"></a>Finally, we assess whether local topographic preferences (SWI coefficient) are phylogenetically clustered or dispersed. Because SWI captures fine-scale variation in drainage and waterlogging expose, local dispersion within genera would be consistent with repeated ecological divergence among close relatives along local topographic gradients.</span>
+<span id="cb10-222"><a href="#cb10-222" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-223"><a href="#cb10-223" aria-hidden="true" tabindex="-1"></a><span class="in">```{r warning=FALSE, message=FALSE}</span></span>
+<span id="cb10-224"><a href="#cb10-224" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: fig-LIPA-SWI</span></span>
+<span id="cb10-225"><a href="#cb10-225" aria-hidden="true" tabindex="-1"></a><span class="in">if (!file.exists(here_rel("notebook", "figs", "LIPA_H1_SWI.png"))) {</span></span>
+<span id="cb10-226"><a href="#cb10-226" aria-hidden="true" tabindex="-1"></a><span class="in">    g &lt;- plot_LIPA(lipa_beta, phylodata, "logSWI")</span></span>
+<span id="cb10-227"><a href="#cb10-227" aria-hidden="true" tabindex="-1"></a><span class="in">    ggsave(</span></span>
+<span id="cb10-228"><a href="#cb10-228" aria-hidden="true" tabindex="-1"></a><span class="in">        plot = g, filename = here_rel("notebook", "figs", "LIPA_H1_SWI.png"),</span></span>
+<span id="cb10-229"><a href="#cb10-229" aria-hidden="true" tabindex="-1"></a><span class="in">        bg = "white", width = 20, height = 20, dpi = 1000</span></span>
+<span id="cb10-230"><a href="#cb10-230" aria-hidden="true" tabindex="-1"></a><span class="in">    )</span></span>
+<span id="cb10-231"><a href="#cb10-231" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb10-232"><a href="#cb10-232" aria-hidden="true" tabindex="-1"></a><span class="in">knitr::include_graphics(here_rel("notebook", "figs", "LIPA_H1_SWI.png"))</span></span>
+<span id="cb10-233"><a href="#cb10-233" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-234"><a href="#cb10-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-235"><a href="#cb10-235" aria-hidden="true" tabindex="-1"></a>LIPA associated to local topography identified **positive signals** in *Sapotaceae* and in the genera *Eschweilera*, *Inga*, *Vismia*, and *Carapa*, and **negative signals** in *Eschweilera*, *Pouteria*, *Symphonia*, and *Zygia* @fig-LIPA-SWI. </span>
+<span id="cb10-236"><a href="#cb10-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-237"><a href="#cb10-237" aria-hidden="true" tabindex="-1"></a><span class="fu"># Within-genus specialisation along SWI gradient</span></span>
+<span id="cb10-238"><a href="#cb10-238" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-239"><a href="#cb10-239" aria-hidden="true" tabindex="-1"></a>Global phylogenetic signal can coexist with recent divergence within genera. To characterise potential evolutionary differentiation, we centre each species’ SWI coefficient relative to its genus mean. This highlights congeneric species that consistently deviate from their genus-average position along the SWI gradient, which is interpreted here as within-genus specialisation.</span>
+<span id="cb10-240"><a href="#cb10-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-241"><a href="#cb10-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-242"><a href="#cb10-242" aria-hidden="true" tabindex="-1"></a><span class="in">```{r warning=FALSE, message=FALSE}</span></span>
+<span id="cb10-243"><a href="#cb10-243" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: fig-intra-genus</span></span>
+<span id="cb10-244"><a href="#cb10-244" aria-hidden="true" tabindex="-1"></a><span class="in">#| fig-cap: "Phylogenetic tree of the studied specie selection among identified tree and palm species in French Guiana"</span></span>
+<span id="cb10-245"><a href="#cb10-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-246"><a href="#cb10-246" aria-hidden="true" tabindex="-1"></a><span class="in">if(!file.exists(here_rel("notebook", "figs", "div_intragenus_H1.png"))){</span></span>
+<span id="cb10-247"><a href="#cb10-247" aria-hidden="true" tabindex="-1"></a><span class="in">    g &lt;- vroom::vroom(here_rel("results", "models", "H1", "beta_fitH1.tsv.gz")) |&gt;</span></span>
+<span id="cb10-248"><a href="#cb10-248" aria-hidden="true" tabindex="-1"></a><span class="in">    filter(parameter == "logSWI") |&gt;</span></span>
+<span id="cb10-249"><a href="#cb10-249" aria-hidden="true" tabindex="-1"></a><span class="in">    mutate(specieslong = paste(genus,species))|&gt;</span></span>
+<span id="cb10-250"><a href="#cb10-250" aria-hidden="true" tabindex="-1"></a><span class="in">    group_by(genus) |&gt;</span></span>
+<span id="cb10-251"><a href="#cb10-251" aria-hidden="true" tabindex="-1"></a><span class="in">    reframe(specieslong, species, TWI_mean_genus = (m - mean(m)), </span></span>
+<span id="cb10-252"><a href="#cb10-252" aria-hidden="true" tabindex="-1"></a><span class="in">    l = (l - mean(m)), h = (h - mean(m)), ll = (ll - mean(m)), hh = (hh - mean(m))) |&gt;</span></span>
+<span id="cb10-253"><a href="#cb10-253" aria-hidden="true" tabindex="-1"></a><span class="in">    filter( TWI_mean_genus != 0) |&gt;</span></span>
+<span id="cb10-254"><a href="#cb10-254" aria-hidden="true" tabindex="-1"></a><span class="in">    mutate(association = "neutral") |&gt;</span></span>
+<span id="cb10-255"><a href="#cb10-255" aria-hidden="true" tabindex="-1"></a><span class="in">    mutate(association = ifelse(l &gt; 0 &amp; h &gt; 0, "80% positive", association)) |&gt;</span></span>
+<span id="cb10-256"><a href="#cb10-256" aria-hidden="true" tabindex="-1"></a><span class="in">    mutate(association = ifelse(l &lt; 0 &amp; h &lt; 0, "80% negative", association)) |&gt;</span></span>
+<span id="cb10-257"><a href="#cb10-257" aria-hidden="true" tabindex="-1"></a><span class="in">    mutate(association = ifelse(ll &gt; 0 &amp; hh &gt; 0, "95% positive", association)) |&gt;</span></span>
+<span id="cb10-258"><a href="#cb10-258" aria-hidden="true" tabindex="-1"></a><span class="in">    mutate(association = ifelse(ll &lt; 0 &amp; hh &lt; 0, "95% negative", association)) |&gt;</span></span>
+<span id="cb10-259"><a href="#cb10-259" aria-hidden="true" tabindex="-1"></a><span class="in">    ggplot(aes(x = reorder(species, TWI_mean_genus, mean), xend = reorder(species, TWI_mean_genus, mean), color = association, fill = association)) +</span></span>
+<span id="cb10-260"><a href="#cb10-260" aria-hidden="true" tabindex="-1"></a><span class="in">    geom_point(aes(y = TWI_mean_genus), shape = 21, size = 3, alpha = 0.5) +</span></span>
+<span id="cb10-261"><a href="#cb10-261" aria-hidden="true" tabindex="-1"></a><span class="in">    coord_flip() +</span></span>
+<span id="cb10-262"><a href="#cb10-262" aria-hidden="true" tabindex="-1"></a><span class="in">    ylab(expression(beta[SWI] - beta[SWI[genus]] )) +</span></span>
+<span id="cb10-263"><a href="#cb10-263" aria-hidden="true" tabindex="-1"></a><span class="in">    geom_segment(aes(y = ll, yend = hh),</span></span>
+<span id="cb10-264"><a href="#cb10-264" aria-hidden="true" tabindex="-1"></a><span class="in">        linewidth = 1, show.legend = F, alpha = 0.5</span></span>
+<span id="cb10-265"><a href="#cb10-265" aria-hidden="true" tabindex="-1"></a><span class="in">    ) +</span></span>
+<span id="cb10-266"><a href="#cb10-266" aria-hidden="true" tabindex="-1"></a><span class="in">    geom_segment(aes(y = l, yend = h), linewidth = 2, alpha = 0.5) +</span></span>
+<span id="cb10-267"><a href="#cb10-267" aria-hidden="true" tabindex="-1"></a><span class="in">    scale_color_manual(values = c("95% positive" = "darkblue", "80% positive" = "blue", "neutral" = "grey", "80% negative" = "red", "95% negative" = "darkred")) +</span></span>
+<span id="cb10-268"><a href="#cb10-268" aria-hidden="true" tabindex="-1"></a><span class="in">    scale_fill_manual(values = c("95% positive" = "darkblue", "80% positive" = "blue", "neutral" = "grey", "80% negative" = "red", "95% negative" = "darkred")) +</span></span>
+<span id="cb10-269"><a href="#cb10-269" aria-hidden="true" tabindex="-1"></a><span class="in">    geom_hline(yintercept = 0, col = "black", linetype = "dashed") +</span></span>
+<span id="cb10-270"><a href="#cb10-270" aria-hidden="true" tabindex="-1"></a><span class="in">    theme(</span></span>
+<span id="cb10-271"><a href="#cb10-271" aria-hidden="true" tabindex="-1"></a><span class="in">        axis.title.y = element_blank(), axis.text.y = element_text(face = "italic"), strip.text = element_text(face = "italic"),</span></span>
+<span id="cb10-272"><a href="#cb10-272" aria-hidden="true" tabindex="-1"></a><span class="in">        legend.position = "bottom"</span></span>
+<span id="cb10-273"><a href="#cb10-273" aria-hidden="true" tabindex="-1"></a><span class="in">    ) +</span></span>
+<span id="cb10-274"><a href="#cb10-274" aria-hidden="true" tabindex="-1"></a><span class="in">    facet_wrap(~genus, scales = "free_y", ncol = 6) +</span></span>
+<span id="cb10-275"><a href="#cb10-275" aria-hidden="true" tabindex="-1"></a><span class="in">    xlab("Species per Genus") +</span></span>
+<span id="cb10-276"><a href="#cb10-276" aria-hidden="true" tabindex="-1"></a><span class="in">    ggtitle("Beta SWI centered by Genus mean") +</span></span>
+<span id="cb10-277"><a href="#cb10-277" aria-hidden="true" tabindex="-1"></a><span class="in">    theme_public()</span></span>
+<span id="cb10-278"><a href="#cb10-278" aria-hidden="true" tabindex="-1"></a><span class="in">    ggsave(plot = g, filename = here_rel("notebook", "figs","div_intragenus_H1.png"), bg = "white", width =20,height = 80, dpi = 300,limitsize = FALSE)</span></span>
+<span id="cb10-279"><a href="#cb10-279" aria-hidden="true" tabindex="-1"></a><span class="in">} </span></span>
+<span id="cb10-280"><a href="#cb10-280" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-281"><a href="#cb10-281" aria-hidden="true" tabindex="-1"></a><span class="in">knitr::include_graphics(here_rel("notebook", "figs","div_intragenus_H1.png"))</span></span>
+<span id="cb10-282"><a href="#cb10-282" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-283"><a href="#cb10-283" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-284"><a href="#cb10-284" aria-hidden="true" tabindex="-1"></a>The genus-centred coefficients summarise whether species are systematically shifted toward wetter or drier microtopographic positions relative to their closest congeners. We interpret consistent positive or negative deviations (with credible intervals excluding zero) as evidence for within-genus differentiation in microtopographic affinity, which may contribute to local coexistence by reducing niche overlap among close relatives.</span>
+<span id="cb10-285"><a href="#cb10-285" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-286"><a href="#cb10-286" aria-hidden="true" tabindex="-1"></a>By testing species preference differences within genera, within-genus comparison, we found that 25 species out of 105 multispecies genera, showed opposite SWI affinities to at least one congener.</span>
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Content <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2020–2026 by Guillaume Salzet, Sylvain Schmitt, and Mélaine Aubry-Kientz<br> All content licensed under a <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license (CC BY 4.0)</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://gitlab.onf.fr/gsalzet/macrotopo_jsdm/blob/main/notebook/results-phylo.qmd" class="toc-action"><i class="bi bi-git"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a><br> <a href="https://gitlab.onf.fr/gsalzet/macrotopo_jsdm">View the source at <i class="fa-brands fa-gitlab" aria-label="gitlab"></i> ONF gitlab</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

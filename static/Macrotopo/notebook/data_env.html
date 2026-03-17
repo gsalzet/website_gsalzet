@@ -1,0 +1,1979 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.553">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Multiscale JSDM French Guiana - Environmental predictors</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../notebook/data_split.html" rel="next">
+<link href="../notebook/data_prep.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Multiscale JSDM French Guiana</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../notebook/data_prep.html" aria-current="page"> 
+<span class="menu-text">Data</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../notebook/model_fit.html"> 
+<span class="menu-text">Model</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../notebook/results-model.html"> 
+<span class="menu-text">Results</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://gitlab.onf.fr/gsalzet/macrotopo_jsdm"> <i class="bi bi-gitlab" role="img" aria-label="gitlab">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <a class="flex-grow-1 no-decor" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title">Environmental predictors</h1>
+        </a>     
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebook/data_prep.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study area and forest inventories</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebook/data_env.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Environmental predictors</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebook/data_split.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Validation and train data</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
+  <ul class="collapse">
+  <li><a href="#regional-climate" id="toc-regional-climate" class="nav-link" data-scroll-target="#regional-climate">Regional climate</a></li>
+  <li><a href="#geomorphological-landscapes" id="toc-geomorphological-landscapes" class="nav-link" data-scroll-target="#geomorphological-landscapes">Geomorphological landscapes</a></li>
+  <li><a href="#local-topography" id="toc-local-topography" class="nav-link" data-scroll-target="#local-topography">Local topography</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://gitlab.onf.fr/gsalzet/macrotopo_jsdm/blob/main/notebook/data_env.qmd" class="toc-action"><i class="bi bi-git"></i>View source</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title d-none d-lg-block">Environmental predictors</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gtExtras)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(terra)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="fu">here_rel</span>(<span class="st">"R"</span>, <span class="st">"funs_data.R"</span>))</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="fu">here_rel</span>(<span class="st">"R"</span>, <span class="st">"funs_graphics.R"</span>))</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="fu">here_rel</span>(<span class="st">"R"</span>, <span class="st">"funs_plot_tables.R"</span>))</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_set</span>(<span class="fu">theme_public</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>Environmental predictors represented three nested spatial scales: * regional climate, summarised by two continuous indices (Clim1–Clim2) derived from multivariate monthly climate patterns; * geomorphological landscapes, represented by a categorical geomorphological subtype map (nested within broader landscape types) capturing mesoscale landform-driven hydro-edaphic contrasts; * local topography, quantified by the SAGA Wetness Index (SWI) summarised within each inventory unit as a fine-scale proxy of relative soil wetness</p>
+<section id="regional-climate" class="level3">
+<h3 class="anchored" data-anchor-id="regional-climate">Regional climate</h3>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="fu">file.exists</span>(<span class="fu">here_rel</span>(<span class="st">"data"</span>,<span class="st">"climatic_data"</span>, <span class="st">"ERA5Land_RAW.rds"</span>))){</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    Climate_data_mth <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"climatic_data"</span>, <span class="st">"ERA5Land_RAW.rds"</span>))</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>}<span class="cf">else</span>{</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    Climate_data_mth <span class="ot">&lt;-</span> <span class="fu">prepare_ERA5Land_RAW</span>(</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">path_ERA5L_mth =</span> <span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"climatic_data"</span>, <span class="st">"ERA5Land_FG_mth.nc"</span>),</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">path_ERA5L_dly =</span> <span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"climatic_data"</span>, <span class="st">"ERA5Land_FG_dly.nc"</span>),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">GF_bboxShp_path =</span> <span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"shp"</span>, <span class="st">"Guyane.shp"</span>),</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">ncores =</span> <span class="fu">min</span>(parallel<span class="sc">::</span><span class="fu">detectCores</span>() <span class="sc">-</span> <span class="dv">1</span>, <span class="dv">10</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">file.exists</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>,<span class="st">"figs"</span>,<span class="st">"Meteo-france-plot.png"</span>))) {</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    MeteoFrance_Data <span class="ot">&lt;-</span> vroom<span class="sc">::</span><span class="fu">vroom</span>(<span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"climatic_data"</span>, <span class="st">"Meteo_france_973_80-22.tsv.gz"</span>),</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        <span class="at">guess_max =</span> <span class="dv">100000</span>) <span class="sc">|&gt;</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>        <span class="fu">rename</span>(<span class="at">Temp =</span> T, <span class="at">GLO2 =</span> GLO2, <span class="at">FF =</span> FF, <span class="at">RR =</span> RR1) <span class="sc">|&gt;</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">yr =</span> <span class="fu">str_sub</span>(AAAAMMJJHH, <span class="dv">1</span>,<span class="dv">4</span>), <span class="at">mth =</span> <span class="fu">str_sub</span>(AAAAMMJJHH, <span class="dv">5</span>,<span class="dv">6</span>),<span class="at">dy =</span> <span class="fu">str_sub</span>(AAAAMMJJHH, <span class="dv">7</span>,<span class="dv">8</span>),<span class="at">hr =</span> <span class="fu">str_sub</span>(AAAAMMJJHH, <span class="dv">9</span>,<span class="dv">10</span>), <span class="at">Day =</span> lubridate<span class="sc">::</span><span class="fu">ymd_h</span>(AAAAMMJJHH,<span class="at">tz =</span> <span class="st">"America/Cayenne"</span>) ) <span class="sc">|&gt;</span> </span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">hr =</span> <span class="fu">as.integer</span>(hr))<span class="sc">|&gt;</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(<span class="fu">as.integer</span>(yr) <span class="sc">&gt;</span> <span class="dv">1979</span>, <span class="fu">as.integer</span>(yr) <span class="sc">&lt;</span> <span class="dv">2023</span>) <span class="sc">|&gt;</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">VPD =</span> <span class="fu">.DewtoVPD</span>(TD, Temp)) <span class="sc">|&gt;</span> <span class="co"># Compute VPD from relative Dewpoint and observered temperatures using Buck (1981)</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>        <span class="fu">select</span>(<span class="sc">-</span>TD)</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    Clim_MF_973 <span class="ot">&lt;-</span> MeteoFrance_Data <span class="sc">|&gt;</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(NOM_USUEL, yr, mth) <span class="sc">|&gt;</span> <span class="co"># Gather data at monthly scale (check)</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">tp =</span> <span class="fu">sum</span>(RR, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">/</span> <span class="dv">10</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>        <span class="fu">ungroup</span>() <span class="sc">|&gt;</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>        <span class="fu">select</span>(NOM_USUEL, Temp, VPD, GLO2, tp, FF, mth, hr) <span class="sc">|&gt;</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>        <span class="fu">gather</span>(<span class="st">"variable"</span>, <span class="st">"value"</span>, <span class="sc">-</span>NOM_USUEL, <span class="sc">-</span>mth,<span class="sc">-</span>hr) <span class="sc">|&gt;</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>        <span class="fu">na.exclude</span>() <span class="sc">|&gt;</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(NOM_USUEL,variable) <span class="sc">|&gt;</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(<span class="fu">all</span>(<span class="fu">str_pad</span>(<span class="at">width =</span> <span class="dv">2</span>, <span class="at">side =</span> <span class="st">"left"</span>, <span class="at">pad =</span> <span class="st">"0"</span>, <span class="fu">as.character</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">12</span>)) <span class="sc">%in%</span> <span class="fu">unique</span>(mth))) <span class="sc">|&gt;</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(NOM_USUEL, mth, variable) <span class="sc">|&gt;</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(<span class="fu">all</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">23</span> <span class="sc">%in%</span> <span class="fu">unique</span>(hr))) <span class="sc">|&gt;</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(NOM_USUEL,mth,hr,variable) <span class="sc">|&gt;</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">value =</span> <span class="fu">if_else</span>(variable <span class="sc">==</span> <span class="st">"GLO2"</span>, <span class="fu">mean</span>(value), value))</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>    Clim_MF_973_mth <span class="ot">&lt;-</span> Clim_MF_973 <span class="sc">|&gt;</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(variable <span class="sc">==</span> <span class="st">"GLO2"</span> <span class="sc">&amp;</span> hr <span class="sc">&gt;</span> <span class="dv">9</span>  <span class="sc">&amp;</span> hr <span class="sc">&lt;</span> <span class="dv">17</span> <span class="sc">|</span> variable <span class="sc">!=</span> <span class="st">"GLO2"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(NOM_USUEL, mth, variable) <span class="sc">|&gt;</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(<span class="fu">n</span>() <span class="sc">&gt;</span> <span class="dv">30</span>) <span class="sc">|&gt;</span> <span class="co"># keep station with more than 30 records per variable</span></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>        <span class="fu">summarise_if</span>(is.numeric, mean, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>((variable <span class="sc">==</span> <span class="st">"tp"</span> <span class="sc">&amp;</span> value <span class="sc">!=</span> <span class="dv">0</span>) <span class="sc">|</span> variable <span class="sc">!=</span> <span class="st">"tp"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(NOM_USUEL, mth, variable) <span class="sc">|&gt;</span></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>        <span class="fu">summarise</span>(<span class="at">MF_value =</span> <span class="fu">mean</span>(value)) <span class="sc">|&gt;</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>        <span class="fu">ungroup</span>()<span class="sc">|&gt;</span></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">mth =</span> <span class="fu">as.integer</span>(mth))<span class="sc">|&gt;</span></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(variable) <span class="sc">|&gt;</span></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">MF_mean_var =</span> <span class="fu">mean</span>(MF_value)) <span class="sc">|&gt;</span></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">MF_value =</span> MF_value <span class="sc">-</span> MF_mean_var) <span class="co"># Apply additive mean-bias correction to align ERA5-Land temperatures with station values</span></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>    Station <span class="ot">&lt;-</span> MeteoFrance_Data <span class="sc">|&gt;</span></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>        <span class="fu">select</span>(NOM_USUEL, LON, LAT) <span class="sc">|&gt;</span></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(NOM_USUEL <span class="sc">%in%</span> <span class="fu">unique</span>(Clim_MF_973_mth<span class="sc">$</span>NOM_USUEL)) <span class="sc">|&gt;</span></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>        <span class="fu">distinct</span>() <span class="sc">|&gt;</span></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>        sf<span class="sc">::</span><span class="fu">st_as_sf</span>(<span class="at">coords =</span> <span class="fu">c</span>(<span class="st">"LON"</span>, <span class="st">"LAT"</span>), <span class="at">crs =</span> <span class="st">"EPSG:4326"</span>)</span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>    Station<span class="sc">$</span>ID <span class="ot">&lt;-</span> Climate_data_mth<span class="sc">$</span>coords_GF_sf<span class="sc">$</span>ID[sf<span class="sc">::</span><span class="fu">st_nearest_feature</span>(sf<span class="sc">::</span><span class="fu">st_as_sf</span>(Station), sf<span class="sc">::</span><span class="fu">st_as_sf</span>(Climate_data_mth<span class="sc">$</span>coords_GF_sf))]</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>    ERA5_MF_Comp <span class="ot">&lt;-</span> Station <span class="sc">|&gt;</span></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>        <span class="fu">st_drop_geometry</span>() <span class="sc">|&gt;</span></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>        <span class="fu">inner_join</span>(Climate_data_mth<span class="sc">$</span>climate_GF <span class="sc">|&gt;</span> <span class="fu">filter</span>(ID <span class="sc">%in%</span> Station<span class="sc">$</span>ID) <span class="sc">|&gt;</span> <span class="fu">select</span>(ID, month, Temperature, MeanIrradiance, VaporPressureDeficit), </span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>        <span class="at">by =</span> <span class="st">"ID"</span>,<span class="at">relationship =</span> <span class="st">"many-to-many"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>        <span class="fu">rename</span>(<span class="at">mth =</span> month) <span class="sc">|&gt;</span> </span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>        <span class="fu">rename</span>(<span class="at">Temp =</span> Temperature,<span class="at">GLO2 =</span> MeanIrradiance, <span class="at">VPD =</span> VaporPressureDeficit) <span class="sc">|&gt;</span></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>        <span class="fu">select</span>(<span class="sc">-</span>ID) <span class="sc">|&gt;</span></span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>        <span class="fu">gather</span>(<span class="st">"variable"</span>, <span class="st">"ERA5_value"</span>, <span class="sc">-</span>NOM_USUEL, <span class="sc">-</span>mth) <span class="sc">|&gt;</span></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(variable) <span class="sc">|&gt;</span></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">ERA5_mean_var =</span> <span class="fu">mean</span>(ERA5_value)) <span class="sc">|&gt;</span></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">ERA5_value =</span> ERA5_value <span class="sc">-</span> ERA5_mean_var) <span class="sc">|&gt;</span></span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>        <span class="fu">left_join</span>(Clim_MF_973_mth, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"NOM_USUEL"</span>, <span class="st">"mth"</span>, <span class="st">"variable"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>        <span class="fu">na.exclude</span>() </span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>} </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>Regional-scale climatic variability was summarised from monthly data (1970–2023) obtained from the ERA5-Land reanalysis <span class="citation" data-cites="munozsabaterERA5LandStateoftheartGlobal2021">(<a href="#ref-munozsabaterERA5LandStateoftheartGlobal2021" role="doc-biblioref">Muñoz-Sabater et al. 2021</a>)</span>. We extracted monthly climate variables at native resolution (9 km), and applied additive seasonal decomposition to isolate the seasonal cycle (removing long-term trends) using <em>rcontroll</em> <a href="https://sylvainschmitt.github.io/rcontroll/articles/climate.html">climate pipeline</a> <span class="citation" data-cites="schmittRcontrollInterfaceIndividual2023">(<a href="#ref-schmittRcontrollInterfaceIndividual2023" role="doc-biblioref">Schmitt et al. 2023</a>)</span>.</p>
+<section id="era5-land-vs.-regional-meteorological-datasets-météo-france" class="level4">
+<h4 class="anchored" data-anchor-id="era5-land-vs.-regional-meteorological-datasets-météo-france">ERA5-Land vs.&nbsp;regional meteorological datasets (Météo-France)</h4>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>mf_map <span class="ot">&lt;-</span> <span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"MF_Network_map.png"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">file.exists</span>(mf_map)){knitr<span class="sc">::</span><span class="fu">include_graphics</span>(mf_map)}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-mf-network" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mf-network-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figs/MF_Network_map.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mf-network-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Locations and instruments of the regional meteorological stations from Météo France network. Black areas indicate geomorphological landscapes not included in this study.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>To evaluate the local validity of reanalysis data, we compared demeaned monthly cycles from ERA5-Land against available meteorological stations (for variables with adequate coverage). Monthly variations in temperature, irradiance, and VPD were compared with monthly variations measured by the regional meteorological station network <span class="citation" data-cites="meteofranceBasicMonthlyClimatological2023">(<a href="#ref-meteofranceBasicMonthlyClimatological2023" role="doc-biblioref">Météo France 2023</a>)</span>. The station data were filtered to keep only those with more than 30 records per month and with records for all months and hours of the day, and then averaged at the monthly scale. The monthly patterns of the station data were then compared with the corresponding monthly patterns extracted from ERA5-Land at the nearest grid cell to each station location.</p>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">file.exists</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>,<span class="st">"Meteo-france-plot.png"</span>))) {</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    g <span class="ot">&lt;-</span> ERA5_MF_Comp <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(NOM_USUEL,variable) <span class="sc">|&gt;</span> </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">do</span>( <span class="at">R2 =</span> (<span class="fu">cbind</span>(.<span class="sc">$</span>ERA5_value,.<span class="sc">$</span>MF_value) <span class="sc">|&gt;</span> <span class="fu">cor</span>())[<span class="dv">2</span>,<span class="dv">1</span>]<span class="sc">^</span><span class="dv">2</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">unnest</span>(<span class="at">cols =</span> <span class="fu">c</span>(R2)) <span class="sc">|&gt;</span> <span class="fu">group_by</span>(variable) <span class="sc">|&gt;</span> </span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">variable =</span> <span class="fu">case_when</span>(variable <span class="sc">==</span> <span class="st">"Temp"</span> <span class="sc">~</span> <span class="st">"Temperature"</span>,</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>                            variable <span class="sc">==</span> <span class="st">"GLO2"</span> <span class="sc">~</span> <span class="st">"Mean Irradiance"</span>,</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>                            variable <span class="sc">==</span> <span class="st">"VPD"</span> <span class="sc">~</span> <span class="st">"Vapor Pressure Deficit"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>() <span class="sc">+</span> <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> variable, <span class="at">y =</span> R2)) <span class="sc">+</span> </span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">1</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Climatic variable"</span>, <span class="at">y =</span> <span class="fu">expression</span>(R[<span class="st">'ERA5-Land vs. MF'</span>]<span class="sc">^</span>{<span class="dv">2</span>})) </span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggsave</span>(<span class="at">plot =</span> g, <span class="at">filename =</span> <span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>,<span class="st">"Meteo-france-plot.png"</span>), <span class="at">bg =</span> <span class="st">"white"</span>, <span class="at">width =</span> <span class="dv">5</span>,<span class="at">height =</span> <span class="dv">5</span>)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>} </span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>,<span class="st">"Meteo-france-plot.png"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/Meteo-france-plot.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption>Comparison of monthly patterns of temperature, mean irradiance, and vapor pressure deficit between ERA5-Land reanalysis and the Météo France station network. The dashed line indicates a perfect fit (R² = 1).</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="mfpca-of-annual-patterns-of-era5-land-data" class="level4">
+<h4 class="anchored" data-anchor-id="mfpca-of-annual-patterns-of-era5-land-data">MFPCA of annual patterns of ERA5-Land data</h4>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">file.exists</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>,<span class="st">"MFPCA-analysis.png"</span>))) {</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">file.exists</span>(<span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"climatic_data"</span>, <span class="st">"ERA5Land_RAW.rds"</span>))) {</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        MFPCA_GF <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"climatic_data"</span>, <span class="st">"MFPCA_GF.rds"</span>))</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>        MFPCA_GF <span class="ot">&lt;-</span> <span class="fu">MFPCA_extraction</span>(Climate_data_mth,</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">select_vars =</span> <span class="fu">c</span>(</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>                <span class="st">"Temperature"</span>, <span class="st">"Rainfall"</span>, <span class="st">"WindSpeed"</span>,</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>                <span class="st">"MeanIrradiance"</span>, <span class="st">"VaporPressureDeficit"</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>            )</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    g  <span class="ot">&lt;-</span> <span class="fu">plot_MFPCA</span>(MFPCA_GF)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggsave</span>(<span class="at">plot =</span> g, <span class="at">filename =</span> <span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>,<span class="st">"MFPCA-analysis.png"</span>), <span class="at">bg =</span> <span class="st">"white"</span>, <span class="at">width =</span> <span class="dv">10</span>,<span class="at">height =</span> <span class="dv">5</span>)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>} </span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>,<span class="st">"MFPCA-analysis.png"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/MFPCA-analysis.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption>Biplot of the first two multivariate functional principal components (MFPCA) summarising the dominant seasonal patterns of temperature, precipitation, irradiance, wind speed, and vapour pressure deficit across French Guiana. The first two MFPCA axes (Clim1 and Clim2) are shown with their associated variable loadings (arrows).</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The two regional climate indices (Clim1 and Clim2) were obtained by applying a multivariate functional principal component analysis (MFPCA) to monthly seasonal patterns of temperature, precipitation, irradiance, wind speed, and vapour pressure deficit <span class="citation" data-cites="happMultivariateFunctionalPrincipal2018">(<a href="#ref-happMultivariateFunctionalPrincipal2018" role="doc-biblioref">Happ and Greven 2018</a>)</span>. These indices summarise the dominant, correlated seasonal dynamics across variables.</p>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>Clim1_map <span class="ot">&lt;-</span> <span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"fPCA1_map.png"</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">file.exists</span>(Clim1_map)) knitr<span class="sc">::</span><span class="fu">include_graphics</span>(Clim1_map)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-clim1" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-clim1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figs/fPCA1_map.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-clim1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Regional projection of Clim1 coefficient
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>Clim2_map <span class="ot">&lt;-</span> <span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"fPCA2_map.png"</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">file.exists</span>(Clim2_map)) knitr<span class="sc">::</span><span class="fu">include_graphics</span>(Clim2_map)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-clim2" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-clim2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figs/fPCA2_map.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-clim2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Regional projection of Clim2 coefficient
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="geomorphological-landscapes" class="level3">
+<h3 class="anchored" data-anchor-id="geomorphological-landscapes">Geomorphological landscapes</h3>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>hab_map <span class="ot">&lt;-</span> <span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"Habitat_map.png"</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">file.exists</span>(hab_map)) knitr<span class="sc">::</span><span class="fu">include_graphics</span>(hab_map)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-geomorphology" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-geomorphology-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figs/Habitat_map.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-geomorphology-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Locations of forest inventory plots across geomorphological landscapes of French Guiana.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Geomorphological landscapes were described using a landscape classification <span class="citation" data-cites="guitetLandformLandscapeMapping2013">(<a href="#ref-guitetLandformLandscapeMapping2013" role="doc-biblioref">Guitet et al. 2013</a>)</span>, in which broad geomorphological types (e.g.&nbsp;coastal, multiconvex, multiconcave, plateaux, high relief) are subdivided into finer geomorphological subtypes (coded 1–13 in <a href="#fig-geomorphology" class="quarto-xref">Figure&nbsp;4</a>). In analyses, subtypes are used as the primary categorical predictor to capture mesoscale landform-driven hydro-edaphic contrasts, while types provide a higher-level summary for reporting and interpretation.</p>
+<table class="table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Geomorphological landscape type</th>
+<th>Geomorphological landscape subtype</th>
+<th>Share of area (%)</th>
+<th>Mean altitude (m)</th>
+<th>Mean altitude range (m)</th>
+<th>Mean hillslope (%)</th>
+<th>Dominant soils</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Coastal</td>
+<td>① - coastal flat plains</td>
+<td>2%</td>
+<td>&lt;100</td>
+<td>&lt;40</td>
+<td>&lt;10</td>
+<td>Arenosol, acrisol, gleysols</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>② - plains with residual relief</td>
+<td>1%</td>
+<td>&lt;100</td>
+<td>&lt;40</td>
+<td>10-15</td>
+<td>Acrisols dominant</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>③ - coastal white sands</td>
+<td>0.1%</td>
+<td>&lt;100</td>
+<td>&lt;40</td>
+<td>&lt;10</td>
+<td>Podsols</td>
+</tr>
+<tr class="even">
+<td>Multiconcave</td>
+<td>④ - inland plains with residual relief</td>
+<td>7%</td>
+<td>100-200</td>
+<td>20-60</td>
+<td>10-15</td>
+<td>Acrisols dominant</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>⑤ - inland flat plains</td>
+<td>1%</td>
+<td>100-200</td>
+<td>20-60</td>
+<td>10-15</td>
+<td>Acrisols dominant</td>
+</tr>
+<tr class="even">
+<td>Multiconvex</td>
+<td>⑥ - low hills and large valleys</td>
+<td>4%</td>
+<td>50-150</td>
+<td>20-60</td>
+<td>10-15</td>
+<td>Acrisols and arenosols</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>⑦ - complex hilly areas</td>
+<td>5%</td>
+<td>50-150</td>
+<td>40-90</td>
+<td>10-25</td>
+<td>Acrisols and ferralsols</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>⑧ - peneplain with moderate hills</td>
+<td>7%</td>
+<td>50-150</td>
+<td>40-60</td>
+<td>10-15</td>
+<td>Acrisols dominant</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>⑨ - regular pattern hilly areas</td>
+<td>6%</td>
+<td>&lt;150</td>
+<td>40-90</td>
+<td>15-25</td>
+<td>Acrisols dominant</td>
+</tr>
+<tr class="even">
+<td>Plateaux</td>
+<td>⑩ - very moderate plateau</td>
+<td>12%</td>
+<td>50-200</td>
+<td>40-60</td>
+<td>10-20</td>
+<td>Ferralsols dominant</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>⑪ - long and high plateau,</td>
+<td>9%</td>
+<td>50-200</td>
+<td>60-150</td>
+<td>15-25</td>
+<td>Ferralsols dominant</td>
+</tr>
+<tr class="even">
+<td>High reliefs</td>
+<td>⑫ - high hills</td>
+<td>14%</td>
+<td>50-200</td>
+<td>&gt;150</td>
+<td>&gt;20</td>
+<td>Ferralsols and plinthosols</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>⑬ - sub-montane relief</td>
+<td>0.3%</td>
+<td>200-500</td>
+<td>&gt;150</td>
+<td>10-25</td>
+<td>Ferralsols and plinthosols</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="local-topography" class="level3">
+<h3 class="anchored" data-anchor-id="local-topography">Local topography</h3>
+<p>Local topographic variation was assessed with a topographic wetness index. We used the SAGA Wetness Index <span class="citation" data-cites="bohnerSpatialPredictionSoil2006">(<a href="#ref-bohnerSpatialPredictionSoil2006" role="doc-biblioref">Böhner and Selige 2006</a>)</span>, as an indicator of the local distribution of water and nutrients in the soil <span class="citation" data-cites="schmittTopographyDrivesMicrogeographic2021">(<a href="#ref-schmittTopographyDrivesMicrogeographic2021" role="doc-biblioref">Schmitt et al. 2021</a>)</span>. The SWI estimates the expected local water accumulation by combining upslope contributing area and slope. A first step consist in computing the flow accumulation from a Digital Elevation Model using a multiple flow direction approach (Freeman) and derives a specific catchment area (SCA) (contributing area per unit contour width). To reduce artefacts in low-relief terrain, where standard wetness indices can produce unstable or spuriously high values in flat valley bottoms, a second step applies an iterative modification of the SCA that constrains contributing area in nearly planar zones as a function of local slope and neighbourhood maxima, thereby yielding more realistic wetness patterns under weak gradients. The SWI is then calculated as follow: <span class="math display">\[
+SWI = log\left(\dfrac{SCA}{tan(\beta)}\right)
+\]</span></p>
+<p>where <span class="math inline">\(\beta\)</span> is the local slope angle and <span class="math inline">\(SCA\)</span> is the corrected specific catchment area.</p>
+<p>We used a 10 m aggregated version of the high-resolution RGE ALTI® DEM <span class="citation" data-cites="ignLargeScaleFrench2023">(<a href="#ref-ignLargeScaleFrench2023" role="doc-biblioref">IGN 2023</a>)</span>, which covers French Guiana with two large-scale methods (radar and image correlation). SWI was computed across French Guiana using elevation with SAGA GIS <span class="citation" data-cites="conradSystemAutomatedGeoscientific2015">(<a href="#ref-conradSystemAutomatedGeoscientific2015" role="doc-biblioref">Conrad et al. 2015</a>)</span>. Due to a strong right skewness in SWI, we used the median SWI per inventory unit and verified its representativeness using the within inventory unit coefficient of variation of SWI:</p>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>SWI_extract_path <span class="ot">&lt;-</span> <span class="fu">here_rel</span>(<span class="st">"data"</span>,<span class="st">"microtopo_data"</span>,<span class="st">"SWI_extract.tsv"</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>SWI_extract <span class="ot">&lt;-</span> vroom<span class="sc">::</span><span class="fu">vroom</span>(SWI_extract_path)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="do">## Rows: 71245 Columns: 2</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="do">## ── Column specification ────────────────────────────────────────────────────────────────────────────────────────────────</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="do">## Delimiter: "\t"</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="do">## chr (1): PlotID</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="do">## dbl (1): SWI</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="do">## ℹ Use `spec()` to retrieve the full column specification for this data.</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="do">## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>SWI_extract <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">PlotID =</span><span class="fu">factor</span>(PlotID))  <span class="sc">|&gt;</span> </span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(PlotID)  <span class="sc">|&gt;</span>  </span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">Median =</span> <span class="fu">log</span>(<span class="fu">median</span>(SWI)<span class="sc">+</span><span class="dv">1</span>), <span class="at">Sigma =</span> <span class="fu">sqrt</span>(<span class="fu">var</span>(<span class="fu">log</span>(SWI<span class="sc">+</span><span class="dv">1</span>)))) <span class="sc">|&gt;</span> </span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ungroup</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">Cov =</span> Sigma<span class="sc">/</span>Median)  <span class="sc">|&gt;</span>  </span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarize</span>(</span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>        <span class="st">`</span><span class="at">Mean (%)</span><span class="st">`</span> <span class="ot">=</span> <span class="dv">100</span><span class="sc">*</span><span class="fu">mean</span>(Cov, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>        <span class="st">`</span><span class="at">2.5% bound (%)</span><span class="st">`</span> <span class="ot">=</span> <span class="dv">100</span><span class="sc">*</span><span class="fu">quantile</span>(Cov, <span class="fl">0.025</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), </span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>        <span class="st">`</span><span class="at">97.5% bound (%)</span><span class="st">`</span> <span class="ot">=</span> <span class="dv">100</span><span class="sc">*</span><span class="fu">quantile</span>(Cov, <span class="fl">0.975</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))<span class="sc">|&gt;</span></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="st">`</span><span class="at">Variable</span><span class="st">`</span> <span class="ot">=</span> <span class="st">"Median SWI"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="st">`</span><span class="at">Variable</span><span class="st">`</span>,<span class="st">`</span><span class="at">Mean (%)</span><span class="st">`</span>, <span class="st">`</span><span class="at">2.5% bound (%)</span><span class="st">`</span>, <span class="st">`</span><span class="at">97.5% bound (%)</span><span class="st">`</span>)<span class="sc">|&gt;</span></span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">fmt_number</span>(<span class="at">columns =</span> <span class="fu">c</span>(<span class="st">`</span><span class="at">Variable</span><span class="st">`</span>,<span class="st">`</span><span class="at">Mean (%)</span><span class="st">`</span>, <span class="st">`</span><span class="at">2.5% bound (%)</span><span class="st">`</span>, <span class="st">`</span><span class="at">97.5% bound (%)</span><span class="st">`</span>), <span class="at">decimals =</span> <span class="dv">2</span>) <span class="sc">|&gt;</span></span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>    <span class="fu">opts_theme</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<div id="ywohiudueh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ywohiudueh table {
+  font-family: 'Public Sans', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#ywohiudueh thead, #ywohiudueh tbody, #ywohiudueh tfoot, #ywohiudueh tr, #ywohiudueh td, #ywohiudueh th {
+  border-style: none;
+}
+
+#ywohiudueh p {
+  margin: 0;
+  padding: 0;
+}
+
+#ywohiudueh .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#ywohiudueh .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#ywohiudueh .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#ywohiudueh .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#ywohiudueh .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ywohiudueh .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ywohiudueh .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ywohiudueh .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#ywohiudueh .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#ywohiudueh .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#ywohiudueh .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#ywohiudueh .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#ywohiudueh .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#ywohiudueh .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#ywohiudueh .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: bold;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#ywohiudueh .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#ywohiudueh .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#ywohiudueh .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#ywohiudueh .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ywohiudueh .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#ywohiudueh .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#ywohiudueh .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#ywohiudueh .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ywohiudueh .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#ywohiudueh .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#ywohiudueh .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ywohiudueh .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ywohiudueh .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#ywohiudueh .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ywohiudueh .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#ywohiudueh .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ywohiudueh .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ywohiudueh .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ywohiudueh .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ywohiudueh .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ywohiudueh .gt_left {
+  text-align: left;
+}
+
+#ywohiudueh .gt_center {
+  text-align: center;
+}
+
+#ywohiudueh .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#ywohiudueh .gt_font_normal {
+  font-weight: normal;
+}
+
+#ywohiudueh .gt_font_bold {
+  font-weight: bold;
+}
+
+#ywohiudueh .gt_font_italic {
+  font-style: italic;
+}
+
+#ywohiudueh .gt_super {
+  font-size: 65%;
+}
+
+#ywohiudueh .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#ywohiudueh .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#ywohiudueh .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#ywohiudueh .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#ywohiudueh .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#ywohiudueh .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#ywohiudueh .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#ywohiudueh .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#ywohiudueh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<caption>Distribution of coefficient of variation for SWI within inventory units.</caption>
+<thead>
+<tr class="header gt_col_headings">
+<th id="Variable" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Variable</th>
+<th id="Mean-(%)" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Mean (%)</th>
+<th id="a2.5%-bound-(%)" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">2.5% bound (%)</th>
+<th id="a97.5%-bound-(%)" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">97.5% bound (%)</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="Variable">Median SWI</td>
+<td class="gt_row gt_right" headers="Mean (%)">3.16</td>
+<td class="gt_row gt_right" headers="2.5% bound (%)">0.44</td>
+<td class="gt_row gt_right" headers="97.5% bound (%)">9.96</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- -->
+
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bohnerSpatialPredictionSoil2006" class="csl-entry" role="listitem">
+Böhner, Jürgen, and Thomas Selige. 2006. <span>“Spatial Prediction of Soil Attributes Using Terrain Analysis and Climate Regionalization.”</span> <em>Gottinger Geograpihsche Abhandlungen</em> 115.
+</div>
+<div id="ref-conradSystemAutomatedGeoscientific2015" class="csl-entry" role="listitem">
+Conrad, O., B. Bechtel, M. Bock, H. Dietrich, E. Fischer, L. Gerlitz, J. Wehberg, V. Wichmann, and J. Böhner. 2015. <span>“System for <span>Automated Geoscientific Analyses</span> (<span>SAGA</span>) v. 2.1.4.”</span> <em>Geoscientific Model Development</em> 8 (7): 1991–2007. <a href="https://doi.org/10.5194/gmd-8-1991-2015">https://doi.org/10.5194/gmd-8-1991-2015</a>.
+</div>
+<div id="ref-guitetLandformLandscapeMapping2013" class="csl-entry" role="listitem">
+Guitet, Stéphane, Jean-François Cornu, Olivier Brunaux, Julie Betbeder, Jean-Michel Carozza, and Cécile Richard-Hansen. 2013. <span>“Landform and Landscape Mapping, <span>French Guiana</span> (<span>South America</span>).”</span> <em>Journal of Maps</em> 9 (3): 325–35. <a href="https://doi.org/10.1080/17445647.2013.785371">https://doi.org/10.1080/17445647.2013.785371</a>.
+</div>
+<div id="ref-happMultivariateFunctionalPrincipal2018" class="csl-entry" role="listitem">
+Happ, Clara, and Sonja Greven. 2018. <span>“Multivariate <span>Functional Principal Component Analysis</span> for <span>Data Observed</span> on <span>Different</span> (<span>Dimensional</span>) <span>Domains</span>.”</span> <em>Journal of the American Statistical Association</em> 113 (522): 649–59. <a href="https://doi.org/10.1080/01621459.2016.1273115">https://doi.org/10.1080/01621459.2016.1273115</a>.
+</div>
+<div id="ref-ignLargeScaleFrench2023" class="csl-entry" role="listitem">
+IGN. 2023. <span>“<span>Large scale french digital terrain model (RGE ALTI)</span>.”</span> {Dataset}. https://geoservices.ign.fr/rgealti: geoservices.ign.fr.
+</div>
+<div id="ref-meteofranceBasicMonthlyClimatological2023" class="csl-entry" role="listitem">
+Météo France. 2023. <span>“Basic Monthly Climatological Data from 1950 to 2023 - <span>French Guiana</span> (Department 973 - <span>France</span>).”</span> Dataset. https://www.data.gouv.fr/: data.gouv.fr.
+</div>
+<div id="ref-munozsabaterERA5LandStateoftheartGlobal2021" class="csl-entry" role="listitem">
+Muñoz-Sabater, Joaquín, Emanuel Dutra, Anna Agustí-Panareda, Clément Albergel, Gabriele Arduini, Gianpaolo Balsamo, Souhail Boussetta, et al. 2021. <span>“<span>ERA5-Land</span>: A State-of-the-Art Global Reanalysis Dataset for Land Applications.”</span> <em>Earth System Science Data</em> 13 (9): 4349–83. <a href="https://doi.org/10.5194/essd-13-4349-2021">https://doi.org/10.5194/essd-13-4349-2021</a>.
+</div>
+<div id="ref-schmittRcontrollInterfaceIndividual2023" class="csl-entry" role="listitem">
+Schmitt, Sylvain, Guillaume Salzet, Fabian Jörg Fischer, Isabelle Maréchaux, and Jerome Chave. 2023. <span>“<span><em>Rcontroll</em></span> : <span>An R</span> Interface for the Individual-Based Forest Dynamics Simulator <span><em>TROLL</em></span>.”</span> <em>Methods in Ecology and Evolution</em>, September, 2041–210X.14215. <a href="https://doi.org/10.1111/2041-210X.14215">https://doi.org/10.1111/2041-210X.14215</a>.
+</div>
+<div id="ref-schmittTopographyDrivesMicrogeographic2021" class="csl-entry" role="listitem">
+Schmitt, Sylvain, Niklas Tysklind, Bruno Hérault, and Myriam Heuertz. 2021. <span>“Topography Drives Microgeographic Adaptations of Closely Related Species in Two Tropical Tree Species Complexes.”</span> <em>Molecular Ecology</em> 30 (20): 5080–93. <a href="https://doi.org/10.1111/mec.16116">https://doi.org/10.1111/mec.16116</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../notebook/data_prep.html" class="pagination-link" aria-label="Study area and forest inventories">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Study area and forest inventories</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../notebook/data_split.html" class="pagination-link" aria-label="Validation and train data">
+        <span class="nav-page-text">Validation and train data</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb10" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Environmental predictors"</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="in">```{r setup, include=FALSE}</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="in">knitr::opts_chunk$set(</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="in">  fig.align = "center", fig.retina = 3,</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="in">  fig.width = 6, fig.height = (6 * 0.618),</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="in">  out.width = "80%", collapse = TRUE,</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="in">  dev = "ragg_png"</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a><span class="in">options(</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a><span class="in">  digits = 3, width = 120,</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="in">  dplyr.summarise.inform = FALSE,</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a><span class="in">  knitr.kable.NA = ""</span></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a><span class="in">here_rel &lt;- function(...) {</span></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a><span class="in">  fs::path_rel(here::here(...))</span></span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a><span class="in">```{r libraries-data, warning=FALSE, message=FALSE}</span></span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a><span class="in">library(tidyverse)</span></span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a><span class="in">library(readr)</span></span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a><span class="in">library(gt)</span></span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a><span class="in">library(gtExtras)</span></span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a><span class="in">library(leaflet)</span></span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a><span class="in">library(sf)</span></span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a><span class="in">library(terra)</span></span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a><span class="in">source(here_rel("R", "funs_data.R"))</span></span>
+<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a><span class="in">source(here_rel("R", "funs_graphics.R"))</span></span>
+<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a><span class="in">source(here_rel("R", "funs_plot_tables.R"))</span></span>
+<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a><span class="in">theme_set(theme_public())</span></span>
+<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb10-44"><a href="#cb10-44" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb10-45"><a href="#cb10-45" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
+<span id="cb10-46"><a href="#cb10-46" aria-hidden="true" tabindex="-1"></a>Plot_table_path <span class="ot">&lt;-</span> <span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"inventory_data"</span>, <span class="st">"Plot_description.csv"</span>)</span>
+<span id="cb10-47"><a href="#cb10-47" aria-hidden="true" tabindex="-1"></a>Shp_plots_path <span class="ot">&lt;-</span> <span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"shp"</span>, <span class="st">"GF_sampling.shp"</span>)</span>
+<span id="cb10-48"><a href="#cb10-48" aria-hidden="true" tabindex="-1"></a>Guyane_path <span class="ot">&lt;-</span> <span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"shp"</span>, <span class="st">"guyane.shp"</span>)</span>
+<span id="cb10-49"><a href="#cb10-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-50"><a href="#cb10-50" aria-hidden="true" tabindex="-1"></a>Plot_table <span class="ot">&lt;-</span> <span class="fu">read_csv2</span>(Plot_table_path)</span>
+<span id="cb10-51"><a href="#cb10-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-52"><a href="#cb10-52" aria-hidden="true" tabindex="-1"></a>Shp_plots <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(Shp_plots_path, <span class="at">quiet =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb10-53"><a href="#cb10-53" aria-hidden="true" tabindex="-1"></a>Guyane <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(Guyane_path, <span class="at">quiet =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb10-54"><a href="#cb10-54" aria-hidden="true" tabindex="-1"></a>    <span class="fu">st_transform</span>(<span class="st">"EPSG:4326"</span>)</span>
+<span id="cb10-55"><a href="#cb10-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-56"><a href="#cb10-56" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-57"><a href="#cb10-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-58"><a href="#cb10-58" aria-hidden="true" tabindex="-1"></a><span class="fu"># Overview</span></span>
+<span id="cb10-59"><a href="#cb10-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-60"><a href="#cb10-60" aria-hidden="true" tabindex="-1"></a>Environmental predictors represented three nested spatial scales: </span>
+<span id="cb10-61"><a href="#cb10-61" aria-hidden="true" tabindex="-1"></a><span class="ss"> * </span>regional climate, summarised by two continuous indices (Clim1–Clim2) derived from multivariate monthly climate patterns; </span>
+<span id="cb10-62"><a href="#cb10-62" aria-hidden="true" tabindex="-1"></a><span class="ss"> * </span>geomorphological landscapes, represented by a categorical geomorphological subtype map (nested within broader landscape types) capturing mesoscale landform-driven hydro-edaphic contrasts; </span>
+<span id="cb10-63"><a href="#cb10-63" aria-hidden="true" tabindex="-1"></a><span class="ss"> * </span>local topography, quantified by the SAGA Wetness Index (SWI) summarised within each inventory unit as a fine-scale proxy of relative soil wetness</span>
+<span id="cb10-64"><a href="#cb10-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-65"><a href="#cb10-65" aria-hidden="true" tabindex="-1"></a><span class="fu">## Regional climate</span></span>
+<span id="cb10-68"><a href="#cb10-68" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb10-69"><a href="#cb10-69" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: Climate-extract</span></span>
+<span id="cb10-70"><a href="#cb10-70" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="fu">file.exists</span>(<span class="fu">here_rel</span>(<span class="st">"data"</span>,<span class="st">"climatic_data"</span>, <span class="st">"ERA5Land_RAW.rds"</span>))){</span>
+<span id="cb10-71"><a href="#cb10-71" aria-hidden="true" tabindex="-1"></a>    Climate_data_mth <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"climatic_data"</span>, <span class="st">"ERA5Land_RAW.rds"</span>))</span>
+<span id="cb10-72"><a href="#cb10-72" aria-hidden="true" tabindex="-1"></a>}<span class="cf">else</span>{</span>
+<span id="cb10-73"><a href="#cb10-73" aria-hidden="true" tabindex="-1"></a>    Climate_data_mth <span class="ot">&lt;-</span> <span class="fu">prepare_ERA5Land_RAW</span>(</span>
+<span id="cb10-74"><a href="#cb10-74" aria-hidden="true" tabindex="-1"></a>        <span class="at">path_ERA5L_mth =</span> <span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"climatic_data"</span>, <span class="st">"ERA5Land_FG_mth.nc"</span>),</span>
+<span id="cb10-75"><a href="#cb10-75" aria-hidden="true" tabindex="-1"></a>        <span class="at">path_ERA5L_dly =</span> <span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"climatic_data"</span>, <span class="st">"ERA5Land_FG_dly.nc"</span>),</span>
+<span id="cb10-76"><a href="#cb10-76" aria-hidden="true" tabindex="-1"></a>        <span class="at">GF_bboxShp_path =</span> <span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"shp"</span>, <span class="st">"Guyane.shp"</span>),</span>
+<span id="cb10-77"><a href="#cb10-77" aria-hidden="true" tabindex="-1"></a>        <span class="at">ncores =</span> <span class="fu">min</span>(parallel<span class="sc">::</span><span class="fu">detectCores</span>() <span class="sc">-</span> <span class="dv">1</span>, <span class="dv">10</span>)</span>
+<span id="cb10-78"><a href="#cb10-78" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb10-79"><a href="#cb10-79" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb10-80"><a href="#cb10-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-81"><a href="#cb10-81" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">file.exists</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>,<span class="st">"figs"</span>,<span class="st">"Meteo-france-plot.png"</span>))) {</span>
+<span id="cb10-82"><a href="#cb10-82" aria-hidden="true" tabindex="-1"></a>    MeteoFrance_Data <span class="ot">&lt;-</span> vroom<span class="sc">::</span><span class="fu">vroom</span>(<span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"climatic_data"</span>, <span class="st">"Meteo_france_973_80-22.tsv.gz"</span>),</span>
+<span id="cb10-83"><a href="#cb10-83" aria-hidden="true" tabindex="-1"></a>        <span class="at">guess_max =</span> <span class="dv">100000</span>) <span class="sc">|&gt;</span></span>
+<span id="cb10-84"><a href="#cb10-84" aria-hidden="true" tabindex="-1"></a>        <span class="fu">rename</span>(<span class="at">Temp =</span> T, <span class="at">GLO2 =</span> GLO2, <span class="at">FF =</span> FF, <span class="at">RR =</span> RR1) <span class="sc">|&gt;</span></span>
+<span id="cb10-85"><a href="#cb10-85" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">yr =</span> <span class="fu">str_sub</span>(AAAAMMJJHH, <span class="dv">1</span>,<span class="dv">4</span>), <span class="at">mth =</span> <span class="fu">str_sub</span>(AAAAMMJJHH, <span class="dv">5</span>,<span class="dv">6</span>),<span class="at">dy =</span> <span class="fu">str_sub</span>(AAAAMMJJHH, <span class="dv">7</span>,<span class="dv">8</span>),<span class="at">hr =</span> <span class="fu">str_sub</span>(AAAAMMJJHH, <span class="dv">9</span>,<span class="dv">10</span>), <span class="at">Day =</span> lubridate<span class="sc">::</span><span class="fu">ymd_h</span>(AAAAMMJJHH,<span class="at">tz =</span> <span class="st">"America/Cayenne"</span>) ) <span class="sc">|&gt;</span> </span>
+<span id="cb10-86"><a href="#cb10-86" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">hr =</span> <span class="fu">as.integer</span>(hr))<span class="sc">|&gt;</span></span>
+<span id="cb10-87"><a href="#cb10-87" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(<span class="fu">as.integer</span>(yr) <span class="sc">&gt;</span> <span class="dv">1979</span>, <span class="fu">as.integer</span>(yr) <span class="sc">&lt;</span> <span class="dv">2023</span>) <span class="sc">|&gt;</span></span>
+<span id="cb10-88"><a href="#cb10-88" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">VPD =</span> <span class="fu">.DewtoVPD</span>(TD, Temp)) <span class="sc">|&gt;</span> <span class="co"># Compute VPD from relative Dewpoint and observered temperatures using Buck (1981)</span></span>
+<span id="cb10-89"><a href="#cb10-89" aria-hidden="true" tabindex="-1"></a>        <span class="fu">select</span>(<span class="sc">-</span>TD)</span>
+<span id="cb10-90"><a href="#cb10-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-91"><a href="#cb10-91" aria-hidden="true" tabindex="-1"></a>    Clim_MF_973 <span class="ot">&lt;-</span> MeteoFrance_Data <span class="sc">|&gt;</span></span>
+<span id="cb10-92"><a href="#cb10-92" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(NOM_USUEL, yr, mth) <span class="sc">|&gt;</span> <span class="co"># Gather data at monthly scale (check)</span></span>
+<span id="cb10-93"><a href="#cb10-93" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">tp =</span> <span class="fu">sum</span>(RR, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">/</span> <span class="dv">10</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb10-94"><a href="#cb10-94" aria-hidden="true" tabindex="-1"></a>        <span class="fu">ungroup</span>() <span class="sc">|&gt;</span></span>
+<span id="cb10-95"><a href="#cb10-95" aria-hidden="true" tabindex="-1"></a>        <span class="fu">select</span>(NOM_USUEL, Temp, VPD, GLO2, tp, FF, mth, hr) <span class="sc">|&gt;</span></span>
+<span id="cb10-96"><a href="#cb10-96" aria-hidden="true" tabindex="-1"></a>        <span class="fu">gather</span>(<span class="st">"variable"</span>, <span class="st">"value"</span>, <span class="sc">-</span>NOM_USUEL, <span class="sc">-</span>mth,<span class="sc">-</span>hr) <span class="sc">|&gt;</span></span>
+<span id="cb10-97"><a href="#cb10-97" aria-hidden="true" tabindex="-1"></a>        <span class="fu">na.exclude</span>() <span class="sc">|&gt;</span></span>
+<span id="cb10-98"><a href="#cb10-98" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(NOM_USUEL,variable) <span class="sc">|&gt;</span></span>
+<span id="cb10-99"><a href="#cb10-99" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(<span class="fu">all</span>(<span class="fu">str_pad</span>(<span class="at">width =</span> <span class="dv">2</span>, <span class="at">side =</span> <span class="st">"left"</span>, <span class="at">pad =</span> <span class="st">"0"</span>, <span class="fu">as.character</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">12</span>)) <span class="sc">%in%</span> <span class="fu">unique</span>(mth))) <span class="sc">|&gt;</span></span>
+<span id="cb10-100"><a href="#cb10-100" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(NOM_USUEL, mth, variable) <span class="sc">|&gt;</span></span>
+<span id="cb10-101"><a href="#cb10-101" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(<span class="fu">all</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">23</span> <span class="sc">%in%</span> <span class="fu">unique</span>(hr))) <span class="sc">|&gt;</span></span>
+<span id="cb10-102"><a href="#cb10-102" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(NOM_USUEL,mth,hr,variable) <span class="sc">|&gt;</span></span>
+<span id="cb10-103"><a href="#cb10-103" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">value =</span> <span class="fu">if_else</span>(variable <span class="sc">==</span> <span class="st">"GLO2"</span>, <span class="fu">mean</span>(value), value))</span>
+<span id="cb10-104"><a href="#cb10-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-105"><a href="#cb10-105" aria-hidden="true" tabindex="-1"></a>    Clim_MF_973_mth <span class="ot">&lt;-</span> Clim_MF_973 <span class="sc">|&gt;</span></span>
+<span id="cb10-106"><a href="#cb10-106" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(variable <span class="sc">==</span> <span class="st">"GLO2"</span> <span class="sc">&amp;</span> hr <span class="sc">&gt;</span> <span class="dv">9</span>  <span class="sc">&amp;</span> hr <span class="sc">&lt;</span> <span class="dv">17</span> <span class="sc">|</span> variable <span class="sc">!=</span> <span class="st">"GLO2"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb10-107"><a href="#cb10-107" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(NOM_USUEL, mth, variable) <span class="sc">|&gt;</span></span>
+<span id="cb10-108"><a href="#cb10-108" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(<span class="fu">n</span>() <span class="sc">&gt;</span> <span class="dv">30</span>) <span class="sc">|&gt;</span> <span class="co"># keep station with more than 30 records per variable</span></span>
+<span id="cb10-109"><a href="#cb10-109" aria-hidden="true" tabindex="-1"></a>        <span class="fu">summarise_if</span>(is.numeric, mean, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb10-110"><a href="#cb10-110" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>((variable <span class="sc">==</span> <span class="st">"tp"</span> <span class="sc">&amp;</span> value <span class="sc">!=</span> <span class="dv">0</span>) <span class="sc">|</span> variable <span class="sc">!=</span> <span class="st">"tp"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb10-111"><a href="#cb10-111" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(NOM_USUEL, mth, variable) <span class="sc">|&gt;</span></span>
+<span id="cb10-112"><a href="#cb10-112" aria-hidden="true" tabindex="-1"></a>        <span class="fu">summarise</span>(<span class="at">MF_value =</span> <span class="fu">mean</span>(value)) <span class="sc">|&gt;</span></span>
+<span id="cb10-113"><a href="#cb10-113" aria-hidden="true" tabindex="-1"></a>        <span class="fu">ungroup</span>()<span class="sc">|&gt;</span></span>
+<span id="cb10-114"><a href="#cb10-114" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">mth =</span> <span class="fu">as.integer</span>(mth))<span class="sc">|&gt;</span></span>
+<span id="cb10-115"><a href="#cb10-115" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(variable) <span class="sc">|&gt;</span></span>
+<span id="cb10-116"><a href="#cb10-116" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">MF_mean_var =</span> <span class="fu">mean</span>(MF_value)) <span class="sc">|&gt;</span></span>
+<span id="cb10-117"><a href="#cb10-117" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">MF_value =</span> MF_value <span class="sc">-</span> MF_mean_var) <span class="co"># Apply additive mean-bias correction to align ERA5-Land temperatures with station values</span></span>
+<span id="cb10-118"><a href="#cb10-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-119"><a href="#cb10-119" aria-hidden="true" tabindex="-1"></a>    Station <span class="ot">&lt;-</span> MeteoFrance_Data <span class="sc">|&gt;</span></span>
+<span id="cb10-120"><a href="#cb10-120" aria-hidden="true" tabindex="-1"></a>        <span class="fu">select</span>(NOM_USUEL, LON, LAT) <span class="sc">|&gt;</span></span>
+<span id="cb10-121"><a href="#cb10-121" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(NOM_USUEL <span class="sc">%in%</span> <span class="fu">unique</span>(Clim_MF_973_mth<span class="sc">$</span>NOM_USUEL)) <span class="sc">|&gt;</span></span>
+<span id="cb10-122"><a href="#cb10-122" aria-hidden="true" tabindex="-1"></a>        <span class="fu">distinct</span>() <span class="sc">|&gt;</span></span>
+<span id="cb10-123"><a href="#cb10-123" aria-hidden="true" tabindex="-1"></a>        sf<span class="sc">::</span><span class="fu">st_as_sf</span>(<span class="at">coords =</span> <span class="fu">c</span>(<span class="st">"LON"</span>, <span class="st">"LAT"</span>), <span class="at">crs =</span> <span class="st">"EPSG:4326"</span>)</span>
+<span id="cb10-124"><a href="#cb10-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-125"><a href="#cb10-125" aria-hidden="true" tabindex="-1"></a>    Station<span class="sc">$</span>ID <span class="ot">&lt;-</span> Climate_data_mth<span class="sc">$</span>coords_GF_sf<span class="sc">$</span>ID[sf<span class="sc">::</span><span class="fu">st_nearest_feature</span>(sf<span class="sc">::</span><span class="fu">st_as_sf</span>(Station), sf<span class="sc">::</span><span class="fu">st_as_sf</span>(Climate_data_mth<span class="sc">$</span>coords_GF_sf))]</span>
+<span id="cb10-126"><a href="#cb10-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-127"><a href="#cb10-127" aria-hidden="true" tabindex="-1"></a>    ERA5_MF_Comp <span class="ot">&lt;-</span> Station <span class="sc">|&gt;</span></span>
+<span id="cb10-128"><a href="#cb10-128" aria-hidden="true" tabindex="-1"></a>        <span class="fu">st_drop_geometry</span>() <span class="sc">|&gt;</span></span>
+<span id="cb10-129"><a href="#cb10-129" aria-hidden="true" tabindex="-1"></a>        <span class="fu">inner_join</span>(Climate_data_mth<span class="sc">$</span>climate_GF <span class="sc">|&gt;</span> <span class="fu">filter</span>(ID <span class="sc">%in%</span> Station<span class="sc">$</span>ID) <span class="sc">|&gt;</span> <span class="fu">select</span>(ID, month, Temperature, MeanIrradiance, VaporPressureDeficit), </span>
+<span id="cb10-130"><a href="#cb10-130" aria-hidden="true" tabindex="-1"></a>        <span class="at">by =</span> <span class="st">"ID"</span>,<span class="at">relationship =</span> <span class="st">"many-to-many"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb10-131"><a href="#cb10-131" aria-hidden="true" tabindex="-1"></a>        <span class="fu">rename</span>(<span class="at">mth =</span> month) <span class="sc">|&gt;</span> </span>
+<span id="cb10-132"><a href="#cb10-132" aria-hidden="true" tabindex="-1"></a>        <span class="fu">rename</span>(<span class="at">Temp =</span> Temperature,<span class="at">GLO2 =</span> MeanIrradiance, <span class="at">VPD =</span> VaporPressureDeficit) <span class="sc">|&gt;</span></span>
+<span id="cb10-133"><a href="#cb10-133" aria-hidden="true" tabindex="-1"></a>        <span class="fu">select</span>(<span class="sc">-</span>ID) <span class="sc">|&gt;</span></span>
+<span id="cb10-134"><a href="#cb10-134" aria-hidden="true" tabindex="-1"></a>        <span class="fu">gather</span>(<span class="st">"variable"</span>, <span class="st">"ERA5_value"</span>, <span class="sc">-</span>NOM_USUEL, <span class="sc">-</span>mth) <span class="sc">|&gt;</span></span>
+<span id="cb10-135"><a href="#cb10-135" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(variable) <span class="sc">|&gt;</span></span>
+<span id="cb10-136"><a href="#cb10-136" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">ERA5_mean_var =</span> <span class="fu">mean</span>(ERA5_value)) <span class="sc">|&gt;</span></span>
+<span id="cb10-137"><a href="#cb10-137" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mutate</span>(<span class="at">ERA5_value =</span> ERA5_value <span class="sc">-</span> ERA5_mean_var) <span class="sc">|&gt;</span></span>
+<span id="cb10-138"><a href="#cb10-138" aria-hidden="true" tabindex="-1"></a>        <span class="fu">left_join</span>(Clim_MF_973_mth, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"NOM_USUEL"</span>, <span class="st">"mth"</span>, <span class="st">"variable"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb10-139"><a href="#cb10-139" aria-hidden="true" tabindex="-1"></a>        <span class="fu">na.exclude</span>() </span>
+<span id="cb10-140"><a href="#cb10-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-141"><a href="#cb10-141" aria-hidden="true" tabindex="-1"></a>} </span>
+<span id="cb10-142"><a href="#cb10-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-143"><a href="#cb10-143" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-144"><a href="#cb10-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-145"><a href="#cb10-145" aria-hidden="true" tabindex="-1"></a>Regional-scale climatic variability was summarised from monthly data (1970–2023) obtained from the ERA5-Land reanalysis <span class="co">[</span><span class="ot">@munozsabaterERA5LandStateoftheartGlobal2021</span><span class="co">]</span>. We extracted monthly climate variables at native resolution (9 km), and applied additive seasonal decomposition to isolate the seasonal cycle (removing long-term trends) using *rcontroll* <span class="co">[</span><span class="ot">climate pipeline</span><span class="co">](https://sylvainschmitt.github.io/rcontroll/articles/climate.html)</span> <span class="co">[</span><span class="ot">@schmittRcontrollInterfaceIndividual2023</span><span class="co">]</span>. </span>
+<span id="cb10-146"><a href="#cb10-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-147"><a href="#cb10-147" aria-hidden="true" tabindex="-1"></a><span class="fu">### ERA5-Land vs. regional meteorological datasets (Météo-France)</span></span>
+<span id="cb10-150"><a href="#cb10-150" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb10-151"><a href="#cb10-151" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-mf-network</span></span>
+<span id="cb10-152"><a href="#cb10-152" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Locations and instruments of the regional meteorological stations from Météo France network.  Black areas indicate geomorphological landscapes not included in this study."</span></span>
+<span id="cb10-153"><a href="#cb10-153" aria-hidden="true" tabindex="-1"></a>mf_map <span class="ot">&lt;-</span> <span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"MF_Network_map.png"</span>)</span>
+<span id="cb10-154"><a href="#cb10-154" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">file.exists</span>(mf_map)){knitr<span class="sc">::</span><span class="fu">include_graphics</span>(mf_map)}</span>
+<span id="cb10-155"><a href="#cb10-155" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-156"><a href="#cb10-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-157"><a href="#cb10-157" aria-hidden="true" tabindex="-1"></a>To evaluate the local validity of reanalysis data, we compared demeaned monthly cycles from ERA5-Land against available meteorological stations (for variables with adequate coverage). Monthly variations in temperature, irradiance, and VPD were compared with monthly variations measured by the regional meteorological station network <span class="co">[</span><span class="ot">@meteofranceBasicMonthlyClimatological2023</span><span class="co">]</span>. The station data were filtered to keep only those with more than 30 records per month and with records for all months and hours of the day, and then averaged at the monthly scale. The monthly patterns of the station data were then compared with the corresponding monthly patterns extracted from ERA5-Land at the nearest grid cell to each station location.</span>
+<span id="cb10-158"><a href="#cb10-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-161"><a href="#cb10-161" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb10-162"><a href="#cb10-162" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: Meteo-france-plot</span></span>
+<span id="cb10-163"><a href="#cb10-163" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Comparison of monthly patterns of temperature, mean irradiance, and vapor pressure deficit between ERA5-Land reanalysis and the Météo France station network. The dashed line indicates a perfect fit (R² = 1)."</span></span>
+<span id="cb10-164"><a href="#cb10-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-165"><a href="#cb10-165" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">file.exists</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>,<span class="st">"Meteo-france-plot.png"</span>))) {</span>
+<span id="cb10-166"><a href="#cb10-166" aria-hidden="true" tabindex="-1"></a>    g <span class="ot">&lt;-</span> ERA5_MF_Comp <span class="sc">|&gt;</span></span>
+<span id="cb10-167"><a href="#cb10-167" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(NOM_USUEL,variable) <span class="sc">|&gt;</span> </span>
+<span id="cb10-168"><a href="#cb10-168" aria-hidden="true" tabindex="-1"></a>    <span class="fu">do</span>( <span class="at">R2 =</span> (<span class="fu">cbind</span>(.<span class="sc">$</span>ERA5_value,.<span class="sc">$</span>MF_value) <span class="sc">|&gt;</span> <span class="fu">cor</span>())[<span class="dv">2</span>,<span class="dv">1</span>]<span class="sc">^</span><span class="dv">2</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb10-169"><a href="#cb10-169" aria-hidden="true" tabindex="-1"></a>    <span class="fu">unnest</span>(<span class="at">cols =</span> <span class="fu">c</span>(R2)) <span class="sc">|&gt;</span> <span class="fu">group_by</span>(variable) <span class="sc">|&gt;</span> </span>
+<span id="cb10-170"><a href="#cb10-170" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">variable =</span> <span class="fu">case_when</span>(variable <span class="sc">==</span> <span class="st">"Temp"</span> <span class="sc">~</span> <span class="st">"Temperature"</span>,</span>
+<span id="cb10-171"><a href="#cb10-171" aria-hidden="true" tabindex="-1"></a>                            variable <span class="sc">==</span> <span class="st">"GLO2"</span> <span class="sc">~</span> <span class="st">"Mean Irradiance"</span>,</span>
+<span id="cb10-172"><a href="#cb10-172" aria-hidden="true" tabindex="-1"></a>                            variable <span class="sc">==</span> <span class="st">"VPD"</span> <span class="sc">~</span> <span class="st">"Vapor Pressure Deficit"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb10-173"><a href="#cb10-173" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>() <span class="sc">+</span> <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> variable, <span class="at">y =</span> R2)) <span class="sc">+</span> </span>
+<span id="cb10-174"><a href="#cb10-174" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">1</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb10-175"><a href="#cb10-175" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Climatic variable"</span>, <span class="at">y =</span> <span class="fu">expression</span>(R[<span class="st">'ERA5-Land vs. MF'</span>]<span class="sc">^</span>{<span class="dv">2</span>})) </span>
+<span id="cb10-176"><a href="#cb10-176" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggsave</span>(<span class="at">plot =</span> g, <span class="at">filename =</span> <span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>,<span class="st">"Meteo-france-plot.png"</span>), <span class="at">bg =</span> <span class="st">"white"</span>, <span class="at">width =</span> <span class="dv">5</span>,<span class="at">height =</span> <span class="dv">5</span>)</span>
+<span id="cb10-177"><a href="#cb10-177" aria-hidden="true" tabindex="-1"></a>} </span>
+<span id="cb10-178"><a href="#cb10-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-179"><a href="#cb10-179" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>,<span class="st">"Meteo-france-plot.png"</span>))</span>
+<span id="cb10-180"><a href="#cb10-180" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-181"><a href="#cb10-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-182"><a href="#cb10-182" aria-hidden="true" tabindex="-1"></a><span class="fu">### MFPCA of annual patterns of ERA5-Land data</span></span>
+<span id="cb10-185"><a href="#cb10-185" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb10-186"><a href="#cb10-186" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: MFPCA-analysis</span></span>
+<span id="cb10-187"><a href="#cb10-187" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Biplot of the first two multivariate functional principal components (MFPCA) summarising the dominant seasonal patterns of temperature, precipitation, irradiance, wind speed, and vapour pressure deficit across French Guiana. The first two MFPCA axes (Clim1 and Clim2) are shown with their associated variable loadings (arrows)."</span></span>
+<span id="cb10-188"><a href="#cb10-188" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-189"><a href="#cb10-189" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">file.exists</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>,<span class="st">"MFPCA-analysis.png"</span>))) {</span>
+<span id="cb10-190"><a href="#cb10-190" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">file.exists</span>(<span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"climatic_data"</span>, <span class="st">"ERA5Land_RAW.rds"</span>))) {</span>
+<span id="cb10-191"><a href="#cb10-191" aria-hidden="true" tabindex="-1"></a>        MFPCA_GF <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="fu">here_rel</span>(<span class="st">"data"</span>, <span class="st">"climatic_data"</span>, <span class="st">"MFPCA_GF.rds"</span>))</span>
+<span id="cb10-192"><a href="#cb10-192" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb10-193"><a href="#cb10-193" aria-hidden="true" tabindex="-1"></a>        MFPCA_GF <span class="ot">&lt;-</span> <span class="fu">MFPCA_extraction</span>(Climate_data_mth,</span>
+<span id="cb10-194"><a href="#cb10-194" aria-hidden="true" tabindex="-1"></a>            <span class="at">select_vars =</span> <span class="fu">c</span>(</span>
+<span id="cb10-195"><a href="#cb10-195" aria-hidden="true" tabindex="-1"></a>                <span class="st">"Temperature"</span>, <span class="st">"Rainfall"</span>, <span class="st">"WindSpeed"</span>,</span>
+<span id="cb10-196"><a href="#cb10-196" aria-hidden="true" tabindex="-1"></a>                <span class="st">"MeanIrradiance"</span>, <span class="st">"VaporPressureDeficit"</span></span>
+<span id="cb10-197"><a href="#cb10-197" aria-hidden="true" tabindex="-1"></a>            )</span>
+<span id="cb10-198"><a href="#cb10-198" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb10-199"><a href="#cb10-199" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb10-200"><a href="#cb10-200" aria-hidden="true" tabindex="-1"></a>    g  <span class="ot">&lt;-</span> <span class="fu">plot_MFPCA</span>(MFPCA_GF)</span>
+<span id="cb10-201"><a href="#cb10-201" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggsave</span>(<span class="at">plot =</span> g, <span class="at">filename =</span> <span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>,<span class="st">"MFPCA-analysis.png"</span>), <span class="at">bg =</span> <span class="st">"white"</span>, <span class="at">width =</span> <span class="dv">10</span>,<span class="at">height =</span> <span class="dv">5</span>)</span>
+<span id="cb10-202"><a href="#cb10-202" aria-hidden="true" tabindex="-1"></a>} </span>
+<span id="cb10-203"><a href="#cb10-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-204"><a href="#cb10-204" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>,<span class="st">"MFPCA-analysis.png"</span>))</span>
+<span id="cb10-205"><a href="#cb10-205" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-206"><a href="#cb10-206" aria-hidden="true" tabindex="-1"></a>The two regional climate indices (Clim1 and Clim2) were obtained by applying a multivariate functional principal component analysis (MFPCA) to monthly seasonal patterns of temperature, precipitation, irradiance, wind speed, and vapour pressure deficit <span class="co">[</span><span class="ot">@happMultivariateFunctionalPrincipal2018</span><span class="co">]</span>. These indices summarise the dominant, correlated seasonal dynamics across variables.</span>
+<span id="cb10-209"><a href="#cb10-209" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb10-210"><a href="#cb10-210" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-clim1</span></span>
+<span id="cb10-211"><a href="#cb10-211" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Regional projection of Clim1 coefficient"</span></span>
+<span id="cb10-212"><a href="#cb10-212" aria-hidden="true" tabindex="-1"></a>Clim1_map <span class="ot">&lt;-</span> <span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"fPCA1_map.png"</span>)</span>
+<span id="cb10-213"><a href="#cb10-213" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">file.exists</span>(Clim1_map)) knitr<span class="sc">::</span><span class="fu">include_graphics</span>(Clim1_map)</span>
+<span id="cb10-214"><a href="#cb10-214" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-215"><a href="#cb10-215" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-218"><a href="#cb10-218" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb10-219"><a href="#cb10-219" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-clim2</span></span>
+<span id="cb10-220"><a href="#cb10-220" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Regional projection of Clim2 coefficient"</span></span>
+<span id="cb10-221"><a href="#cb10-221" aria-hidden="true" tabindex="-1"></a>Clim2_map <span class="ot">&lt;-</span> <span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"fPCA2_map.png"</span>)</span>
+<span id="cb10-222"><a href="#cb10-222" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">file.exists</span>(Clim2_map)) knitr<span class="sc">::</span><span class="fu">include_graphics</span>(Clim2_map)</span>
+<span id="cb10-223"><a href="#cb10-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-224"><a href="#cb10-224" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-225"><a href="#cb10-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-226"><a href="#cb10-226" aria-hidden="true" tabindex="-1"></a><span class="fu">## Geomorphological landscapes</span></span>
+<span id="cb10-227"><a href="#cb10-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-230"><a href="#cb10-230" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb10-231"><a href="#cb10-231" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-geomorphology</span></span>
+<span id="cb10-232"><a href="#cb10-232" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-align: center</span></span>
+<span id="cb10-233"><a href="#cb10-233" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Locations of forest inventory plots across geomorphological landscapes of French Guiana."</span></span>
+<span id="cb10-234"><a href="#cb10-234" aria-hidden="true" tabindex="-1"></a>hab_map <span class="ot">&lt;-</span> <span class="fu">here_rel</span>(<span class="st">"notebook"</span>, <span class="st">"figs"</span>, <span class="st">"Habitat_map.png"</span>)</span>
+<span id="cb10-235"><a href="#cb10-235" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">file.exists</span>(hab_map)) knitr<span class="sc">::</span><span class="fu">include_graphics</span>(hab_map)</span>
+<span id="cb10-236"><a href="#cb10-236" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-237"><a href="#cb10-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-238"><a href="#cb10-238" aria-hidden="true" tabindex="-1"></a>Geomorphological landscapes were described using a landscape classification <span class="co">[</span><span class="ot">@guitetLandformLandscapeMapping2013</span><span class="co">]</span>, in which broad geomorphological types (e.g. coastal, multiconvex, multiconcave, plateaux, high relief) are subdivided into finer geomorphological subtypes (coded 1–13 in @fig-geomorphology). In analyses, subtypes are used as the primary categorical predictor to capture mesoscale landform-driven hydro-edaphic contrasts, while types provide a higher-level summary for reporting and interpretation.</span>
+<span id="cb10-239"><a href="#cb10-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-240"><a href="#cb10-240" aria-hidden="true" tabindex="-1"></a>| Geomorphological landscape type| Geomorphological landscape subtype | Share of area (%) | Mean  altitude (m) | Mean  altitude  range (m) | Mean  hillslope (%) | Dominant soils |</span>
+<span id="cb10-241"><a href="#cb10-241" aria-hidden="true" tabindex="-1"></a>|---|---|---|---|---|---|---|</span>
+<span id="cb10-242"><a href="#cb10-242" aria-hidden="true" tabindex="-1"></a>| Coastal | ① - coastal flat plains | 2% | &lt;100 | &lt;40 | &lt;10 | Arenosol, acrisol, gleysols |</span>
+<span id="cb10-243"><a href="#cb10-243" aria-hidden="true" tabindex="-1"></a>|  | ② - plains with residual relief | 1% | &lt;100 | &lt;40 | 10-15 | Acrisols dominant |</span>
+<span id="cb10-244"><a href="#cb10-244" aria-hidden="true" tabindex="-1"></a>|  | ③ - coastal white sands | 0.1% | &lt;100 | &lt;40 | &lt;10 | Podsols |</span>
+<span id="cb10-245"><a href="#cb10-245" aria-hidden="true" tabindex="-1"></a>| Multiconcave | ④ - inland plains with residual relief | 7% | 100-200 | 20-60 | 10-15 | Acrisols dominant |</span>
+<span id="cb10-246"><a href="#cb10-246" aria-hidden="true" tabindex="-1"></a>|  | ⑤ - inland flat plains | 1% | 100-200 | 20-60 | 10-15 | Acrisols dominant |</span>
+<span id="cb10-247"><a href="#cb10-247" aria-hidden="true" tabindex="-1"></a>| Multiconvex | ⑥ - low hills and large valleys | 4% | 50-150 | 20-60 | 10-15 | Acrisols and arenosols |</span>
+<span id="cb10-248"><a href="#cb10-248" aria-hidden="true" tabindex="-1"></a>|  | ⑦ - complex hilly areas | 5% | 50-150 | 40-90 | 10-25 | Acrisols and ferralsols |</span>
+<span id="cb10-249"><a href="#cb10-249" aria-hidden="true" tabindex="-1"></a>|  | ⑧ - peneplain with moderate hills | 7% | 50-150 | 40-60 | 10-15 | Acrisols dominant |</span>
+<span id="cb10-250"><a href="#cb10-250" aria-hidden="true" tabindex="-1"></a>|  | ⑨ - regular pattern hilly areas | 6% | &lt;150 | 40-90 | 15-25 | Acrisols dominant |</span>
+<span id="cb10-251"><a href="#cb10-251" aria-hidden="true" tabindex="-1"></a>| Plateaux | ⑩ - very moderate plateau | 12% | 50-200 | 40-60 | 10-20 | Ferralsols dominant |</span>
+<span id="cb10-252"><a href="#cb10-252" aria-hidden="true" tabindex="-1"></a>|  | ⑪ - long and high plateau, | 9% | 50-200 | 60-150 | 15-25 | Ferralsols dominant |</span>
+<span id="cb10-253"><a href="#cb10-253" aria-hidden="true" tabindex="-1"></a>| High reliefs | ⑫ - high hills | 14% | 50-200 | &gt;150 | &gt;20 | Ferralsols and plinthosols |</span>
+<span id="cb10-254"><a href="#cb10-254" aria-hidden="true" tabindex="-1"></a>|  | ⑬ - sub-montane relief | 0.3% | 200-500 | &gt;150 | 10-25 | Ferralsols and plinthosols |</span>
+<span id="cb10-255"><a href="#cb10-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-256"><a href="#cb10-256" aria-hidden="true" tabindex="-1"></a><span class="fu">## Local topography</span></span>
+<span id="cb10-257"><a href="#cb10-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-258"><a href="#cb10-258" aria-hidden="true" tabindex="-1"></a>Local topographic variation was assessed with a topographic wetness index. We used the SAGA Wetness Index <span class="co">[</span><span class="ot">@bohnerSpatialPredictionSoil2006</span><span class="co">]</span>, as an indicator of the local distribution of water and nutrients in the soil <span class="co">[</span><span class="ot">@schmittTopographyDrivesMicrogeographic2021</span><span class="co">]</span>.</span>
+<span id="cb10-259"><a href="#cb10-259" aria-hidden="true" tabindex="-1"></a>The SWI estimates the expected local water accumulation by combining upslope contributing area and slope. A first step consist in computing the flow accumulation from a Digital Elevation Model using a multiple flow direction approach (Freeman) and derives a specific catchment area (SCA) (contributing area per unit contour width). To reduce artefacts in low-relief terrain, where standard wetness indices can produce unstable or spuriously high values in flat valley bottoms, a second step applies an iterative modification of the SCA that constrains contributing area in nearly planar zones as a function of local slope and neighbourhood maxima, thereby yielding more realistic wetness patterns under weak gradients. The SWI is then calculated as follow: </span>
+<span id="cb10-260"><a href="#cb10-260" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb10-261"><a href="#cb10-261" aria-hidden="true" tabindex="-1"></a>SWI = log\left(\dfrac{SCA}{tan(\beta)}\right)</span>
+<span id="cb10-262"><a href="#cb10-262" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb10-263"><a href="#cb10-263" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-264"><a href="#cb10-264" aria-hidden="true" tabindex="-1"></a>where $\beta$ is the local slope angle and $SCA$ is the corrected specific catchment area.</span>
+<span id="cb10-265"><a href="#cb10-265" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-266"><a href="#cb10-266" aria-hidden="true" tabindex="-1"></a>We used a 10 m aggregated version of the high-resolution RGE ALTI® DEM <span class="co">[</span><span class="ot">@ignLargeScaleFrench2023</span><span class="co">]</span>, which covers French Guiana with two large-scale methods (radar and image correlation). SWI was computed across French Guiana using elevation with SAGA GIS <span class="co">[</span><span class="ot">@conradSystemAutomatedGeoscientific2015</span><span class="co">]</span>. Due to a strong right skewness in SWI, we used the median SWI per inventory unit and verified its representativeness using the within inventory unit coefficient of variation of SWI:</span>
+<span id="cb10-267"><a href="#cb10-267" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-270"><a href="#cb10-270" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb10-271"><a href="#cb10-271" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tab-SWI-dist</span></span>
+<span id="cb10-272"><a href="#cb10-272" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: "Distribution of coefficient of variation for SWI within inventory units."</span></span>
+<span id="cb10-273"><a href="#cb10-273" aria-hidden="true" tabindex="-1"></a>SWI_extract_path <span class="ot">&lt;-</span> <span class="fu">here_rel</span>(<span class="st">"data"</span>,<span class="st">"microtopo_data"</span>,<span class="st">"SWI_extract.tsv"</span>)</span>
+<span id="cb10-274"><a href="#cb10-274" aria-hidden="true" tabindex="-1"></a>SWI_extract <span class="ot">&lt;-</span> vroom<span class="sc">::</span><span class="fu">vroom</span>(SWI_extract_path)</span>
+<span id="cb10-275"><a href="#cb10-275" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-276"><a href="#cb10-276" aria-hidden="true" tabindex="-1"></a>SWI_extract <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">PlotID =</span><span class="fu">factor</span>(PlotID))  <span class="sc">|&gt;</span> </span>
+<span id="cb10-277"><a href="#cb10-277" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(PlotID)  <span class="sc">|&gt;</span>  </span>
+<span id="cb10-278"><a href="#cb10-278" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">Median =</span> <span class="fu">log</span>(<span class="fu">median</span>(SWI)<span class="sc">+</span><span class="dv">1</span>), <span class="at">Sigma =</span> <span class="fu">sqrt</span>(<span class="fu">var</span>(<span class="fu">log</span>(SWI<span class="sc">+</span><span class="dv">1</span>)))) <span class="sc">|&gt;</span> </span>
+<span id="cb10-279"><a href="#cb10-279" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ungroup</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb10-280"><a href="#cb10-280" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">Cov =</span> Sigma<span class="sc">/</span>Median)  <span class="sc">|&gt;</span>  </span>
+<span id="cb10-281"><a href="#cb10-281" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarize</span>(</span>
+<span id="cb10-282"><a href="#cb10-282" aria-hidden="true" tabindex="-1"></a>        <span class="st">`</span><span class="at">Mean (%)</span><span class="st">`</span> <span class="ot">=</span> <span class="dv">100</span><span class="sc">*</span><span class="fu">mean</span>(Cov, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb10-283"><a href="#cb10-283" aria-hidden="true" tabindex="-1"></a>        <span class="st">`</span><span class="at">2.5% bound (%)</span><span class="st">`</span> <span class="ot">=</span> <span class="dv">100</span><span class="sc">*</span><span class="fu">quantile</span>(Cov, <span class="fl">0.025</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), </span>
+<span id="cb10-284"><a href="#cb10-284" aria-hidden="true" tabindex="-1"></a>        <span class="st">`</span><span class="at">97.5% bound (%)</span><span class="st">`</span> <span class="ot">=</span> <span class="dv">100</span><span class="sc">*</span><span class="fu">quantile</span>(Cov, <span class="fl">0.975</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))<span class="sc">|&gt;</span></span>
+<span id="cb10-285"><a href="#cb10-285" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="st">`</span><span class="at">Variable</span><span class="st">`</span> <span class="ot">=</span> <span class="st">"Median SWI"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb10-286"><a href="#cb10-286" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="st">`</span><span class="at">Variable</span><span class="st">`</span>,<span class="st">`</span><span class="at">Mean (%)</span><span class="st">`</span>, <span class="st">`</span><span class="at">2.5% bound (%)</span><span class="st">`</span>, <span class="st">`</span><span class="at">97.5% bound (%)</span><span class="st">`</span>)<span class="sc">|&gt;</span></span>
+<span id="cb10-287"><a href="#cb10-287" aria-hidden="true" tabindex="-1"></a>    <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
+<span id="cb10-288"><a href="#cb10-288" aria-hidden="true" tabindex="-1"></a>    <span class="fu">fmt_number</span>(<span class="at">columns =</span> <span class="fu">c</span>(<span class="st">`</span><span class="at">Variable</span><span class="st">`</span>,<span class="st">`</span><span class="at">Mean (%)</span><span class="st">`</span>, <span class="st">`</span><span class="at">2.5% bound (%)</span><span class="st">`</span>, <span class="st">`</span><span class="at">97.5% bound (%)</span><span class="st">`</span>), <span class="at">decimals =</span> <span class="dv">2</span>) <span class="sc">|&gt;</span></span>
+<span id="cb10-289"><a href="#cb10-289" aria-hidden="true" tabindex="-1"></a>    <span class="fu">opts_theme</span>()</span>
+<span id="cb10-290"><a href="#cb10-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-291"><a href="#cb10-291" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Content <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2020–2026 by Guillaume Salzet, Sylvain Schmitt, and Mélaine Aubry-Kientz<br> All content licensed under a <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license (CC BY 4.0)</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://gitlab.onf.fr/gsalzet/macrotopo_jsdm/blob/main/notebook/data_env.qmd" class="toc-action"><i class="bi bi-git"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a><br> <a href="https://gitlab.onf.fr/gsalzet/macrotopo_jsdm">View the source at <i class="fa-brands fa-gitlab" aria-label="gitlab"></i> ONF gitlab</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
