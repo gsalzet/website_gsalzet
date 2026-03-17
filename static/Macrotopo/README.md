@@ -5,20 +5,9 @@
 - [Licenses](#licenses)
 
 <!-- README.md is generated from README.qmd. Please edit that file -->
-
-------------------------------------------------------------------------
-
- - [Guillaume Salzet](https://guillaume-salzet.netlify.app/) • RDI department, ONF
- - [Sylvain Schmitt](https://sylvainschmitt.netlify.app/) • Forêt & société, CIRAD
- - [Mélaine Aubry-Kientz](https://www.researchgate.net/profile/Melaine-Aubry-Kientz) • UMR AMAP, Montpellier University
-
-------------------------------------------------------------------------
-
 <!-- badges: start -->
 
-[![OSF DOI](https://img.shields.io/badge/OSF%20Project-10.17605%2FOSF.IO%2FPGE73-blue)](https://doi.org/10.17605/OSF.IO/PGE73)
-[![Website](https://img.shields.io/badge/Project_website-HERE-blue)](https://guillaume-salzet.netlify.app/macrotopo/)
-
+[![OSF DOI](https://img.shields.io/badge/OSF%20Project-10.17605%2FOSF.IO%2FPGE73-blue)](https://doi.org/10.17605/OSF.IO/PGE73) [![Gitlab project](https://img.shields.io/badge/gitlab.ONF.fr-repo-green?logo=gitlab)](https://gitlab.onf.fr/gsalzet/macrotopo_jsdm) [![Website](https://img.shields.io/badge/Project_website-HERE-blue.png)](https://guillaume-salzet.netlify.app/macrotopo)
 <!-- badges: end -->
 
 ------------------------------------------------------------------------
@@ -29,10 +18,9 @@
 
 ## Replication
 
-> [!TIP]
->
-> Before using replication pipeline, you nedd to add **data**, **results** and **models** folders available at [OSF project repo](https://doi.org/10.17605/OSF.IO/PGE73).
->
+::: {.callout-tip}
+Before using replication pipeline, you nedd to add **data**, **results** and **models** folders available at [OSF project repo](https://doi.org/10.17605/OSF.IO/PGE73).
+:::
 
 Our replication pipeline is based on [**Suparna Chaudhry, Marc Dotson, and Andrew Heiss repository**](https://github.com/andrewheiss/silent-skywalk).
 
@@ -60,7 +48,7 @@ We use the [{renv} package](https://rstudio.github.io/renv/articles/renv.html) t
 
 5.  Visit [`http://localhost:8787`](http://localhost:8787) and open an RStudio session inside the newly-built container in your browser. Any edits you make here will also be reflected on your local computer.
 
-6.  Run the {targets} pipeline by running `targets::tar_make()` in the R console. Wait again; it takes ≈40 minutes to clean the data, run the model and build the statistical notebook website. Subsequent runs of the pipeline should be fairly instant, though.
+6.  Run the {targets} pipeline by running `targets::tar_make()` in the R console. Wait again; it takes ≈20 minutes to build the statistical notebook website. Subsequent runs of the pipeline should be fairly instant, though.
 
     > [!TIP]
     >
