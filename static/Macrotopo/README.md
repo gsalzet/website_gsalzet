@@ -8,15 +8,17 @@
 
 ------------------------------------------------------------------------
 
-[Guillaume Salzet](https://guillaume-salzet.netlify.app/) • RDI department, ONF
-[Sylvain Schmitt](https://sylvainschmitt.netlify.app/) • Forêt & société, CIRAD
-[Mélaine Aubry-Kientz](https://www.researchgate.net/profile/Melaine-Aubry-Kientz) • UMR AMAP, Montpellier University
+ - [Guillaume Salzet](https://guillaume-salzet.netlify.app/) • RDI department, ONF
+ - [Sylvain Schmitt](https://sylvainschmitt.netlify.app/) • Forêt & société, CIRAD
+ - [Mélaine Aubry-Kientz](https://www.researchgate.net/profile/Melaine-Aubry-Kientz) • UMR AMAP, Montpellier University
 
 ------------------------------------------------------------------------
 
 <!-- badges: start -->
 
 [![OSF DOI](https://img.shields.io/badge/OSF%20Project-10.17605%2FOSF.IO%2FPGE73-blue)](https://doi.org/10.17605/OSF.IO/PGE73)
+[![Website](https://img.shields.io/badge/Project_website-HERE-blue)](https://guillaume-salzet.netlify.app/macrotopo/)
+
 <!-- badges: end -->
 
 ------------------------------------------------------------------------
@@ -27,9 +29,10 @@
 
 ## Replication
 
-::: {.callout-tip}
-Before using replication pipeline, you nedd to add **data**, **results** and **models** folders available at [OSF project repo](https://doi.org/10.17605/OSF.IO/PGE73).
-:::
+> [!TIP]
+>
+> Before using replication pipeline, you nedd to add **data**, **results** and **models** folders available at [OSF project repo](https://doi.org/10.17605/OSF.IO/PGE73).
+>
 
 Our replication pipeline is based on [**Suparna Chaudhry, Marc Dotson, and Andrew Heiss repository**](https://github.com/andrewheiss/silent-skywalk).
 
