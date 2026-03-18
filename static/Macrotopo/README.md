@@ -19,7 +19,7 @@
 ## Replication
 
 ::: {.callout-tip}
-Before using replication pipeline, you nedd to add **data**, **results** and **models** folders available at [OSF project repo](https://doi.org/10.17605/OSF.IO/PGE73).
+Before using replication pipeline, you need to add **data**, **results** and **models** folders available at [OSF project repo](https://doi.org/10.17605/OSF.IO/PGE73).
 :::
 
 Our replication pipeline is based on [**Suparna Chaudhry, Marc Dotson, and Andrew Heiss repository**](https://github.com/andrewheiss/silent-skywalk).
